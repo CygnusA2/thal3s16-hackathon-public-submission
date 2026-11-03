@@ -519,7 +519,11 @@
           evidenceLayer.markerReviewFlags[property.id];
         const providerFactsAbsent = recordReviewFlag === 'ATTOM_PARCEL_IDENTITY_ONLY_ALL_BUILDING_FACTS_UNAVAILABLE';
         for (const id of ['fact-beds', 'fact-baths', 'fact-sqft', 'fact-year']) {
-          setText(id, providerFactsAbsent ? 'Not provided' : 'Not published');
+          /* Identity-only records (no building characteristics exist in the
+             provider record) read 'Not available'; records whose licensed
+             measurements exist but are withheld pending display rights read
+             'Not published'. Neither is ever a fabricated value. */
+          setText(id, providerFactsAbsent ? 'Not available' : 'Not published');
         }
         const recordReviewMessage = ({
           ASSESSOR_RECORD_LAG_REDEVELOPMENT:
