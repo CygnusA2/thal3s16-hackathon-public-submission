@@ -80,7 +80,7 @@
       baths: '6',
       sqft: '6,950 ft²',
       year: '2021',
-      photoUrl: './assets/clients30/cf30-008.jpg',
+      photoUrl: './assets/clients30/cf30-019.jpg',
       photoSource: 'AI-generated fictional mansion — fictional scenario, not an actual property photograph',
       imageCount: 1,
       attomStatus: 'Property discovery fixture'
@@ -96,7 +96,7 @@
       baths: '7',
       sqft: '7,640 ft²',
       year: '2018',
-      photoUrl: './assets/clients30/cf30-019.jpg',
+      photoUrl: './assets/clients30/cf30-008.jpg',
       photoSource: 'AI-generated fictional mansion — fictional scenario, not an actual property photograph',
       imageCount: 1,
       attomStatus: 'Property discovery fixture'
