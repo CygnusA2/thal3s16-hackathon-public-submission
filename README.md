@@ -4,9 +4,9 @@
 
 THAL3S 16 explores how to assess the liquidity potential of illiquid collateral while keeping financial calculations and lending authority outside the language model.
 
-## Watch the live demonstration
+## Explore the interactive demonstration
 
-**[33-second THAL3S 16 California demo video](assets/launch/THAL3S16_California_Live_Demo_33s.mp4)** — recorded from the actual public browser interface: real Google Satellite, 30 synthetic California property scenarios, AI-generated mansion imagery, a completed seven-stage assessment, and a blocked-case example. The video is silent with captions; it is not a real loan, credit decision, funding transaction or actual property photograph.
+**[Open the THAL3S 16 California demo](https://cygnusa2.github.io/thal3s16-hackathon-public-submission/)** — explore 30 independently verified California ATTOM reference addresses alongside 30 AI-generated illustrative mansion photographs and a seven-stage synthetic financial assessment. The reference properties are not represented as assets owned by fictional clients; no real appraisal, credit approval, token issuance or funding takes place.
 
 ## Start with these three documents
 
