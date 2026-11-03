@@ -33,7 +33,7 @@
       sqft: '6,710 ft²',
       year: '1968',
       photoUrl: './assets/clients30/fallback-single_family_residence.svg',
-      photoSource: 'Original category illustration — fictional scenario, not an actual property photograph',
+      photoSource: 'AI-generated fictional mansion — fictional scenario, not an actual property photograph',
       imageCount: 1,
       attomStatus: 'Live AVM route proven · private evidence only'
     },
@@ -49,7 +49,7 @@
       sqft: '8,420 ft²',
       year: '2019',
       photoUrl: './assets/clients30/fallback-single_family_residence.svg',
-      photoSource: 'Original category illustration — fictional scenario, not an actual property photograph',
+      photoSource: 'AI-generated fictional mansion — fictional scenario, not an actual property photograph',
       imageCount: 1,
       attomStatus: 'Illustrative property characteristics · ATTOM wiring pending'
     },
@@ -65,7 +65,7 @@
       sqft: '9,180 ft²',
       year: '2016',
       photoUrl: './assets/clients30/fallback-single_family_residence.svg',
-      photoSource: 'Original category illustration — fictional scenario, not an actual property photograph',
+      photoSource: 'AI-generated fictional mansion — fictional scenario, not an actual property photograph',
       imageCount: 1,
       attomStatus: 'Property discovery fixture'
     },
@@ -81,7 +81,7 @@
       sqft: '6,950 ft²',
       year: '2021',
       photoUrl: './assets/clients30/fallback-single_family_residence.svg',
-      photoSource: 'Original category illustration — fictional scenario, not an actual property photograph',
+      photoSource: 'AI-generated fictional mansion — fictional scenario, not an actual property photograph',
       imageCount: 1,
       attomStatus: 'Property discovery fixture'
     },
@@ -97,7 +97,7 @@
       sqft: '7,640 ft²',
       year: '2018',
       photoUrl: './assets/clients30/fallback-single_family_residence.svg',
-      photoSource: 'Original category illustration — fictional scenario, not an actual property photograph',
+      photoSource: 'AI-generated fictional mansion — fictional scenario, not an actual property photograph',
       imageCount: 1,
       attomStatus: 'Property discovery fixture'
     }
@@ -1340,10 +1340,10 @@
     fallback.style.setProperty('display', 'none', 'important');
     photo.alt = entry.alt_text;
     injected = el('div', 'aerial-overlay s02-photo-overlay');
-    injected.append(el('strong', null, 'ILLUSTRATIVE CATEGORY ARTWORK'));
+    injected.append(el('strong', null, 'AI-GENERATED LUXURY RESIDENCE'));
     injected.append(el('small', null, ILLUSTRATIVE_LABEL));
     frame.appendChild(injected);
-    setText('photo-count', '1 original category illustration');
+    setText('photo-count', '1 AI-generated mansion image');
     setText('photo-source',
       'Illustration: ' + entry.credit + ' — fictional asset, not a real property photograph');
   };
