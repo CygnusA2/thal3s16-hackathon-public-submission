@@ -1,7 +1,6 @@
 'use strict';
-/* Sanitized ATTOM evidence status. This does NOT contain licensed records or borrower identities.
-   Fictional client cf30-021 is paired with a separate independently verified Malibu
-   reference parcel for research only; ownership is neither asserted nor implied. */
+/* Sanitized ATTOM verification metadata only. No licensed values, raw records or API secrets.
+   Area-reference parcels are independent of fictional client portfolios and AI photographs. */
 window.THAL3S_ATTOM_EVIDENCE = Object.freeze({
   schema_version: 'thal3s16-attom-evidence-ui-v1',
   markerStatus: {
@@ -10,13 +9,13 @@ window.THAL3S_ATTOM_EVIDENCE = Object.freeze({
   "montecito": "PRIVATE_DETAIL_VERIFIED",
   "palo-alto": "PRIVATE_DETAIL_VERIFIED",
   "la-jolla": "PRIVATE_DETAIL_VERIFIED",
-  "cf30-001": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
-  "cf30-002": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
+  "cf30-001": "PRIVATE_DETAIL_VERIFIED",
+  "cf30-002": "PRIVATE_DETAIL_VERIFIED",
   "cf30-003": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
-  "cf30-004": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
-  "cf30-005": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
+  "cf30-004": "PRIVATE_DETAIL_VERIFIED",
+  "cf30-005": "PRIVATE_DETAIL_VERIFIED",
   "cf30-006": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
-  "cf30-007": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
+  "cf30-007": "PRIVATE_DETAIL_VERIFIED",
   "cf30-008": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
   "cf30-009": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
   "cf30-010": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
@@ -41,6 +40,8 @@ window.THAL3S_ATTOM_EVIDENCE = Object.freeze({
   "cf30-029": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
   "cf30-030": "NEEDS_ADDRESS_AND_PARCEL_MATCH"
 },
-  /* Each licensed value requires field-level display rights clearance. */
-  publishedFacts: Object.freeze({})
+  markerReviewFlags: {
+  "cf30-007": "ASSESSOR_RECORD_LAG_REDEVELOPMENT"
+},
+  publishedFacts: Object.freeze({}) // Display permission not yet cleared.
 });
