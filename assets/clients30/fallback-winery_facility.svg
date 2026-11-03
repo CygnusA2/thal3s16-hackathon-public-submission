@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-label="Illustrative original artwork: winery facility with tasting house and barrels. Not a photograph and not any client's actual property.">
+  <title>ILLUSTRATIVE — WINERY FACILITY</title>
+  <desc>Original deterministic vector artwork (THAL3S16 SprintVis S01 fallback art). ILLUSTRATIVE only; does not depict any real or client property.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fdf6ec"/><stop offset="1" stop-color="#f3e5cd"/></linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#sky)"/>
+  <circle cx="280" cy="170" r="90" fill="#e8b04b"/>  <g stroke="#3e3a34" stroke-width="4"><rect x="560" y="360" width="480" height="240" fill="#f7f3ea"/><rect x="640" y="240" width="240" height="130" fill="#f7f3ea"/><rect x="690" y="200" width="60" height="46" fill="#8a5a3b"/><rect x="820" y="200" width="60" height="46" fill="#8a5a3b"/><polygon points="540,360 800,270 1060,360" fill="#8a5a3b"/><polygon points="620,240 760,180 900,240" fill="#8a5a3b"/><rect x="740" y="470" width="120" height="130" fill="#a9825a"/></g>  <g fill="#a9825a"><ellipse cx="360" cy="720" rx="70" ry="66" stroke="#3e3a34" stroke-width="4"/><ellipse cx="480" cy="740" rx="70" ry="66" stroke="#3e3a34" stroke-width="4"/></g>  <path d="M0,780 Q700,720 1600,760 L1600,1000 L0,1000 Z" fill="#c9d8b0"/>  <g transform="translate(1280,700) scale(1.0)"><rect x="-10" y="-70" width="20" height="80" fill="#a9825a"/><circle cx="0" cy="-105" r="58" fill="#7d9a68"/><circle cx="-40" cy="-80" r="40" fill="#9fb380"/><circle cx="42" cy="-82" r="38" fill="#9fb380"/></g>
+  <g font-family="Georgia, 'Times New Roman', serif" fill="#3e3a34">
+    <text x="80" y="930" font-size="44" letter-spacing="6">ILLUSTRATIVE</text>
+    <text x="80" y="972" font-size="20" letter-spacing="2">ORIGINAL ARTWORK — WINERY FACILITY WITH TASTING HOUSE AND BARRELS — NOT A PHOTOGRAPH, NOT ANY CLIENT&apos;S ACTUAL PROPERTY</text>
+  </g>
+</svg>
