@@ -567,8 +567,17 @@
         }
         const recordReviewFlag = evidenceLayer && evidenceLayer.markerReviewFlags &&
           evidenceLayer.markerReviewFlags[property.id];
-        setText('physical-facts-source', recordReviewFlag === 'ASSESSOR_RECORD_LAG_REDEVELOPMENT'
-          ? 'ATTOM reference parcel verified privately. CAUTION: assessor building information may predate redevelopment; newer listing characteristics are not ATTOM-verified. The real facts remain unpublished and no fictional client ownership is asserted.'
+        const recordReviewMessage = ({
+          ASSESSOR_RECORD_LAG_REDEVELOPMENT:
+            'CAUTION: this ATTOM assessor record may predate redevelopment; newer listing characteristics are not ATTOM-verified.',
+          ASSESSOR_LISTING_VARIANCE_AND_LOCALITY_CAVEAT:
+            'CAUTION: ATTOM and listing building specifications disagree, and this Carmel-area address must not be represented as an address inside Carmel-by-the-Sea city proper.',
+          ASSESSOR_BUILDER_AREA_VARIANCE:
+            'CAUTION: ATTOM building area differs from builder-sourced listing area; sources are not interchangeable.'
+        })[recordReviewFlag] || '';
+        setText('physical-facts-source', recordReviewMessage
+          ? 'ATTOM reference parcel verified privately. ' + recordReviewMessage +
+            ' Licensed facts are not publicly displayed; no ownership by a fictional client is asserted.'
           : syntheticClient
             ? 'Independent ATTOM reference parcel for this research area only. Fictional client ownership is not asserted. Real building characteristics are not published; mansion image is AI-generated.'
             : 'ATTOM reference parcel verified privately; its characteristics are withheld pending public-display clearance. This map marker represents an area, not the verified parcel boundary. Mansion image is AI-generated.');
