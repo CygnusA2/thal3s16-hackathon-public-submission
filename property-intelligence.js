@@ -491,7 +491,9 @@
           ? 'ATTOM identity mismatch · rejected · replacement needed'
           : currentEvidenceState === 'PREPARED_UNUSED_APPROVAL_REQUIRED'
             ? 'ATTOM request prepared · no retrieval or approval yet'
-            : 'ATTOM Property Detail not verified for this public marker');
+            : currentEvidenceState === 'HTTP_FAILURE_REPLACEMENT_PENDING'
+              ? 'ATTOM provider request failed · no source record · replacement needed'
+              : 'ATTOM Property Detail not verified for this public marker');
       if (privateVerified) {
         /* Verified real parcels are independent research references, NEVER
            proof that a fictional borrower owns the actual home. Licensed
@@ -513,6 +515,10 @@
             'CAUTION: ATTOM and the public listing disagree about bedrooms and living area. The provider record has not been reconciled with the listing.',
           ASSESSOR_LISTING_AREA_VARIANCE_TIBURON:
             'CAUTION: ATTOM and public listing living-area figures differ for this independently matched Tiburon reference. No source substitution is authorized.',
+          ASSESSOR_LISTING_VARIANCE_ST_HELENA:
+            'CAUTION: ATTOM county structure differs from newer marketing information for the independently verified Saint Helena parcel; no listing substitution is permitted.',
+          ASSESSOR_RECORD_LAG_NAPA:
+            'CAUTION: the verified Napa assessor record may not describe a more recent redeveloped listing. ATTOM building facts remain independently sourced and are not replaced with listing attributes.',
           ATTOM_PARCEL_IDENTITY_ONLY_ALL_BUILDING_FACTS_UNAVAILABLE:
             'CAUTION: ATTOM verified the parcel identity but returned no bedrooms, bathrooms, living area, or year built. Listing figures must not be treated as ATTOM evidence.'
         })[recordReviewFlag] || '';
@@ -526,7 +532,9 @@
         setText('physical-facts-source',
           currentEvidenceState === 'IDENTITY_MISMATCH_REPLACEMENT_PENDING'
             ? 'A prior ATTOM lookup was rejected on address identity. No provider record was retained or assigned to this fictional client; a different parcel requires separate verification.'
-            : currentEvidenceState === 'PREPARED_UNUSED_APPROVAL_REQUIRED'
+            : currentEvidenceState === 'HTTP_FAILURE_REPLACEMENT_PENDING'
+              ? 'The prior ATTOM request failed at the provider and its one-use approval was consumed. No verified record is available; a separate independently prepared property requires new founder authorization.'
+              : currentEvidenceState === 'PREPARED_UNUSED_APPROVAL_REQUIRED'
               ? 'Property lookup packet prepared privately but not executed; physical facts remain unavailable until independent identity verification and publication clearance.'
               : syntheticClient
                 ? 'No verified ATTOM physical characteristics for this illustrative client location.'
