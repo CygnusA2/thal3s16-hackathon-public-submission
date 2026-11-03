@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-label="Illustrative original artwork: single family residence. Not a photograph and not any client's actual property.">
+  <title>ILLUSTRATIVE — SINGLE FAMILY RESIDENCE</title>
+  <desc>Original deterministic vector artwork (THAL3S16 SprintVis S01 fallback art). ILLUSTRATIVE only; does not depict any real or client property.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fdf6ec"/><stop offset="1" stop-color="#f3e5cd"/></linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#sky)"/>
+  <circle cx="1330" cy="180" r="90" fill="#e8b04b"/>  <path d="M0,700 Q400,600 800,690 T1600,660 L1600,1000 L0,1000 Z" fill="#c9d8b0"/>  <g transform="translate(620,430) scale(1.0)"><rect x="0" y="0" width="360" height="200" fill="#f7f3ea" stroke="#3e3a34" stroke-width="4"/><polygon points="-30,0 180,-120 390,0" fill="#8a5a3b" stroke="#3e3a34" stroke-width="4"/><rect x="142" y="100" width="76" height="100" fill="#a9825a" stroke="#3e3a34" stroke-width="3"/><rect x="30" y="40" width="64" height="54" fill="#bcd3dc" stroke="#3e3a34" stroke-width="3"/><rect x="266" y="40" width="64" height="54" fill="#bcd3dc" stroke="#3e3a34" stroke-width="3"/></g>  <g transform="translate(380,640) scale(1.1)"><rect x="-10" y="-70" width="20" height="80" fill="#a9825a"/><circle cx="0" cy="-105" r="58" fill="#7d9a68"/><circle cx="-40" cy="-80" r="40" fill="#9fb380"/><circle cx="42" cy="-82" r="38" fill="#9fb380"/></g>  <g transform="translate(1180,660) scale(0.9)"><rect x="-10" y="-70" width="20" height="80" fill="#a9825a"/><circle cx="0" cy="-105" r="58" fill="#7d9a68"/><circle cx="-40" cy="-80" r="40" fill="#9fb380"/><circle cx="42" cy="-82" r="38" fill="#9fb380"/></g>
+  <g font-family="Georgia, 'Times New Roman', serif" fill="#3e3a34">
+    <text x="80" y="930" font-size="44" letter-spacing="6">ILLUSTRATIVE</text>
+    <text x="80" y="972" font-size="20" letter-spacing="2">ORIGINAL ARTWORK — SINGLE FAMILY RESIDENCE — NOT A PHOTOGRAPH, NOT ANY CLIENT&apos;S ACTUAL PROPERTY</text>
+  </g>
+</svg>
