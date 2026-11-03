@@ -1,20 +1,282 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>THAL3S 16 | Public Research Demo</title>
-<style>
-:root{color-scheme:dark;font-family:Inter,system-ui,-apple-system,sans-serif;background:#0c0d0c;color:#eee9df}*{box-sizing:border-box}body{margin:0}header{padding:22px clamp(18px,4vw,65px);border-bottom:1px solid #40372c;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}a{color:#e0bd73}h1,h2{font-family:Georgia,serif;font-weight:400}h1{font-size:clamp(36px,5vw,68px);line-height:1.08;margin:10px 0 14px}h2{font-size:29px;margin:0 0 15px}.gold{color:#d8b56b}.eyebrow{font-size:11px;letter-spacing:.2em;color:#c7a667;font-weight:700}.sub{color:#b6aa9d;line-height:1.65}.shell{max-width:1440px;margin:auto;padding:38px 25px 70px}.hero{max-width:920px;margin-bottom:32px}.layout{display:grid;grid-template-columns:minmax(290px,42%) minmax(350px,58%);gap:22px}.panel{border:1px solid #45372b;background:linear-gradient(160deg,#181512,#100f0e);border-radius:18px;padding:25px;min-width:0}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.metric{border:1px solid #49392a;border-radius:12px;padding:16px;background:#211a15}.metric strong{display:block;color:#e3c47e;font-size:clamp(18px,2vw,30px);margin-top:8px}.metric small{color:#a79b8c}.btn{border:1px solid #7e623a;background:#1d1811;color:#e4c581;border-radius:9px;padding:12px 14px;cursor:pointer;font:inherit}.btn[aria-pressed=true],.primary{background:#c5a25a;color:#17120c;font-weight:700}.btn:focus-visible{outline:3px solid #f5d38b}button:hover{filter:brightness(1.15)}.steps{list-style:none;padding:0;margin:22px 0}.steps li{padding:13px 8px;border-bottom:1px solid #3d3028;display:flex;gap:14px;align-items:center}.num{border-radius:50%;background:#3b3022;color:#d2b26f;width:32px;height:32px;display:grid;place-items:center;flex-shrink:0}.done .num{background:#c6a35d;color:#19140c}.steps small{display:block;color:#a99f93;margin-top:4px}.status{border:1px solid #786037;border-radius:12px;padding:18px;background:#2a2117}.regimes{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.regimes .btn{font-size:12px}.visual{height:235px;border:1px solid #665139;border-radius:12px;position:relative;overflow:hidden;background:radial-gradient(circle at 55% 70%,#39463d 0,#17251e 42%,#111914 100%);display:flex;align-items:center;justify-content:center}.visual svg{width:100%;height:100%}.tag{position:absolute;top:12px;left:12px;background:#13110fe8;color:#e8c87f;border:1px solid #665139;border-radius:18px;padding:8px 12px;font-size:11px;letter-spacing:.08em}.foot{margin-top:28px;border-top:1px solid #3d3228;padding-top:22px;font-size:13px;color:#a79b8c}details{margin-top:18px;border-top:1px solid #45382b;padding-top:18px}summary{cursor:pointer;color:#d5b772}#result{margin-top:14px}#result[hidden]{display:none}@media(max-width:850px){.layout{grid-template-columns:1fr}.grid{grid-template-columns:1fr 1fr}}@media(max-width:480px){.grid{grid-template-columns:1fr}} 
-</style></head><body>
-<header><div><div class="eyebrow">CYGNUS-A² <span class="gold">/ THAL3S 16</span></div><div class="sub" style="font-size:12px">Financial Intelligence · California research</div></div><a href="https://github.com/CygnusA2/thal3s16-hackathon-public-submission">Explore the research repository ↗</a></header>
-<main class="shell"><div class="hero"><div class="eyebrow">META GLOBAL AI DEVELOPER HACKATHON · 2026</div><h1>Understand the asset.<br><span class="gold">Reveal the liquidity.</span></h1><p class="sub">A public, rights-cleared research preview of THAL3S 16. Explore one fictional California client and the seven stages of a safeguarded collateral assessment. No real borrower, live lending, or provider inference is involved in this page.</p></div>
-<div class="layout"><section class="panel"><div class="eyebrow">01 / SELECTED ASSET</div><h2>St. Helena · Vineyard estate</h2><div class="visual" role="img" aria-label="Abstract geometric diagram of a vineyard estate, not a property photograph"><div class="tag">ORIGINAL VECTOR DIAGRAM · NOT PROPERTY IMAGERY</div><svg viewBox="0 0 600 280" aria-hidden="true"><path d="M0 210 Q180 150 330 210 T600 185 V280 H0Z" fill="#3b4933"/><path d="M0 255 L600 230 M0 275 L600 250 M0 235 L600 210" stroke="#b2a16e" stroke-width="2" opacity=".5"/><path d="M190 160 L300 80 L410 160Z" fill="#94774d"/><rect x="210" y="155" width="180" height="90" fill="#d6c49e"/><rect x="280" y="190" width="45" height="55" fill="#463f30"/><rect x="230" y="175" width="35" height="30" fill="#536d65"/><rect x="340" y="175" width="35" height="30" fill="#536d65"/><path d="M170 245 L430 245" stroke="#f1d49a" stroke-width="3"/></svg></div><p class="sub">Synthetic client: fictional vineyard operating company. Illustrative asset value: <strong>$55,000,000</strong>. Existing secured property debt: <strong>$8,000,000</strong>.</p><div class="grid" style="grid-template-columns:1fr 1fr"><div class="metric"><small>Requested facility</small><strong>$6,000,000</strong></div><div class="metric"><small>Net worth (fictional)</small><strong>$64,000,000</strong></div></div><details><summary>Explore the six economic regimes</summary><p class="sub">Regimes are contextual assumptions or historical snapshots. Selecting one here does not recalculate the committed credit assessment.</p><div class="regimes" id="regimes"></div><p id="regime-detail" class="sub" aria-live="polite"></p></details></section>
-<section class="panel"><div class="eyebrow">02 / ASSESSMENT</div><h2>From evidence to human review</h2><p class="sub">The values below are drawn from a frozen synthetic demonstration record. This page replays the seven steps; it does not call the Meta model.</p><button class="btn primary" id="run">Run seven-stage walkthrough</button><ol class="steps" id="steps"></ol><div id="result" hidden><div class="grid"><div class="metric"><small>Indicative capacity</small><strong>$10,475,000</strong></div><div class="metric"><small>Effective LTV</small><strong>38.5%</strong></div><div class="metric"><small>Valuation haircut</small><strong>1.5%</strong></div></div><div class="status" style="margin-top:14px"><div class="eyebrow">SAFEGUARDED OUTCOME</div><h2 style="margin:8px 0">Human review required</h2><p class="sub" style="margin:0">Indicative capacity is not a credit approval, issuance or funding authorization. Further specialist collateral evidence may be required.</p></div></div></section></div>
-<div class="foot">Research-only · Synthetic figures · No loan approval · No token issuance · No funding · No real property photograph · <a href="https://github.com/CygnusA2/thal3s16-hackathon-public-submission/blob/main/THAL3S16_Meta_Model_Financial_Intelligence_Report_V9.pdf">Full V9 research report</a> · <a href="https://github.com/CygnusA2/thal3s16-hackathon-public-submission/tree/main/examples/fip">Inspect public FIP example</a></div></main>
-<script>
-const stages=[['Property selected','Synthetic property identified'],['Evidence reconciled','Evidence consistency reviewed'],['Valuation spread','150 basis points in committed record'],['Uncertainty / haircut','1.5% illustrative haircut'],['Effective LTV','38.5% after haircut'],['Indicative liquidity','Capacity $10,475,000'],['Human review','No automated approval or funding']];
-const list=document.getElementById('steps');list.innerHTML=stages.map((s,i)=>'<li id="s'+i+'"><span class="num">'+String(i+1).padStart(2,'0')+'</span><div><strong>'+s[0]+'</strong><small>'+s[1]+'</small></div></li>').join('');
-document.getElementById('run').onclick=()=>{list.querySelectorAll('li').forEach(li=>li.classList.add('done'));document.getElementById('result').hidden=false;document.getElementById('run').textContent='Assessment walkthrough complete';};
-const regimes=[['Normal markets','Baseline snapshot'],['Higher interest rates','Higher borrowing costs'],['Property downturn','Lower property-price context'],['Liquidity crisis','Authored synthetic stress assumption'],['Recession','Authored synthetic downturn assumption'],['Recovery','Improving macroeconomic context']];
-const box=document.getElementById('regimes');box.innerHTML=regimes.map((r,i)=>'<button class="btn" aria-pressed="'+(i===0)+'" data-i="'+i+'">'+r[0]+'</button>').join('');
-box.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;box.querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));document.getElementById('regime-detail').textContent=regimes[+b.dataset.i][1]+' · Financial output remains unchanged.';});
-document.getElementById('regime-detail').textContent='Baseline snapshot · Financial output remains unchanged.';
-</script></body></html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://maps.googleapis.com https://maps.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' https: data: blob:; connect-src 'self' https://maps.googleapis.com https://maps.gstatic.com; font-src 'self' https://fonts.gstatic.com data:; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>THAL3S 16 — California Property Intelligence</title>
+  <link rel="stylesheet" href="./property-intelligence.css">
+</head>
+<body>
+  <main class="app-shell">
+    <header class="topbar">
+      <div>
+        <div class="brandline"><span class="brandmark" aria-hidden="true"></span><strong>CYGNUS-A²</strong><span>THAL3S 16 PRIVATE INTELLIGENCE</span></div>
+        <p>Private Client Property Intelligence · California · Confidential demonstration environment</p>
+      </div>
+      <div class="status-stack"><button id="connect-google-map" class="map-connect" type="button">CONNECT GOOGLE SATELLITE</button>
+        <span class="status-pill live">PRIVATE DATA ROUTE VERIFIED</span>
+        <span class="status-pill">CONFIDENTIAL · INVITATION-ONLY DEMO</span>
+      </div>
+    </header>
+
+    <section class="workspace" id="workspace">
+      <aside class="map-panel" aria-label="California property map">
+        <div class="panel-head">
+          <div>
+            <p class="eyebrow">CALIFORNIA · PRIVATE CLIENT INTELLIGENCE</p>
+            <h1>Explore properties.<br><span>Run intelligence.</span></h1>
+          </div>
+          <p class="microcopy">Select a demonstration property to see THAL3S reconcile evidence, measure valuation uncertainty, apply a haircut and calculate indicative liquidity capacity.</p>
+        </div>
+
+        <div class="california-map" id="california-map"><div class="map-mode" id="map-mode">CALIFORNIA OVERVIEW</div><div class="map-instruction" id="map-instruction">Select a property to begin</div><div id="google-map" class="google-map" aria-label="Google satellite map of California" hidden></div><div id="map-fallback" class="map-fallback">
+          <svg viewBox="0 0 560 760" role="img" aria-label="Stylised map of California with selectable property markers">
+            <defs>
+              <linearGradient id="terrain" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#1a2828"/>
+                <stop offset="1" stop-color="#101818"/>
+              </linearGradient>
+              <filter id="glow">
+                <feGaussianBlur stdDeviation="5" result="b"/>
+                <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+              </filter>
+            </defs>
+            <path class="state-shape" d="M144 36 L252 53 L286 116 L311 156 L343 193 L370 231 L402 276 L417 336 L447 392 L463 456 L451 516 L421 566 L397 626 L355 696 L295 724 L247 681 L225 623 L203 570 L179 516 L158 462 L141 409 L121 353 L105 296 L91 238 L78 184 L92 129 L117 82 Z"/>
+            <path class="coast-line" d="M144 36 L117 82 L92 129 L78 184 L91 238 L105 296 L121 353 L141 409 L158 462 L179 516 L203 570 L225 623 L247 681" />
+            <g class="region-labels" aria-hidden="true">
+              <text x="188" y="178">BAY AREA</text>
+              <text x="220" y="350">CENTRAL COAST</text>
+              <text x="300" y="540">LOS ANGELES</text>
+              <text x="322" y="650">SAN DIEGO</text>
+            </g>
+          </svg>
+          <div id="marker-layer" class="marker-layer"></div>
+          </div><div class="map-legend">
+            <span><i class="dot selected"></i>Selected property</span>
+            <span><i class="dot"></i>Demo property</span>
+          </div>
+        </div>
+      </aside>
+
+      <section class="property-panel" aria-label="Selected property intelligence">
+        <div class="media-card">
+          <div class="photo-frame" id="photo-frame"><div class="focus-label" id="focus-label">PROPERTY FOCUS</div>
+            <img id="property-photo" alt="" hidden>
+            <div class="photo-fallback aerial-scene" id="photo-fallback">
+              <div class="aerial-noise" aria-hidden="true"></div>
+              <div class="aerial-road" aria-hidden="true"></div>
+              <div class="aerial-driveway" aria-hidden="true"></div>
+              <div class="parcel-boundary" aria-hidden="true"><span>PARCEL</span></div>
+              <div class="roof roof-main" aria-hidden="true"></div>
+              <div class="roof roof-wing" aria-hidden="true"></div>
+              <div class="pool" aria-hidden="true"></div>
+              <div class="tree t1" aria-hidden="true"></div>
+              <div class="tree t2" aria-hidden="true"></div>
+              <div class="tree t3" aria-hidden="true"></div>
+              <div class="tree t4" aria-hidden="true"></div>
+              <div class="achievement-rail" id="achievement-rail" aria-label="THAL3S milestone achievements">
+                <div class="achievement" data-achievement="0"><span>01</span><strong>SELECTED</strong><small>Property identified</small></div>
+                <div class="achievement" data-achievement="1"><span>02</span><strong>EVIDENCE</strong><small>Reconciled</small></div>
+                <div class="achievement" data-achievement="2"><span>03</span><strong>SPREAD</strong><small>Measured</small></div>
+                <div class="achievement" data-achievement="3"><span>04</span><strong>HAIRCUT</strong><small>Applied</small></div>
+                <div class="achievement" data-achievement="4"><span>05</span><strong>EFFECTIVE LTV</strong><small>Adjusted</small></div>
+                <div class="achievement" data-achievement="5"><span>06</span><strong>CAPACITY</strong><small>Indicative</small></div>
+                <div class="achievement" data-achievement="6"><span>07</span><strong>REVIEW</strong><small>Required</small></div>
+              </div>
+              <div class="aerial-overlay">
+                <span class="source-chip">ILLUSTRATIVE RECONSTRUCTION</span>
+                <strong>Concept mansion from property characteristics</strong>
+                <small>Not provider imagery. This visual is illustrative and is replaced automatically when licensed MLS imagery is available.</small>
+              </div>
+            </div>
+          </div>
+          <div class="photo-meta">
+            <span id="photo-source">Illustrative reconstruction from property characteristics</span>
+            <span id="photo-count">0 images</span>
+          </div>
+        </div>
+
+        <div class="property-heading">
+          <div>
+            <p class="eyebrow">SELECTED PROPERTY</p>
+            <h2 id="property-address">1005 Schuyler Rd</h2>
+            <p id="property-location">Beverly Hills, CA 90210</p>
+          </div>
+          <button class="close-button" id="reset-map" type="button" aria-label="Return to California overview">×</button>
+        </div>
+
+        <div class="facts-grid">
+          <div><span>Bedrooms</span><strong id="fact-beds">5</strong></div>
+          <div><span>Bathrooms</span><strong id="fact-baths">6.5</strong></div>
+          <div><span>Living area</span><strong id="fact-sqft">6,710 ft²</strong></div>
+          <div><span>Year built</span><strong id="fact-year">1968</strong></div>
+        </div>
+
+        <div class="focus-strip"><span>SELECTED ASSET</span><strong id="focus-caption">Beverly Hills · Private demonstration property</strong><button id="back-overview" type="button">California overview</button></div>
+
+        <section class="client-card" id="client-card" aria-label="Synthetic private client profile">
+          <button class="client-card-head" id="client-toggle" type="button" aria-expanded="false">
+            <div>
+              <p class="eyebrow">SYNTHETIC PRIVATE CLIENT</p>
+              <strong id="client-name">Property-rich entrepreneur</strong>
+              <small id="client-summary">$16.80M net worth · $8.00M property exposure</small>
+            </div>
+            <span class="client-expand-label" id="client-expand-label">Expand</span>
+          </button>
+          <div class="client-card-body" id="client-details" hidden>
+            <div class="client-metrics">
+              <div><span>Total net worth</span><strong id="client-net">$16.80M</strong></div>
+              <div><span>Property valuation</span><strong id="client-property">$8.00M</strong></div>
+              <div><span>Other assets</span><strong id="client-other">$12.00M</strong></div>
+              <div><span>Existing property debt</span><strong id="client-debt">$2.00M</strong></div>
+              <div><span>Other liabilities</span><strong id="client-other-debt">$1.20M</strong></div>
+              <div><span>Liquidity requested</span><strong id="client-request">$1.50M</strong></div>
+            </div>
+            <div class="client-note">Illustrative client context only · no real customer data · no credit approval</div>
+            <button class="portfolio-toggle" id="portfolio-toggle" type="button" aria-expanded="false" aria-controls="portfolio-panel">View Full Portfolio &amp; Total Liquidity</button>
+            <section class="portfolio-panel" id="portfolio-panel" hidden aria-label="Synthetic full portfolio assessment">
+              <div class="portfolio-head">
+                <div><p class="eyebrow">FULL PORTFOLIO INTELLIGENCE</p><strong>The entire balance sheet, not just one property.</strong></div>
+                <span class="source-chip">SYNTHETIC</span>
+              </div>
+              <div class="portfolio-grid">
+                <div class="portfolio-subcard">
+                  <span class="label">Gross assets</span><strong id="portfolio-gross">$0.00M</strong>
+                  <div id="portfolio-allocation" class="portfolio-allocation"></div>
+                  <div class="portfolio-row"><span>Total debts / liabilities</span><strong id="portfolio-liab">$0.00M</strong></div>
+                  <div class="portfolio-row"><span>Net worth</span><strong id="portfolio-net">$0.00M</strong></div>
+                </div>
+                <div class="portfolio-subcard">
+                  <span class="label">Illustrative liquidity potential</span><strong class="portfolio-total" id="portfolio-total">$0.00M</strong>
+                  <div class="portfolio-row"><span>Existing cash / deposits</span><strong id="portfolio-cash">$0.00M</strong></div>
+                  <div class="portfolio-row"><span>Potential additional property-backed capacity</span><strong id="portfolio-capacity">$0.00M</strong></div>
+                  <small>Combined figure is illustrative only and is not available funding or a lending commitment.</small>
+                </div>
+              </div>
+              <div class="risk-strip">
+                <div><span>Market / concentration</span><strong id="risk-market">—</strong><small id="risk-market-detail"></small></div>
+                <div><span>Liquidity / cash</span><strong id="risk-liquidity">—</strong><small id="risk-liquidity-detail"></small></div>
+                <div><span>Credit / leverage</span><strong id="risk-credit">—</strong><small id="risk-credit-detail"></small></div>
+              </div>
+              <div class="client-note">Risk labels are demonstration heuristics, not underwriting scores or probabilities of default.</div>
+            </section>
+          </div>
+        </section>
+
+        <div class="source-row">
+          <span class="source-chip attom">ATTOM</span>
+          <span id="attom-status">Identity + AVM route ready</span>
+          <span class="source-chip review">HUMAN REVIEW</span>
+        </div>
+
+        <section class="working-panel" aria-label="THAL3S working data">
+          <div class="working-head">
+            <div>
+              <p class="eyebrow">THAL3S 16 · PRIVATE ASSESSMENT STATE</p>
+              <strong id="working-title">Awaiting property assessment</strong>
+            </div>
+            <span id="working-badge" class="source-chip">ILLUSTRATIVE VALUES</span>
+          </div>
+          <div class="working-grid">
+            <div><span>Property identity</span><strong id="work-identity">—</strong><small id="work-identity-note">Awaiting selection</small></div>
+            <div><span>Evidence status</span><strong id="work-attom">—</strong><small id="work-attom-note">Awaiting reconciliation</small></div>
+            <div><span>Valuation spread</span><strong id="work-avm">—</strong><small id="work-avm-note">Awaiting provider comparison</small></div>
+            <div><span>Haircut</span><strong id="work-consistency">—</strong><small id="work-consistency-note">Uncertainty adjustment</small></div>
+            <div><span>Effective LTV</span><strong id="work-ltv">—</strong><small id="work-ltv-note">Base 40.0%</small></div>
+            <div><span>Indicative capacity</span><strong id="work-review">—</strong><small id="work-review-note">No approval implied</small></div>
+          </div>
+        </section>
+
+        <section class="thal3s-console" aria-label="THAL3S 16 assessment progress">
+          <div class="console-head">
+            <div>
+              <p class="eyebrow">THAL3S 16 · PRIVATE ASSESSMENT</p>
+              <h3 id="assessment-title">Ready to assess selected property</h3>
+              <p id="assessment-signal" class="assessment-signal">7-stage deterministic intelligence path · no automated approval</p>
+            </div>
+            <div class="run-cta"><small id="run-context">Property selected</small><button id="run-assessment" type="button">Run THAL3S 16</button></div>
+          </div>
+
+          <ol class="timeline" id="timeline">
+            <li data-stage="0"><span>01</span><div><strong>Property Selected</strong><small>Identity confirmed for assessment</small></div><b>READY</b></li>
+            <li data-stage="1"><span>02</span><div><strong>Evidence Reconciled</strong><small>Independent sources checked for freshness and consistency</small></div><b>WAITING</b></li>
+            <li data-stage="2"><span>03</span><div><strong>Valuation Spread</strong><small>Difference between provider valuations measured</small></div><b>WAITING</b></li>
+            <li data-stage="3"><span>04</span><div><strong>Uncertainty / Haircut</strong><small>Valuation uncertainty reduces the indicative ceiling</small></div><b>WAITING</b></li>
+            <li data-stage="4"><span>05</span><div><strong>Effective LTV</strong><small>Base LTV adjusted downward by the haircut</small></div><b>WAITING</b></li>
+            <li data-stage="5"><span>06</span><div><strong>Indicative Liquidity Capacity</strong><small>Calculated only when evidence remains consistent</small></div><b>WAITING</b></li>
+            <li data-stage="6"><span>07</span><div><strong>Human Review</strong><small>No automated approval, issuance or funding</small></div><b>WAITING</b></li>
+          </ol>
+
+          <section class="final-card" id="final-card" hidden aria-live="polite">
+            <div class="final-card-head">
+              <div>
+                <p class="eyebrow">THAL3S 16 · PRIVATE REVIEW SNAPSHOT</p>
+                <h3>Human Review Required</h3>
+              </div>
+              <span class="final-status">SAFEGUARDED OUTCOME</span>
+            </div>
+            <div class="final-property">
+              <div>
+                <span class="label">PROPERTY</span>
+                <strong id="final-property-address">1005 Schuyler Rd</strong>
+                <small id="final-property-location">Beverly Hills, CA 90210</small>
+              </div>
+              <div>
+                <span class="label">EVIDENCE STATUS</span>
+                <strong id="final-attom">PRIVATE / MAPPED</strong>
+                <small>Provider evidence retained privately</small>
+              </div>
+            </div>
+            <div class="final-metrics">
+              <div><span>Valuation haircut</span><strong id="final-avm">—</strong><small>Derived from valuation spread</small></div>
+              <div><span>Effective LTV</span><strong id="final-ltv">—</strong><small>Base LTV reduced by uncertainty</small></div>
+              <div class="capacity-highlight"><span>Indicative capacity</span><strong id="final-consistency">—</strong><small>Human review required</small></div>
+            </div>
+            <div class="safeguards">
+              <span>NO CREDIT APPROVAL</span>
+              <span>NO ISSUANCE</span>
+              <span>NO FUNDING</span>
+              <span>HUMAN REVIEW REQUIRED</span>
+            </div>
+          </section>
+
+          <div class="assessment-outcome" id="assessment-outcome">
+            <div>
+              <span class="label">CURRENT STATE</span>
+              <strong id="outcome-status">NOT STARTED</strong>
+            </div>
+            <div>
+              <span class="label">PROVIDER EVIDENCE</span>
+              <strong id="outcome-evidence">PRIVATE</strong>
+            </div>
+            <div>
+              <span class="label">AUTHORIZATION</span>
+              <strong>NO CREDIT APPROVAL</strong>
+            </div>
+          </div>
+        </section>
+      </section>
+    </section>
+
+    <footer class="footer-note">
+      <div class="footer-copy"><span>Private Client Intelligence · Internal demonstration</span><span>Representative photography is labelled; licensed MLS imagery replaces it when available.</span></div>
+      <button class="sources-footer-toggle" id="sources-toggle" type="button" aria-expanded="false" aria-controls="sources-panel">Sources &amp; Methodology</button>
+    </footer>
+    <section class="sources-panel" id="sources-panel" hidden aria-label="Sources and methodology">
+      <div class="sources-panel-head"><div><p class="eyebrow">SOURCES &amp; METHODOLOGY</p><h3>Research-grounded assumptions, not random client figures</h3></div><button id="sources-close" type="button" aria-label="Close sources and methodology">×</button></div>
+      <p>The client profiles are deliberately constructed synthetic examples. The cited research informs wealth tiers and portfolio categories; it does <strong>not</strong> provide these exact individual values or county averages.</p>
+      <ol class="source-list">
+        <li><strong>Altrata — World Ultra Wealth Report 2026</strong><span>UHNW definitions, population and asset-holding patterns.</span><a href="https://altrata.com/wp-content/uploads/2026/06/Altrata_World-Ultra-Wealth-Report-2026_FINAL.pdf" target="_blank" rel="noopener noreferrer">Report ↗</a></li>
+        <li><strong>Capgemini — World Wealth Report 2026</strong><span>HNWI wealth segments and portfolio categories.</span><a href="https://www.capgemini.com/wp-content/uploads/2026/10/WWR_2026.pdf" target="_blank" rel="noopener noreferrer">Report ↗</a></li>
+        <li><strong>Knight Frank — The Wealth Report 2026</strong><span>Global luxury-real-estate and wealth context.</span><a href="https://i.emlfiles4.com/cmpdoc/0/4/8/5/2/1/files/146815_the-wealth-report-2026.pdf" target="_blank" rel="noopener noreferrer">Report ↗</a></li>
+        <li><strong>PPIC — Wealth in California</strong><span>Independent California household-wealth distribution benchmark.</span><a href="https://www.ppic.org/publication/wealth-in-california/" target="_blank" rel="noopener noreferrer">Research ↗</a></li>
+      </ol>
+      <div class="method-box"><strong>How the synthetic figures are modelled</strong><p>Net worth = property assets + other assets − secured mortgage − other liabilities. Portfolio collateral capacity = max(0, property value × (1 − haircut) × combined-LTV limit − existing property debt). These are demonstration assumptions, not lender offers or verified observations.</p><p>No verified client liabilities, credit score, cash-flow assessment, title verification or real customer records are used. THAL3S still requires human review and does not authorize credit, issuance or funding.</p></div>
+    </section>
+  </main>
+  <script src="./clients30-integration.js"></script>
+    <script src="./maps-config.js"></script>
+    <script src="./property-intelligence.js"></script>
+</body>
+</html>
