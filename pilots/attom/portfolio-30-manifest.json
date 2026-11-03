@@ -4,17 +4,17 @@
   "scope": {
     "active_property_markers": 30,
     "ai_generated_photographs": 30,
-    "verified_private_research_reference_markers": 27,
-    "pending_research_reference_markers": 3,
+    "verified_private_research_reference_markers": 29,
+    "pending_research_reference_markers": 1,
     "published_licensed_attom_facts": 0,
     "archived_original_demo_markers": 5,
     "archived_unique_reference_parcels_excluded_from_active_scope": 2,
-    "previously_verified_private_parcels_in_historical_35_scope": 29,
+    "previously_verified_private_parcels_in_historical_35_scope": 31,
     "verified_private_identity_only_records": 1,
-    "consumed_attom_approvals_historical": 38,
+    "consumed_attom_approvals_historical": 40,
     "failed_closed_attempts_historical": 7
   },
-  "governing_policy": "Exactly 30 fictional client markers and 30 AI-generated fictional mansions. Twenty-seven of thirty marker areas have privately verified independent ATTOM parcel identities; three remain: Antelope Valley/Palmdale (prepared), Somis (failed HTTP, needs replacement), and Nicasio (prepared). ATTOM property values are private; financial and FIP benchmarks remain synthetic. No actual client ownership or parcel-specific map pin is implied.",
+  "governing_policy": "Exactly 30 fictional client markers and 30 AI-generated mansion illustrations; 29 independent ATTOM parcel identities verified privately. One outstanding Somis reference: unused separate county-road candidate packet prepared, not executed. All licensed provider fields remain private; synthetic client financial assumptions unchanged. No real parcel ownership association.",
   "archived_evidence": "Five historical original-demo markers excluded from the active 30. All historical ATTOM approvals, receipts and source records remain intact and unmodified in Hermes. Three matching-area references are reused as research-reference associations. A separate Malibu parcel and La Jolla parcel remain archived outside the 30-target program.",
   "audit_rules": [
     "Any new provider call requires its own fresh one-use founder terminal authorization",
@@ -418,11 +418,12 @@
       "target_area": "Antelope Valley area",
       "illustrative_location": "Antelope Valley area, California (Los Angeles County)",
       "verified_address": null,
-      "private_attom_stage": "PREPARED_UNUSED_APPROVAL_REQUIRED",
+      "private_attom_stage": "PRIVATE_DETAIL_VERIFIED",
       "public_attom_facts": "NOT_PUBLISHED",
       "financial_scenario": "SYNTHETIC_UNCHANGED",
       "batch": "C6",
-      "private_evidence_note": "Palmdale Antelope Valley replacement packet independently prepared and preflighted in Hermes for 2020 W Avenue N, digest 32400d29cfc5d649816437dbd9492941b0e71b9fdc4e9682f105bbfda3e1806b. No ATTOM lookup or approval executed. Earlier Agua Dulce candidate remains unused and outside this target area."
+      "private_evidence_note": "Independent West Palmdale parcel identity privately matched on 2026-11-03, within the proper Antelope Valley research geography. Real parcel is not the map pin, client asset or illustrative mansion. Earlier Agua Dulce packet preserved unused. Licensed values remain private.",
+      "source_record_vintage": "2026-10-08"
     },
     {
       "marker_id": "cf30-028",
@@ -430,11 +431,11 @@
       "target_area": "Somis",
       "illustrative_location": "Somis, California (Ventura County)",
       "verified_address": null,
-      "private_attom_stage": "HTTP_FAILURE_REPLACEMENT_PENDING",
+      "private_attom_stage": "PREPARED_UNUSED_APPROVAL_REQUIRED",
       "public_attom_facts": "NOT_PUBLISHED",
       "financial_scenario": "SYNTHETIC_UNCHANGED",
       "batch": "C6",
-      "private_evidence_note": "Somis original candidate 6914 Solano Verde Dr produced HTTP_FAILURE on 2026-11-03; single-use approval consumed; no mapped provider source or retry. New independently verified Somis-area candidate and authorization required."
+      "private_evidence_note": "Former Somis private-drive candidate failed HTTP_FAILURE (generic provider non-200; root cause undetermined), approval consumed and never retried. A DISTINCT proposed replacement at 5501 Balcom Canyon Rd, Somis 93066, digest 2ca9ebe4cccf68b274bff31a4b824640cf66659c30f1b40f8b1fe528d0dbca13, has an unused immutable packet. No new provider call or approval recorded; no ATTOM parcel identity verified yet."
     },
     {
       "marker_id": "cf30-029",
@@ -459,11 +460,16 @@
       "target_area": "Nicasio",
       "illustrative_location": "Nicasio, California (Marin County)",
       "verified_address": null,
-      "private_attom_stage": "PREPARED_UNUSED_APPROVAL_REQUIRED",
+      "private_attom_stage": "PRIVATE_DETAIL_VERIFIED",
       "public_attom_facts": "NOT_PUBLISHED",
       "financial_scenario": "SYNTHETIC_UNCHANGED",
       "batch": "C6",
-      "private_evidence_note": "Nicasio 3200 Nicasio Valley Rd ATTOM Property Detail request packet prepared and digest-bound in Hermes (d7339a3a060d3807dcdbe8a6480b19a1d2a95cf3f4a426834bafbb2beeebe618), but no live ATTOM call or founder approval executed."
+      "private_evidence_note": "Independent Nicasio-area ATTOM reference identity matched on 2026-11-03. Provider bathroom information is unavailable. County building area differs substantially from the marketing listing; no substitution. Licensed provider values remain owner-only; no fictional client ownership.",
+      "source_record_vintage": "2026-09-24",
+      "private_evidence_missing_fields": [
+        "bathrooms"
+      ],
+      "private_evidence_review_flag": "ASSESSOR_LISTING_AREA_VARIANCE_NICASIO"
     }
   ]
 }
