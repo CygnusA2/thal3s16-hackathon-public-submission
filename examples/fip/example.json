@@ -1,0 +1,15 @@
+{
+  "schema_version": "public-fip-example-v1",
+  "status": 1,
+  "evidence_freshness": 2,
+  "risks": [
+    {
+      "dimension": 1,
+      "severity": 2,
+      "fact_ids": [
+        "synthetic.evidence.stale"
+      ]
+    }
+  ],
+  "human_review": true
+}
