@@ -5,16 +5,16 @@
     "total_map_markers": 35,
     "fictional_clients": 30,
     "original_demo_markers": 5,
-    "privately_verified_property_detail_records": 16,
+    "privately_verified_property_detail_records": 18,
     "publicly_published_attom_property_records": 0,
-    "pending_unique_marker_targets": 19,
-    "identity_mismatch_attempts": 1,
-    "failed_closed_attempts": 2,
+    "pending_unique_marker_targets": 17,
+    "identity_mismatch_attempts": 3,
+    "failed_closed_attempts": 4,
     "privately_verified_original_demo_markers": 5,
-    "privately_verified_fictional_research_reference_markers": 11,
-    "consumed_attom_approvals": 20
+    "privately_verified_fictional_research_reference_markers": 13,
+    "consumed_attom_approvals": 24
   },
-  "important_notice": "16 of 35 independent real ATTOM reference parcels have been matched and privately retained. Eleven are associated with fictional client marker areas for research only, not evidence of client ownership, occupation, financing, or parcel location at the illustrative map pin. Santa Monica assessor lag, Carmel locality and assessor-vs-listing variation, and Bel Air builder-area variance require review. No licensed measurements, owner data, key, or raw provider response is published.",
+  "important_notice": "18/35 independent real ATTOM parcel references have been verified privately; 17 marker targets remain. No licensed measurements, identifiers, or provider payloads are publicly disclosed. Orinda and Tiburon failed address identity validation, Saratoga remains unexecuted. Newport Beach assessor-vs-listing variance, Santa Monica assessor lag, Carmel locality/size discrepancies, and Bel Air building-area variance require review. No real parcel is claimed to be owned by a fictional client; AI mansion images are unrelated illustrations.",
   "gates": [
     "verified_unique_real_parcel_identity",
     "exact_address_agreement",
@@ -292,10 +292,11 @@
       "target_area": "Orinda",
       "illustrative_location": "Orinda, California (Contra Costa County)",
       "verified_address": null,
-      "private_attom_stage": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
+      "private_attom_stage": "IDENTITY_MISMATCH_REPLACEMENT_PENDING",
       "public_attom_facts": "NOT_PUBLISHED",
       "financial_scenario": "SYNTHETIC_UNCHANGED",
-      "batch": "C3"
+      "batch": "C3",
+      "private_evidence_note": "Original Orinda candidate failed closed on exact canonical street identity; approval permanently consumed, no provider record persisted. Distinct replacement packet prepared but not executed."
     },
     {
       "marker_id": "cf30-016",
@@ -314,10 +315,12 @@
       "target_area": "San Marino",
       "illustrative_location": "San Marino, California (Los Angeles County)",
       "verified_address": null,
-      "private_attom_stage": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
+      "private_attom_stage": "PRIVATE_DETAIL_VERIFIED",
       "public_attom_facts": "NOT_PUBLISHED",
       "financial_scenario": "SYNTHETIC_UNCHANGED",
-      "batch": "C4"
+      "batch": "C4",
+      "source_record_vintage": "2026-10-01",
+      "private_evidence_note": "San Marino-area reference parcel privately verified by identity-matched ATTOM Property Detail. All licensed measurements withheld. No fictional client ownership asserted."
     },
     {
       "marker_id": "cf30-018",
@@ -372,10 +375,13 @@
       "target_area": "Newport Beach",
       "illustrative_location": "Newport Beach, California (Orange County)",
       "verified_address": null,
-      "private_attom_stage": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
+      "private_attom_stage": "PRIVATE_DETAIL_VERIFIED",
       "public_attom_facts": "NOT_PUBLISHED",
       "financial_scenario": "SYNTHETIC_UNCHANGED",
-      "batch": "C5"
+      "batch": "C5",
+      "source_record_vintage": "2026-10-21",
+      "private_evidence_review_flag": "ASSESSOR_LISTING_VARIANCE_NEWPORT",
+      "private_evidence_note": "Newport Beach-area ATTOM parcel identity verified privately. ATTOM building characteristics differ from public listing; do not substitute either for the other or imply fictional client ownership."
     },
     {
       "marker_id": "cf30-023",
@@ -394,10 +400,11 @@
       "target_area": "Tiburon",
       "illustrative_location": "Tiburon, California (Marin County)",
       "verified_address": null,
-      "private_attom_stage": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
+      "private_attom_stage": "IDENTITY_MISMATCH_REPLACEMENT_PENDING",
       "public_attom_facts": "NOT_PUBLISHED",
       "financial_scenario": "SYNTHETIC_UNCHANGED",
-      "batch": "C5"
+      "batch": "C5",
+      "private_evidence_note": "Original Tiburon candidate failed exact provider address identity; approval permanently consumed, no source record persisted. Root cause undetermined; replacement not yet prepared."
     },
     {
       "marker_id": "cf30-025",
@@ -405,10 +412,11 @@
       "target_area": "Saratoga",
       "illustrative_location": "Saratoga, California (Santa Clara County)",
       "verified_address": null,
-      "private_attom_stage": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
+      "private_attom_stage": "PREPARED_UNUSED_APPROVAL_REQUIRED",
       "public_attom_facts": "NOT_PUBLISHED",
       "financial_scenario": "SYNTHETIC_UNCHANGED",
-      "batch": "C5"
+      "batch": "C5",
+      "private_evidence_note": "Saratoga single-use Property Detail request packet prepared, still unused; requires fresh interactive founder authorization before execution."
     },
     {
       "marker_id": "cf30-026",
