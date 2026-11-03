@@ -21,7 +21,7 @@ THAL3S 16 explores how to assess the liquidity potential of illiquid collateral 
 ## Inspect the engineering
 
 - [Self-contained public FIP example](examples/fip/) — Python validator, synthetic JSON and tests; illustrates the design, not the private benchmark harness.
-- The public source now contains the full California frontend with 35 clickable property markers (30 synthetic clients and five original demo properties), portfolios, regimes and seven-stage assessment. Unlicensed JPEGs are replaced with original category illustrations. Google Maps automatic key injection is pending deployment-workflow activation.
+- The public California frontend contains **exactly 30 clickable fictional-client property markers and 30 distinct AI-generated illustrative luxury mansion photographs**, together with synthetic portfolios, six economic regimes and a seven-stage assessment. Google Satellite loads automatically through a domain-restricted browser key configured in the GitHub Pages deployment workflow. No AI mansion photograph is a real ATTOM property image.
 
 ## Research and limitations
 
@@ -31,6 +31,6 @@ THAL3S 16 explores how to assess the liquidity potential of illiquid collateral 
 
 **All financial scenarios are synthetic.** No real borrower data, credit approval, token issuance or funding is represented.
 
-**Demo:** [THAL3S 16 California interactive frontend](https://cygnusa2.github.io/thal3s16-hackathon-public-submission/) — 35 marker records, including 30 synthetic clients; original illustration placeholders replace unlicensed photographs. Automatic Google Satellite loading is not yet verified. [Earlier simplified walkthrough](research-walkthrough.html).
+**Demo:** [THAL3S 16 California interactive frontend](https://cygnusa2.github.io/thal3s16-hackathon-public-submission/) — **30 markers, 30 AI-generated mansion illustrations**, automatic Google Satellite integration, and a synthetic financial workflow. As of 3 November 2026, **16/30 active research areas** have privately verified independent ATTOM parcel references; **14** remain. The real parcels are not owned by the fictional clients and the licensed ATTOM physical-characteristic values are **not published**. [Active 30-property ATTOM rollout](pilots/attom/ROLLOUT_30.md) · [Earlier simplified walkthrough](research-walkthrough.html).
 
 **Source development repository remains private.** This repository is a curated clean-history submission package, not a mirror of internal branches or private credentials. The full private benchmark harness and raw provider responses are not included; independent replication of the complete study is not possible from this subset alone.
