@@ -465,13 +465,15 @@
        are public government records and lawful to display. Restricted
        licensed provider measurements are never routed through (b). */
     const factKeys = ['bedrooms', 'bathrooms', 'living_area_sqft', 'year_built'];
+    const allowedProviders = ['ATTOM', 'COUNTY_PORTAL', 'COUNTY_RECORD', 'LISTING_RECORD'];
     const hasApprovedAttomFacts = Boolean(candidate &&
       candidate.marker_id === property.id &&
-      (candidate.provider === 'ATTOM' || candidate.provider === 'COUNTY_RECORD') &&
+      allowedProviders.indexOf(candidate.provider) !== -1 &&
       candidate.publication_status === 'CLEARED' &&
       typeof candidate.verified_address === 'string' && candidate.verified_address.length > 5 &&
-      /^[0-9]{4}-[0-9]{2}-[0-9]{2}T/.test(candidate.retrieved_at_utc || '') &&
-      /^[0-9]{4}-[0-9]{2}-[0-9]{2}$/.test(candidate.record_vintage || '') &&
+      /^\d{4}-[0-9]{2}-[0-9]{2}$/.test(candidate.retrieved_at_utc || '') &&
+      (candidate.record_vintage === null ||
+        /^[0-9]{4}-[0-9]{2}-[0-9]{2}$/.test(candidate.record_vintage || '')) &&
       facts && typeof facts === 'object' &&
       factKeys.every(key => facts[key] === null ||
         (typeof facts[key] === 'number' && Number.isFinite(facts[key]) && facts[key] > 0)));
@@ -488,17 +490,16 @@
       setText('fact-baths', showFact(facts.bathrooms, ''));
       setText('fact-sqft', showFact(facts.living_area_sqft, ' ft²'));
       setText('fact-year', showFact(facts.year_built, ''));
-      setText('attom-status', candidate.provider === 'ATTOM'
-        ? 'ATTOM Property Detail · publication cleared'
-        : 'County assessor public record · verified');
+      setText('attom-status',
+        candidate.provider === 'ATTOM' ? 'ATTOM Property Detail · publication cleared'
+        : candidate.provider === 'COUNTY_PORTAL' ? 'County assessor public record · verified'
+        : candidate.provider === 'COUNTY_RECORD' ? 'County assessor record · via public data source'
+        : 'Public property listing data · not county-verified');
       setText('physical-facts-source',
-        candidate.provider === 'ATTOM'
-          ? 'ATTOM property characteristics · retrieved ' + candidate.retrieved_at_utc.slice(0, 10) +
-            ' · record vintage ' + candidate.record_vintage +
-            '. Map marker indicates an area; the AI-generated mansion photograph is illustrative.'
-          : candidate.source + ' · retrieved ' + candidate.retrieved_at_utc.slice(0, 10) +
-            ' · record vintage ' + candidate.record_vintage +
-            '. Unconfirmed fields read "Not available". Map marker indicates an area; the AI-generated mansion photograph is illustrative.');
+        candidate.source +
+        ' · retrieved ' + candidate.retrieved_at_utc +
+        (candidate.record_vintage ? ' · source record updated ' + candidate.record_vintage : '') +
+        '. Source URL recorded in the evidence layer. Unconfirmed fields read "Not available". Map marker indicates an area; the AI-generated mansion photograph is illustrative.');
     } else {
       const privateVerified = evidenceLayer && evidenceLayer.markerStatus &&
         evidenceLayer.markerStatus[property.id] === 'PRIVATE_DETAIL_VERIFIED';
