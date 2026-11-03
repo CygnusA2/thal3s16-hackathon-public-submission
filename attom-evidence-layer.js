@@ -1,8 +1,10 @@
 'use strict';
-/* Public-safe provenance only: 30 fictional client regions, 29 independent
-   real-parcel ATTOM identities privately verified, Somis pending separately approved call.
-   No licensed measurements, owner data, parcel IDs or API credentials published.
-   These real references do not depict the AI houses or imply fictional client ownership. */
+/* THAL3S 16 synthetic 30-client research portfolio: all 30 independent
+   geographic real-parcel reference identities verified privately against ATTOM.
+   Orinda and Somis have no ATTOM building-characteristic values.
+   These identities are not fictional clients' actual property holdings;
+   the 30 AI mansion photographs and all financial scenarios are illustrative.
+   NO licensed provider measurements, raw sources, owner data or API keys are public. */
 window.THAL3S_ATTOM_EVIDENCE = Object.freeze({
   schema_version: 'thal3s16-attom-evidence-ui-v2-30',
   active_marker_count: 30,
@@ -34,7 +36,7 @@ window.THAL3S_ATTOM_EVIDENCE = Object.freeze({
   "cf30-025": "PRIVATE_DETAIL_VERIFIED",
   "cf30-026": "PRIVATE_DETAIL_VERIFIED",
   "cf30-027": "PRIVATE_DETAIL_VERIFIED",
-  "cf30-028": "PREPARED_UNUSED_APPROVAL_REQUIRED",
+  "cf30-028": "PRIVATE_DETAIL_VERIFIED",
   "cf30-029": "PRIVATE_DETAIL_VERIFIED",
   "cf30-030": "PRIVATE_DETAIL_VERIFIED"
 },
@@ -46,6 +48,7 @@ window.THAL3S_ATTOM_EVIDENCE = Object.freeze({
   "cf30-022": "ASSESSOR_LISTING_VARIANCE_NEWPORT",
   "cf30-024": "ASSESSOR_LISTING_AREA_VARIANCE_TIBURON",
   "cf30-026": "ASSESSOR_LISTING_VARIANCE_ST_HELENA",
+  "cf30-028": "ATTOM_PARCEL_IDENTITY_ONLY_ALL_BUILDING_FACTS_UNAVAILABLE",
   "cf30-029": "ASSESSOR_RECORD_LAG_NAPA",
   "cf30-030": "ASSESSOR_LISTING_AREA_VARIANCE_NICASIO"
 },
