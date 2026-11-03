@@ -1,6 +1,6 @@
 'use strict';
-/* Sanitized ATTOM verification metadata only. No licensed values, identifiers, raw records or API secrets.
-   Real parcels are independent research references for fictional client areas; no ownership is asserted. */
+/* Public-safe verification status only. Licensed ATTOM values, identities, records and keys are private.
+   A geographic research reference is not a fictional client's home or evidence of ownership. */
 window.THAL3S_ATTOM_EVIDENCE = Object.freeze({
   schema_version: 'thal3s16-attom-evidence-ui-v1',
   markerStatus: {
@@ -23,17 +23,17 @@ window.THAL3S_ATTOM_EVIDENCE = Object.freeze({
   "cf30-012": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
   "cf30-013": "PRIVATE_DETAIL_VERIFIED",
   "cf30-014": "PRIVATE_DETAIL_VERIFIED",
-  "cf30-015": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
+  "cf30-015": "IDENTITY_MISMATCH_REPLACEMENT_PENDING",
   "cf30-016": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
-  "cf30-017": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
+  "cf30-017": "PRIVATE_DETAIL_VERIFIED",
   "cf30-018": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
   "cf30-019": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
   "cf30-020": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
   "cf30-021": "PRIVATE_DETAIL_VERIFIED",
-  "cf30-022": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
+  "cf30-022": "PRIVATE_DETAIL_VERIFIED",
   "cf30-023": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
-  "cf30-024": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
-  "cf30-025": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
+  "cf30-024": "IDENTITY_MISMATCH_REPLACEMENT_PENDING",
+  "cf30-025": "PREPARED_UNUSED_APPROVAL_REQUIRED",
   "cf30-026": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
   "cf30-027": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
   "cf30-028": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
@@ -43,7 +43,8 @@ window.THAL3S_ATTOM_EVIDENCE = Object.freeze({
   markerReviewFlags: {
   "cf30-007": "ASSESSOR_RECORD_LAG_REDEVELOPMENT",
   "cf30-013": "ASSESSOR_LISTING_VARIANCE_AND_LOCALITY_CAVEAT",
-  "cf30-014": "ASSESSOR_BUILDER_AREA_VARIANCE"
+  "cf30-014": "ASSESSOR_BUILDER_AREA_VARIANCE",
+  "cf30-022": "ASSESSOR_LISTING_VARIANCE_NEWPORT"
 },
-  publishedFacts: Object.freeze({}) // Licensed field publication not cleared.
+  publishedFacts: Object.freeze({}) // No field-level redistribution clearance.
 });
