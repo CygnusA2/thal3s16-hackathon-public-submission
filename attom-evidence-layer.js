@@ -1,20 +1,18 @@
 'use strict';
-/* Public-safe verification status only. Licensed ATTOM values, identities, records and keys are private.
-   A geographic research reference is not a fictional client's home or evidence of ownership. */
+/* THAL3S 16 FINAL SCOPE: exactly 30 fictional-client property markers.
+   Status-only metadata; no licensed ATTOM building facts, records, parcel IDs or API secrets.
+   Verified geographical research references imply no ownership by fictional clients.
+   Five legacy original demo marker IDs remain archived in historical source/evidence. */
 window.THAL3S_ATTOM_EVIDENCE = Object.freeze({
-  schema_version: 'thal3s16-attom-evidence-ui-v1',
+  schema_version: 'thal3s16-attom-evidence-ui-v2-30',
+  active_marker_count: 30,
   markerStatus: {
-  "beverly-hills": "PRIVATE_DETAIL_VERIFIED",
-  "malibu": "PRIVATE_DETAIL_VERIFIED",
-  "montecito": "PRIVATE_DETAIL_VERIFIED",
-  "palo-alto": "PRIVATE_DETAIL_VERIFIED",
-  "la-jolla": "PRIVATE_DETAIL_VERIFIED",
   "cf30-001": "PRIVATE_DETAIL_VERIFIED",
   "cf30-002": "PRIVATE_DETAIL_VERIFIED",
-  "cf30-003": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
+  "cf30-003": "PRIVATE_DETAIL_VERIFIED",
   "cf30-004": "PRIVATE_DETAIL_VERIFIED",
   "cf30-005": "PRIVATE_DETAIL_VERIFIED",
-  "cf30-006": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
+  "cf30-006": "PRIVATE_DETAIL_VERIFIED",
   "cf30-007": "PRIVATE_DETAIL_VERIFIED",
   "cf30-008": "PRIVATE_DETAIL_VERIFIED",
   "cf30-009": "PRIVATE_DETAIL_VERIFIED",
@@ -31,7 +29,7 @@ window.THAL3S_ATTOM_EVIDENCE = Object.freeze({
   "cf30-020": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
   "cf30-021": "PRIVATE_DETAIL_VERIFIED",
   "cf30-022": "PRIVATE_DETAIL_VERIFIED",
-  "cf30-023": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
+  "cf30-023": "PRIVATE_DETAIL_VERIFIED",
   "cf30-024": "IDENTITY_MISMATCH_REPLACEMENT_PENDING",
   "cf30-025": "PREPARED_UNUSED_APPROVAL_REQUIRED",
   "cf30-026": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
@@ -46,5 +44,5 @@ window.THAL3S_ATTOM_EVIDENCE = Object.freeze({
   "cf30-014": "ASSESSOR_BUILDER_AREA_VARIANCE",
   "cf30-022": "ASSESSOR_LISTING_VARIANCE_NEWPORT"
 },
-  publishedFacts: Object.freeze({}) // No field-level redistribution clearance.
+  publishedFacts: Object.freeze({}) // Publication rights not established.
 });
