@@ -438,6 +438,11 @@
     selectedId = id;
     renderMarkers();
     setText('property-address', property.address);
+    /* Marker id for the photo/characteristics integrations: the address
+       line now carries the real ATTOM-verified street address (no embedded
+       cf30 label), so the selected marker id travels on this attribute. */
+    const addressNode = document.getElementById('property-address');
+    if (addressNode) addressNode.setAttribute('data-marker-id', property.id);
     setText('property-location', property.location);
     /* For synthetic clients, disclose missing physical characteristics
        rather than showing unexplained dashes or inventing specifications. */
@@ -481,6 +486,18 @@
     } else {
       const privateVerified = evidenceLayer && evidenceLayer.markerStatus &&
         evidenceLayer.markerStatus[property.id] === 'PRIVATE_DETAIL_VERIFIED';
+      /* Real ATTOM-verified reference identity for this research area: the
+         canonical address from the privately validated provider record
+         replaces the fictional portfolio label. It is a research reference
+         only — the fictional client does not own the real parcel, and the
+         AI-generated mansion photograph is not the actual property. */
+      const verifiedAddress = evidenceLayer && evidenceLayer.verifiedAddresses &&
+        typeof evidenceLayer.verifiedAddresses[property.id] === 'string' &&
+        evidenceLayer.verifiedAddresses[property.id].length > 5
+          ? evidenceLayer.verifiedAddresses[property.id] : null;
+      if (privateVerified && verifiedAddress) {
+        setText('property-address', verifiedAddress);
+      }
       const currentEvidenceState = evidenceLayer && evidenceLayer.markerStatus &&
         evidenceLayer.markerStatus[property.id];
       setText('attom-status', privateVerified
@@ -791,6 +808,11 @@
 
   const clientIdFromDom = () => {
     const address = document.getElementById('property-address');
+    /* Prefer the explicit marker-id attribute (the address line now shows
+       the real verified street address); fall back to the legacy label
+       match for any unchanged deployment path. */
+    const stamped = address && address.getAttribute('data-marker-id');
+    if (stamped && /^cf30-\d{3}$/.test(stamped)) return stamped;
     const match = address && address.textContent.match(/cf30-\d{3}/);
     return match ? match[0] : null;
   };
@@ -1346,6 +1368,11 @@
 
   const clientIdFromDom = () => {
     const address = byId('property-address');
+    /* Prefer the explicit marker-id attribute (the address line now shows
+       the real verified street address); fall back to the legacy label
+       match for any unchanged deployment path. */
+    const stamped = address && address.getAttribute('data-marker-id');
+    if (stamped && /^cf30-\d{3}$/.test(stamped)) return stamped;
     const match = address && address.textContent.match(/cf30-\d{3}/);
     return match ? match[0] : null;
   };
