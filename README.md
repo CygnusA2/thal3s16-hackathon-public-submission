@@ -21,7 +21,7 @@ THAL3S 16 explores how to assess the liquidity potential of illiquid collateral 
 ## Inspect the engineering
 
 - [Self-contained public FIP example](examples/fip/) — Python validator, synthetic JSON and tests; illustrates the design, not the private benchmark harness.
-- A stable public frontend is not yet deployed. The temporary private-preview tunnel is not a guaranteed public demo.
+- A rights-cleared, simplified public walkthrough is deployed via GitHub Pages; it is not the complete private 35-marker California frontend.
 
 ## Research and limitations
 
@@ -31,6 +31,6 @@ THAL3S 16 explores how to assess the liquidity potential of illiquid collateral 
 
 **All financial scenarios are synthetic.** No real borrower data, credit approval, token issuance or funding is represented.
 
-**Demo:** [THAL3S 16 California private preview](https://jay-lie-techrepublic-less.trycloudflare.com) — currently a temporary founder-review tunnel, not a guaranteed public deployment. Founder-supplied photographs have unverified redistribution rights and are not included in this curated repository.
+**Demo:** [THAL3S 16 public research walkthrough](https://cygnusa2.github.io/thal3s16-hackathon-public-submission/) — stable-hosted, limited-scope demonstration with one synthetic case and original vector artwork; GitHub Pages deployment is enabled, browser availability should be confirmed before a large launch. Founder-supplied photographs have unverified redistribution rights and are not included in this curated repository.
 
 **Source development repository remains private.** This repository is a curated clean-history submission package, not a mirror of internal branches or private credentials. The full private benchmark harness and raw provider responses are not included; independent replication of the complete study is not possible from this subset alone.
