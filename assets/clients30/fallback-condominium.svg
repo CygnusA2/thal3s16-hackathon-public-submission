@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-label="Illustrative original artwork: condominium residence. Not a photograph and not any client's actual property.">
+  <title>ILLUSTRATIVE — CONDOMINIUM</title>
+  <desc>Original deterministic vector artwork (THAL3S16 SprintVis S01 fallback art). ILLUSTRATIVE only; does not depict any real or client property.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fdf6ec"/><stop offset="1" stop-color="#f3e5cd"/></linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#sky)"/>
+  <circle cx="240" cy="170" r="90" fill="#e8b04b"/>  <g stroke="#3e3a34" stroke-width="4"><rect x="640" y="240" width="320" height="460" fill="#f7f3ea"/><polygon points="620,240 800,150 980,240" fill="#8a5a3b"/><rect x="662" y="270" width="76" height="44" fill="#bcd3dc"/><rect x="762" y="362" width="76" height="44" fill="#bcd3dc"/><rect x="862" y="454" width="76" height="44" fill="#bcd3dc"/><rect x="662" y="546" width="76" height="44" fill="#bcd3dc"/><rect x="762" y="638" width="76" height="44" fill="#bcd3dc"/><rect x="862" y="730" width="76" height="44" fill="#bcd3dc"/><rect x="662" y="822" width="76" height="44" fill="#bcd3dc"/><rect x="762" y="914" width="76" height="44" fill="#bcd3dc"/><rect x="862" y="1006" width="76" height="44" fill="#bcd3dc"/><rect x="662" y="1098" width="76" height="44" fill="#bcd3dc"/><rect x="700" y="700" width="200" height="40" fill="#a9825a"/></g>  <g transform="translate(340,700) scale(1.2)"><rect x="-10" y="-70" width="20" height="80" fill="#a9825a"/><circle cx="0" cy="-105" r="58" fill="#7d9a68"/><circle cx="-40" cy="-80" r="40" fill="#9fb380"/><circle cx="42" cy="-82" r="38" fill="#9fb380"/></g>  <g transform="translate(1240,700) scale(1.2)"><rect x="-10" y="-70" width="20" height="80" fill="#a9825a"/><circle cx="0" cy="-105" r="58" fill="#7d9a68"/><circle cx="-40" cy="-80" r="40" fill="#9fb380"/><circle cx="42" cy="-82" r="38" fill="#9fb380"/></g>  <path d="M0,740 Q400,660 900,730 T1600,700 L1600,1000 L0,1000 Z" fill="#c9d8b0"/>
+  <g font-family="Georgia, 'Times New Roman', serif" fill="#3e3a34">
+    <text x="80" y="930" font-size="44" letter-spacing="6">ILLUSTRATIVE</text>
+    <text x="80" y="972" font-size="20" letter-spacing="2">ORIGINAL ARTWORK — CONDOMINIUM RESIDENCE — NOT A PHOTOGRAPH, NOT ANY CLIENT&apos;S ACTUAL PROPERTY</text>
+  </g>
+</svg>
