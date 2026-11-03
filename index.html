@@ -267,6 +267,65 @@
               <strong>NO CREDIT APPROVAL</strong>
             </div>
           </div>
+          <details class="mfip-panel" id="meta-fip-panel">
+            <summary>
+              <span class="mfip-badge">RECORDED REPLAY</span>
+              <strong>Meta Muse Spark Open — model risk interpretation · FIP V2 validation</strong>
+              <small>Research replay · no live inference in this demo</small>
+            </summary>
+            <div class="mfip-body">
+              <p class="mfip-intro">How THAL3S 16 separates <em>deterministic computation</em> from <em>AI interpretation</em>, and how the Financial Intelligence Protocol (FIP) decides which model outputs may ever be presented as verified intelligence. The two examples below are <strong>previously executed, receipt-backed benchmark cases</strong> (sanitized: model answer documents are discarded by design; only structural outcomes, deterministic attachments and grader booleans are retained). Nothing here is a live call.</p>
+
+              <div class="mfip-flow" aria-label="Separation of concerns">
+                <div><span>1</span><strong>Deterministic credit engine</strong><small>Calculates LTV, capacity, risk-d01…d13 intensities and assessment status from the authored synthetic facts. No AI.</small></div>
+                <div><span>2</span><strong>Meta Muse Spark Open</strong><small>Receives the frozen projection and returns a structured risk interpretation (dimension codes, severities, fact references) under the <code>fip-numeric-v2-request</code> schema.</small></div>
+                <div><span>3</span><strong>FIP V2 validation</strong><small>Fail-closed contract: schema pinning, fact references must exist in the projection, severity must be consistent with the deterministic status. Rejections never reach the user as verified intelligence.</small></div>
+                <div><span>4</span><strong>Human review</strong><small>Only FIP-validated output is surfaced to a human reviewer. The model never approves loans, sets credit limits or overrides the engine.</small></div>
+              </div>
+
+              <div class="mfip-cases">
+                <article class="mfip-case mfip-accept">
+                  <header><span class="mfip-badge">RECORDED REPLAY</span><span class="mfip-verdict ok">VALIDATED</span></header>
+                  <h4>Accepted example — benchmark case mb384-356</h4>
+                  <ul>
+                    <li><strong>Case:</strong> BLOCKED status · profile <code>highly_illiquid_uhnw</code> · regime <code>recovery</code> · evidence <code>contradictory</code> · reasons <code>REQUEST_EXCEEDS_CAPACITY</code>, <code>VALUE_CONFLICT</code> (request sha256 <code>0ababa2b…</code>).</li>
+                    <li><strong>Evidence supplied:</strong> the frozen synthetic projection — portfolio, valuation, LTV and regime facts. 17 distinct fact IDs (e.g. <code>risk.effective_ltv_bps</code>, <code>evidence.value_spread_bps</code>, <code>assessment.reason.VALUE_CONFLICT</code>) were cited by the validated interpretation.</li>
+                    <li><strong>Model interpretation:</strong> selected risk dimensions 1–6 with severities; classification matched the engine on all four axes (status, regime, freshness, quality).</li>
+                    <li><strong>FIP V2 checks:</strong> schema valid · every cited fact exists in the projection (evidence-grounding precision 100%) · financial-safety clean · zero prohibited phrases · severity consistent with the deterministic status.</li>
+                    <li><strong>Deterministic attachments (never model output):</strong> <code>asset.synthetic=true</code>, <code>evidence.stale=false</code>, <code>regime.is_assumption_not_observation=false</code>.</li>
+                    <li><strong>Recorded latency:</strong> 8.48 s · one request, no retries.</li>
+                  </ul>
+                </article>
+
+                <article class="mfip-case mfip-reject">
+                  <header><span class="mfip-badge">RECORDED REPLAY</span><span class="mfip-verdict bad">REJECTED — FIP_CONTRADICTORY_STATUS</span></header>
+                  <h4>Rejected example — benchmark case mb384-228</h4>
+                  <ul>
+                    <li><strong>Case:</strong> CLEAN status · profile <code>real_estate_investor</code> · regime <code>liquidity_crisis</code> · evidence <code>mild_disagreement</code> · expected status ILLUSTRATIVE_ONLY (request sha256 <code>918770d6…</code>).</li>
+                    <li><strong>Actual recorded failure reason</strong> (sanitized diagnostic <code>fip-v2-risk-diagnostic-v1</code>): severity-vs-status contradiction on risk dimension 4 (<code>risk-d04</code>) — the model returned severity 3 (<code>HIGH</code>) where the deterministic engine status is ILLUSTRATIVE_ONLY (code 0), whose maximum allowable severity is 2 (<code>MEDIUM</code>).</li>
+                    <li><strong>FIP outcome:</strong> the document failed the contract and was discarded — it is never displayed as verified financial intelligence.</li>
+                    <li><strong>Recorded latency:</strong> 9.31 s · one request, no retries.</li>
+                    <li><strong>Systemic finding:</strong> this failure class recurred on clean cases under stressed regimes (all 15 rejections in the 60-case study plus 3 in the 12-case pilot), which is why severity consistency with the deterministic status is a hard FIP check.</li>
+                  </ul>
+                </article>
+              </div>
+
+              <div class="mfip-metrics">
+                <h4>Measured results — distinct experimental cohorts (not a controlled head-to-head measurement)</h4>
+                <div class="mfip-metrics-grid">
+                  <div><strong>0 / 5</strong><small>Narrative-era requests validated — every prompt failed early phrase-gate safety validation (pre-FIP era, 2026-11-01)</small></div>
+                  <div><strong>70 / 93 · 75.3%</strong><small>FIP V2 validated outputs across the 12-case pilot, 60-case study and 21-case completion study (combined cohorts)</small></div>
+                  <div><strong>50 / 50</strong><small>Blocked-status cases validated (FIP V2 cohorts)</small></div>
+                  <div><strong>20 / 43</strong><small>Clean-status cases validated (FIP V2 cohorts)</small></div>
+                  <div><strong>8.22 s</strong><small>Median model latency (60-case study receipts)</small></div>
+                  <div><strong>100%</strong><small>Evidence-citation precision among validated outputs — every cited fact existed in the supplied projection</small></div>
+                </div>
+                <p class="mfip-caveat">All figures describe the authored synthetic 96-cell benchmark population, measured live against Muse Spark Open (Meta, served via Fireworks AI) under founder-authorized one-use approvals. They do not describe real borrowers and imply no production funding capability. Cohorts differ in case mix; they are reported separately, not as a controlled comparison.</p>
+              </div>
+
+              <p class="mfip-legend"><strong>Provenance labels:</strong> <span class="mfip-badge">LIVE</span> real-time inference (none in this demo) · <span class="mfip-badge">RECORDED REPLAY</span> receipt-backed benchmark result, replayed here verbatim from the sanitized ledger · <span class="mfip-badge">SYNTHETIC MOCK</span> fabricated illustration (none used here). No model inference, latency, evidence or statistic on this page is fabricated.</p>
+            </div>
+          </details>
         </section>
       </section>
     </section>

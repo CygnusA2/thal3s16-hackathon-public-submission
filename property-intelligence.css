@@ -359,3 +359,38 @@ body{
   .alloc-item{grid-template-columns:92px 1fr 56px}
   .footer-note{align-items:flex-start;flex-direction:column}
 }
+
+/* --- Meta Muse Spark Open / FIP V2 research-replay panel (2026-11-03) --- */
+.mfip-panel{margin:14px 0 4px;border:1px solid var(--line);border-radius:10px;background:var(--panel2)}
+.mfip-panel>summary{display:flex;flex-wrap:wrap;align-items:center;gap:10px;padding:12px 14px;cursor:pointer;list-style:none}
+.mfip-panel>summary::-webkit-details-marker{display:none}
+.mfip-panel>summary strong{font-size:14px;color:var(--gold)}
+.mfip-panel>summary small{color:var(--muted);font-size:12px}
+.mfip-badge{display:inline-block;padding:2px 7px;border-radius:999px;border:1px solid var(--mint);color:var(--mint);font-size:10px;letter-spacing:.08em;font-weight:600}
+.mfip-body{padding:2px 16px 16px;border-top:1px solid var(--line)}
+.mfip-intro{color:var(--muted);font-size:13px;max-width:78ch}
+.mfip-flow{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:8px;margin:10px 0}
+.mfip-flow>div{border:1px solid var(--line);border-radius:8px;padding:9px 11px;background:rgba(17,23,22,.7)}
+.mfip-flow span{display:inline-block;width:18px;height:18px;border-radius:50%;background:var(--gold);color:#14100c;font-weight:700;font-size:11px;text-align:center;line-height:18px;margin-bottom:4px}
+.mfip-flow strong{display:block;font-size:12.5px;margin:2px 0}
+.mfip-flow small{color:var(--muted);font-size:11.5px;line-height:1.4;display:block}
+.mfip-cases{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:10px;margin:12px 0}
+.mfip-case{border:1px solid var(--line);border-radius:10px;padding:12px 14px;background:rgba(8,10,9,.5)}
+.mfip-case header{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:6px}
+.mfip-verdict{font-size:11px;font-weight:700;padding:2px 8px;border-radius:6px}
+.mfip-verdict.ok{background:rgba(159,224,186,.15);color:var(--mint);border:1px solid var(--mint)}
+.mfip-verdict.bad{background:rgba(232,159,150,.12);color:var(--red);border:1px solid var(--red)}
+.mfip-case h4{margin:2px 0 8px;font-size:13.5px}
+.mfip-case ul{margin:0;padding-left:16px}
+.mfip-case li{color:var(--muted);font-size:12.5px;margin-bottom:6px;line-height:1.45}
+.mfip-case li strong{color:var(--ink)}
+.mfip-case code{font-size:11px;color:var(--mint);background:rgba(159,224,186,.08);padding:0 4px;border-radius:4px}
+.mfip-metrics h4{font-size:13px;margin:10px 0 8px}
+.mfip-metrics-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:8px}
+.mfip-metrics-grid>div{border:1px solid var(--line);border-radius:8px;padding:9px 11px;background:rgba(17,23,22,.7)}
+.mfip-metrics-grid strong{display:block;font-size:17px;color:var(--gold);margin-bottom:3px}
+.mfip-metrics-grid small{color:var(--muted);font-size:11.5px;line-height:1.4;display:block}
+.mfip-caveat{color:var(--muted);font-size:11.5px;max-width:88ch;margin:10px 0 0}
+.mfip-legend{color:var(--muted);font-size:11.5px;margin:14px 0 0}
+.mfip-legend .mfip-badge{font-size:9.5px;padding:1px 6px}
+@media (max-width:700px){.mfip-cases{grid-template-columns:1fr}}
