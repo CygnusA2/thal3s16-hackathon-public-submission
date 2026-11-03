@@ -556,9 +556,20 @@
       setText('attom-status', privateVerified
         ? 'ATTOM Property Detail verified privately · values not published'
         : 'ATTOM Property Detail not verified for this public marker');
-      setText('physical-facts-source', syntheticClient
-        ? 'No verified ATTOM physical characteristics for this illustrative client location.'
-        : 'Physical characteristics shown above are illustrative demo fixtures, not verified ATTOM figures.');
+      if (privateVerified) {
+        /* A real matched parcel now exists, so do not display the historical
+           fictional physical specifications as if they belonged to it.
+           ATTOM values remain private pending field-level display clearance. */
+        for (const id of ['fact-beds', 'fact-baths', 'fact-sqft', 'fact-year']) {
+          setText(id, 'Not published');
+        }
+        setText('physical-facts-source',
+          'ATTOM parcel verified privately. Building characteristics are withheld pending public-display clearance. The mansion photograph is AI-generated and illustrative.');
+      } else {
+        setText('physical-facts-source', syntheticClient
+          ? 'No verified ATTOM physical characteristics for this illustrative client location.'
+          : 'Physical characteristics shown above are illustrative demo fixtures, not verified ATTOM figures.');
+      }
     }
     renderClientProfile(property.id);
     if (!byId('portfolio-panel').hidden) renderPortfolio(property.id);
