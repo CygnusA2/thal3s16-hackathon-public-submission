@@ -1,74 +1,65 @@
-# THAL3S 16 — Active 30-property California pilot
+# THAL3S 16 — California ATTOM Private Identity Pilot: Complete
 
-**Current status · 3 November 2026: 29/30 privately verified independent ATTOM real-parcel identities; 1 pending (Somis).**
+**Final status · 3 November 2026: 30/30 independent California area-reference parcel identities privately verified. No further parcel lookups are needed to meet the identity-coverage goal.**
 
-This is the founder-approved final scope: **30 fictional-client California map markers and 30 distinct AI-generated luxury-mansion illustrations**. The former [35-marker plan](./ROLLOUT_35.md) is a historical archive and **must not** be used to authorize additional provider requests.
+This is the founder-approved final scope: **exactly 30 fictional-client map markers and 30 distinct AI-generated mansion illustrations**. The historical [35-property plan](./ROLLOUT_35.md) is superseded. The five removed original demo markers, earlier authorizations and historic provider records remain preserved as an audit trail.
 
-## Source-of-truth accounting
+## What has been achieved
 
-- **29/30 active geographic research-reference identities privately matched to ATTOM Property Detail.** One marker remains: `cf30-028` Somis.
-- **0/30 licensed ATTOM records or physical-characteristic values made public**; documented provider rights presently cover internal evaluation only. The public demonstration carries sanitized verification status, not provider values or actual owner details.
-- All 30 fictional clients, AI-generated houses and their geographical pin locations are illustrative; none depicts or is asserted to own, occupy, finance or be an accurate map pin of any real ATTOM parcel.
-- Orinda `cf30-015` is **identity verified only**; bedrooms, bathrooms, area and year built were **all unavailable**. Other private matches may have missing provider fields or assessor/marketing discrepancies; do not impute them from photographic or listing information.
-- The original five demo markers were removed from the live map without deleting historical R12/R13/R14 approvals, records or receipts. Historical repository evidence remains accessible via Git commit history and the private ledger.
-- **Hermes-reported state:** 40 consumed one-use approvals, seven failed-closed attempts and 31 successful private reference records in total (29 current markers plus two separately archived references). No prior requests may be replayed or retried.
-- Synthetic wealth, loan requests, credit-engine calculations, FIP validation results and Meta benchmark findings are unaltered. No production loan approval, asset ownership, issuance or funding is implied.
+- Every stable marker ID `cf30-001` through `cf30-030` now has one independently verified, identity-matched **private real ATTOM parcel reference** associated with its California geographic research area. This does **not** imply ownership, financing, occupancy, use as collateral, an exact pin-to-parcel location, or that the AI mansion depicts the real property.
+- **28/30** active references have at least one available ATTOM building characteristic, retained privately with source paths. **2/30** — `cf30-015` Orinda and `cf30-028` Somis — have **all four building characteristics unavailable** (bedrooms, bathrooms, living area, year built). These are still verified parcel **identities**, not complete building-facts profiles.
+- Several of the other 28 records have *partial* missing characteristics; 28/30 does **not** imply all four fields are present. Missing values are never treated as zero, invented or replaced by listing figures.
+- Record freshness, assessor/listing discrepancies and canonically verified address/locality are tracked separately. The final Somis private source has a **2026-09-21** vintage and was flagged stale. Its identity was successfully validated by the independent, founder-approved replacement request at a different address than the earlier failed request.
+- Provider `property/detail` responses did not establish current AVM, sale, assessment or tax-year valuation data for these cases; their absence is **not** a market valuation, a certified appraisal or a THAL3S credit approval.
+- **0/30 licensed ATTOM property values are published**. The known subscription evidence supports internal evaluation; no right to redistribute the private provider records has been established. Public GitHub Pages contains only generalized readiness labels and discrepancy categories, not ATTOM values, real parcel IDs, raw payloads, owners or API secrets.
+- Historical execution integrity was preserved: Hermes reports **41 consumed one-use founder authorizations**, **seven failed-closed attempts** never retried, and **34 private provider source records** including historical references. All approval ledgers, receipts, private source files and the protected ATTOM key remain in the Hermes environment, untouched by this public documentation update.
+- All fictional financial portfolios, tokenisation/credit simulations, deterministic calculations, FIP validation results and Meta benchmarking work are unchanged.
 
-## Verified private area-reference identities
+## Marker-by-marker final identity status
 
-| Marker | Research area | Status |
+| Marker | Research area | ATTOM private reference |
 |---|---|---|
-| `cf30-001` | Atherton | PRIVATE DETAIL VERIFIED |
-| `cf30-002` | Woodside | PRIVATE DETAIL VERIFIED |
-| `cf30-003` | Beverly Hills | PRIVATE DETAIL VERIFIED |
-| `cf30-004` | Hillsborough | PRIVATE DETAIL VERIFIED |
-| `cf30-005` | Pasadena | PRIVATE DETAIL VERIFIED |
-| `cf30-006` | Palo Alto | PRIVATE DETAIL VERIFIED |
-| `cf30-007` | Santa Monica | PRIVATE DETAIL VERIFIED |
-| `cf30-008` | San Francisco (Pacific Heights) | PRIVATE DETAIL VERIFIED |
-| `cf30-009` | Los Gatos | PRIVATE DETAIL VERIFIED |
-| `cf30-010` | Oakland | PRIVATE DETAIL VERIFIED |
-| `cf30-011` | San Francisco | PRIVATE DETAIL VERIFIED |
-| `cf30-012` | San Francisco | PRIVATE DETAIL VERIFIED |
-| `cf30-013` | Carmel-by-the-Sea | PRIVATE DETAIL VERIFIED |
-| `cf30-014` | Bel Air | PRIVATE DETAIL VERIFIED |
-| `cf30-015` | Orinda | Verified identity; all building facts unavailable |
-| `cf30-016` | Hillsborough | PRIVATE DETAIL VERIFIED |
-| `cf30-017` | San Marino | PRIVATE DETAIL VERIFIED |
-| `cf30-018` | Atherton | PRIVATE DETAIL VERIFIED |
-| `cf30-019` | Woodside | PRIVATE DETAIL VERIFIED |
-| `cf30-020` | Bel Air | PRIVATE DETAIL VERIFIED |
-| `cf30-021` | Malibu | PRIVATE DETAIL VERIFIED |
-| `cf30-022` | Newport Beach | PRIVATE DETAIL VERIFIED |
-| `cf30-023` | Montecito | PRIVATE DETAIL VERIFIED |
-| `cf30-024` | Tiburon | PRIVATE DETAIL VERIFIED |
-| `cf30-025` | Saratoga | PRIVATE DETAIL VERIFIED |
-| `cf30-026` | St. Helena | PRIVATE DETAIL VERIFIED |
-| `cf30-027` | Antelope Valley area | PRIVATE DETAIL VERIFIED |
-| `cf30-029` | Napa | PRIVATE DETAIL VERIFIED |
-| `cf30-030` | Nicasio | PRIVATE DETAIL VERIFIED |
+| `cf30-001` | Atherton | Identity confirmed; private property facts withheld |
+| `cf30-002` | Woodside | Identity confirmed; private property facts withheld |
+| `cf30-003` | Beverly Hills | Identity confirmed; private property facts withheld |
+| `cf30-004` | Hillsborough | Identity confirmed; private property facts withheld |
+| `cf30-005` | Pasadena | Identity confirmed; private property facts withheld |
+| `cf30-006` | Palo Alto | Identity confirmed; private property facts withheld |
+| `cf30-007` | Santa Monica | Identity confirmed; private property facts withheld |
+| `cf30-008` | San Francisco (Pacific Heights) | Identity confirmed; private property facts withheld |
+| `cf30-009` | Los Gatos | Identity confirmed; private property facts withheld |
+| `cf30-010` | Oakland | Identity confirmed; private property facts withheld |
+| `cf30-011` | San Francisco | Identity confirmed; private property facts withheld |
+| `cf30-012` | San Francisco | Identity confirmed; private property facts withheld |
+| `cf30-013` | Carmel-by-the-Sea | Identity confirmed; private property facts withheld |
+| `cf30-014` | Bel Air | Identity confirmed; private property facts withheld |
+| `cf30-015` | Orinda | Identity confirmed; physical attributes unavailable |
+| `cf30-016` | Hillsborough | Identity confirmed; private property facts withheld |
+| `cf30-017` | San Marino | Identity confirmed; private property facts withheld |
+| `cf30-018` | Atherton | Identity confirmed; private property facts withheld |
+| `cf30-019` | Woodside | Identity confirmed; private property facts withheld |
+| `cf30-020` | Bel Air | Identity confirmed; private property facts withheld |
+| `cf30-021` | Malibu | Identity confirmed; private property facts withheld |
+| `cf30-022` | Newport Beach | Identity confirmed; private property facts withheld |
+| `cf30-023` | Montecito | Identity confirmed; private property facts withheld |
+| `cf30-024` | Tiburon | Identity confirmed; private property facts withheld |
+| `cf30-025` | Saratoga | Identity confirmed; private property facts withheld |
+| `cf30-026` | St. Helena | Identity confirmed; private property facts withheld |
+| `cf30-027` | Antelope Valley area | Identity confirmed; private property facts withheld |
+| `cf30-028` | Somis | Identity confirmed; physical attributes unavailable |
+| `cf30-029` | Napa | Identity confirmed; private property facts withheld |
+| `cf30-030` | Nicasio | Identity confirmed; private property facts withheld |
 
-## Outstanding Somis reference
+## Outstanding work beyond identity coverage
 
-| Marker | Research area | Status |
-|---|---|---|
-| `cf30-028` | Somis | PREPARED UNUSED APPROVAL REQUIRED |
+**Property-completeness review:** Orinda and Somis have no provider building characteristics; other properties have partial missing data. These remain evidence gaps, not unfinished parcel-identity work.
 
-**Original failed attempt:** The authorized Property Detail lookup for 6914 Solano Verde Dr returned a non-200 provider response classified `HTTP_FAILURE`; the one-use approval was durably consumed. No source record was retained; the exact root cause is undetermined. Its private-drive location may be relevant but is not confirmed as the cause.
+**Provider data rights:** Confirm the actual ATTOM contract or written authorization for field-level public display before any private measurements are copied to the public demonstration. No existing founder API entitlement confirmation automatically authorizes public redistribution.
 
-**Proposed replacement (NOT ATTOM-verified):** 5501 Balcom Canyon Rd, Somis, CA 93066, a public-county-road address supported by a public luxury/equestrian listing. Hermes reports a distinct unused plan `plan-property-detail-2ca9ebe4cccf68b2.json`, digest `2ca9ebe4cccf68b274bff31a4b824640cf66659c30f1b40f8b1fe528d0dbca13`. The replacement request has **not been approved or executed**.
+**Finance and valuation:** Obtain separately approved, correctly entitled current AVM/title/lien/lending evidence only in a distinct, explicitly authorized workstream. The original research simulation must remain frozen. Nothing in this document authorizes more provider API requests.
 
-**Founder execution gate:** Before any call, confirm the actual on-disk plan and digest, canonical address and locality, the authorized ATTOM Property Detail endpoint, remaining entitlement, and the request's unused ledger state. An interactive, independently recorded founder approval must bind that exact request for a 15-minute window. One attempt only, no retries, fallback, bulk requests or automatic changes to the plan. Fail closed on identity or transport errors, preserving durable receipts and original historical state.
+**Final demo QA:** Verify the 30 markers, 30 AI-generated illustrative photos, Google Satellite, seven-stage human-review workflow and clear labels explaining real ATTOM references versus fictional client finances. The demo must not suggest production credit approval or real customer funding.
 
-## Outstanding data-quality and publication gates
+[Public California interactive demonstration](https://cygnusa2.github.io/thal3s16-hackathon-public-submission/) · [Machine-readable 30-marker identity status](./portfolio-30-manifest.json)
 
-- **Nicasio** (`cf30-030`): the verified assessor structure's living area differs from public marketing; keep the provenance discrepancy visible and do not substitute source values.
-- **Napa** (`cf30-029`): assessor lag relative to newer listing information, separately flagged.
-- **St. Helena** (`cf30-026`): original ATTOM source carries the independently confirmed `Saint Helena` canonical locality, plus a county-versus-marketing discrepancy.
-- **Santa Monica, Carmel area, Bel Air, Newport Beach and Tiburon:** the previously recorded review flags remain relevant.
-- **Valuations:** Many ATTOM `property/detail` responses lack AVM/sale/tax values. They are distinct from a separately authorized AVM endpoint. An ATTOM estimate is not a certified appraisal or lending approval.
-- **Public rights:** Field-level publication clearance and explicit relevant license terms must be reviewed before any private ATTOM building facts are added to GitHub Pages.
-
-## Release status
-
-The demonstration is **29/30 privately matched regional identities**, not 29 production lending assessments. Every physical mansion image remains AI-generated. See the active [30-marker tracking manifest](./portfolio-30-manifest.json). The earlier trial-and-error progress is preserved in Git history and the private source ledger.
+**The property-identity programme is closed at 30/30, while data completeness, licensing and credit production readiness remain separate and unresolved.**
