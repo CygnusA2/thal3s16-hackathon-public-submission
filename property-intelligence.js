@@ -32,7 +32,7 @@
       baths: '6.5',
       sqft: '6,710 ft²',
       year: '1968',
-      photoUrl: './assets/clients30/fallback-single_family_residence.svg',
+      photoUrl: './assets/clients30/cf30-003.jpg',
       photoSource: 'AI-generated fictional mansion — fictional scenario, not an actual property photograph',
       imageCount: 1,
       attomStatus: 'Live AVM route proven · private evidence only'
@@ -48,7 +48,7 @@
       baths: '7.5',
       sqft: '8,420 ft²',
       year: '2019',
-      photoUrl: './assets/clients30/fallback-single_family_residence.svg',
+      photoUrl: './assets/clients30/cf30-022.jpg',
       photoSource: 'AI-generated fictional mansion — fictional scenario, not an actual property photograph',
       imageCount: 1,
       attomStatus: 'Illustrative property characteristics · ATTOM wiring pending'
@@ -64,7 +64,7 @@
       baths: '8',
       sqft: '9,180 ft²',
       year: '2016',
-      photoUrl: './assets/clients30/fallback-single_family_residence.svg',
+      photoUrl: './assets/clients30/cf30-023.jpg',
       photoSource: 'AI-generated fictional mansion — fictional scenario, not an actual property photograph',
       imageCount: 1,
       attomStatus: 'Property discovery fixture'
@@ -80,7 +80,7 @@
       baths: '6',
       sqft: '6,950 ft²',
       year: '2021',
-      photoUrl: './assets/clients30/fallback-single_family_residence.svg',
+      photoUrl: './assets/clients30/cf30-008.jpg',
       photoSource: 'AI-generated fictional mansion — fictional scenario, not an actual property photograph',
       imageCount: 1,
       attomStatus: 'Property discovery fixture'
@@ -96,7 +96,7 @@
       baths: '7',
       sqft: '7,640 ft²',
       year: '2018',
-      photoUrl: './assets/clients30/fallback-single_family_residence.svg',
+      photoUrl: './assets/clients30/cf30-019.jpg',
       photoSource: 'AI-generated fictional mansion — fictional scenario, not an actual property photograph',
       imageCount: 1,
       attomStatus: 'Property discovery fixture'
