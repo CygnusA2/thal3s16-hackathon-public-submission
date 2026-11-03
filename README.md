@@ -21,7 +21,7 @@ THAL3S 16 explores how to assess the liquidity potential of illiquid collateral 
 ## Inspect the engineering
 
 - [Self-contained public FIP example](examples/fip/) — Python validator, synthetic JSON and tests; illustrates the design, not the private benchmark harness.
-- A rights-cleared, simplified public walkthrough is deployed via GitHub Pages; it is not the complete private 35-marker California frontend.
+- The public source now contains the full California frontend with 35 clickable property markers (30 synthetic clients and five original demo properties), portfolios, regimes and seven-stage assessment. Unlicensed JPEGs are replaced with original category illustrations. Google Maps automatic key injection is pending deployment-workflow activation.
 
 ## Research and limitations
 
@@ -31,6 +31,6 @@ THAL3S 16 explores how to assess the liquidity potential of illiquid collateral 
 
 **All financial scenarios are synthetic.** No real borrower data, credit approval, token issuance or funding is represented.
 
-**Demo:** [THAL3S 16 public research walkthrough](https://cygnusa2.github.io/thal3s16-hackathon-public-submission/) — stable-hosted, limited-scope demonstration with one synthetic case and original vector artwork; GitHub Pages deployment is enabled, browser availability should be confirmed before a large launch. Founder-supplied photographs have unverified redistribution rights and are not included in this curated repository.
+**Demo:** [THAL3S 16 California interactive frontend](https://cygnusa2.github.io/thal3s16-hackathon-public-submission/) — 35 marker records, including 30 synthetic clients; original illustration placeholders replace unlicensed photographs. Automatic Google Satellite loading is not yet verified. [Earlier simplified walkthrough](research-walkthrough.html).
 
 **Source development repository remains private.** This repository is a curated clean-history submission package, not a mirror of internal branches or private credentials. The full private benchmark harness and raw provider responses are not included; independent replication of the complete study is not possible from this subset alone.
