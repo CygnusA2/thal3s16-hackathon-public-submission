@@ -4,17 +4,17 @@
   "scope": {
     "active_property_markers": 30,
     "ai_generated_photographs": 30,
-    "verified_private_research_reference_markers": 22,
-    "pending_research_reference_markers": 8,
+    "verified_private_research_reference_markers": 27,
+    "pending_research_reference_markers": 3,
     "published_licensed_attom_facts": 0,
     "archived_original_demo_markers": 5,
     "archived_unique_reference_parcels_excluded_from_active_scope": 2,
-    "previously_verified_private_parcels_in_historical_35_scope": 24,
+    "previously_verified_private_parcels_in_historical_35_scope": 29,
     "verified_private_identity_only_records": 1,
-    "consumed_attom_approvals_historical": 32,
-    "failed_closed_attempts_historical": 6
+    "consumed_attom_approvals_historical": 38,
+    "failed_closed_attempts_historical": 7
   },
-  "governing_policy": "Exactly 30 synthetic client markers paired with 30 distinct AI-generated fictional mansions. 22 of 30 regional references have independently verified ATTOM parcel identities, including one Orinda parcel with all building characteristics absent. Eight remain; Atherton second parcel failed identity validation. ATTOM provider measurements remain private, no real-client ownership, no changes to synthetic credit or benchmark.",
+  "governing_policy": "Exactly 30 fictional client markers and 30 AI-generated fictional mansions. Twenty-seven of thirty marker areas have privately verified independent ATTOM parcel identities; three remain: Antelope Valley/Palmdale (prepared), Somis (failed HTTP, needs replacement), and Nicasio (prepared). ATTOM property values are private; financial and FIP benchmarks remain synthetic. No actual client ownership or parcel-specific map pin is implied.",
   "archived_evidence": "Five historical original-demo markers excluded from the active 30. All historical ATTOM approvals, receipts and source records remain intact and unmodified in Hermes. Three matching-area references are reused as research-reference associations. A separate Malibu parcel and La Jolla parcel remain archived outside the 30-target program.",
   "audit_rules": [
     "Any new provider call requires its own fresh one-use founder terminal authorization",
@@ -284,11 +284,15 @@
       "target_area": "Atherton",
       "illustrative_location": "Atherton, California (San Mateo County)",
       "verified_address": null,
-      "private_attom_stage": "IDENTITY_MISMATCH_REPLACEMENT_PENDING",
+      "private_attom_stage": "PRIVATE_DETAIL_VERIFIED",
       "public_attom_facts": "NOT_PUBLISHED",
       "financial_scenario": "SYNTHETIC_UNCHANGED",
       "batch": "C4",
-      "private_evidence_note": "Second Atherton parcel candidate returned an ATTOM response but failed exact canonical-address identity verification on 2026-11-03; approval consumed; no mapped provider source or licensed data retained. Requires a different authorized candidate, not a retry."
+      "private_evidence_note": "Atherton second independent real-parcel research reference matched under separate authorized R14.1 request. Burned prior Stockbridge approval untouched; provider bathrooms unavailable. Fictional client has no asserted ownership.",
+      "source_record_vintage": "2026-09-29",
+      "private_evidence_missing_fields": [
+        "bathrooms"
+      ]
     },
     {
       "marker_id": "cf30-019",
@@ -296,10 +300,15 @@
       "target_area": "Woodside",
       "illustrative_location": "Woodside, California (San Mateo County)",
       "verified_address": null,
-      "private_attom_stage": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
+      "private_attom_stage": "PRIVATE_DETAIL_VERIFIED",
       "public_attom_facts": "NOT_PUBLISHED",
       "financial_scenario": "SYNTHETIC_UNCHANGED",
-      "batch": "C4"
+      "batch": "C4",
+      "private_evidence_note": "Woodside second independent real-parcel research reference identity verified under a new approved request. Provider bathrooms unavailable; no borrower ownership asserted.",
+      "source_record_vintage": "2026-10-05",
+      "private_evidence_missing_fields": [
+        "bathrooms"
+      ]
     },
     {
       "marker_id": "cf30-020",
@@ -307,10 +316,12 @@
       "target_area": "Bel Air",
       "illustrative_location": "Bel Air, California (Los Angeles County)",
       "verified_address": null,
-      "private_attom_stage": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
+      "private_attom_stage": "PRIVATE_DETAIL_VERIFIED",
       "public_attom_facts": "NOT_PUBLISHED",
       "financial_scenario": "SYNTHETIC_UNCHANGED",
-      "batch": "C4"
+      "batch": "C4",
+      "private_evidence_note": "Bel Air second independent parcel reference verified privately, fresh provider record. Distinct from the previous Bel Air parcel; no ownership assertion.",
+      "source_record_vintage": "2026-11-02"
     },
     {
       "marker_id": "cf30-021",
@@ -390,10 +401,16 @@
       "target_area": "St. Helena",
       "illustrative_location": "St. Helena, California (Napa County)",
       "verified_address": null,
-      "private_attom_stage": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
+      "private_attom_stage": "PRIVATE_DETAIL_VERIFIED",
       "public_attom_facts": "NOT_PUBLISHED",
       "financial_scenario": "SYNTHETIC_UNCHANGED",
-      "batch": "C6"
+      "batch": "C6",
+      "private_evidence_note": "St. Helena private parcel reference verified with exact provider locality Saint Helena; assessor structure differs from marketing listing. Bathrooms missing from provider record; listing facts must not replace ATTOM.",
+      "source_record_vintage": "2026-11-02",
+      "private_evidence_missing_fields": [
+        "bathrooms"
+      ],
+      "private_evidence_review_flag": "ASSESSOR_LISTING_VARIANCE_ST_HELENA"
     },
     {
       "marker_id": "cf30-027",
@@ -401,10 +418,11 @@
       "target_area": "Antelope Valley area",
       "illustrative_location": "Antelope Valley area, California (Los Angeles County)",
       "verified_address": null,
-      "private_attom_stage": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
+      "private_attom_stage": "PREPARED_UNUSED_APPROVAL_REQUIRED",
       "public_attom_facts": "NOT_PUBLISHED",
       "financial_scenario": "SYNTHETIC_UNCHANGED",
-      "batch": "C6"
+      "batch": "C6",
+      "private_evidence_note": "Palmdale Antelope Valley replacement packet independently prepared and preflighted in Hermes for 2020 W Avenue N, digest 32400d29cfc5d649816437dbd9492941b0e71b9fdc4e9682f105bbfda3e1806b. No ATTOM lookup or approval executed. Earlier Agua Dulce candidate remains unused and outside this target area."
     },
     {
       "marker_id": "cf30-028",
@@ -412,10 +430,11 @@
       "target_area": "Somis",
       "illustrative_location": "Somis, California (Ventura County)",
       "verified_address": null,
-      "private_attom_stage": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
+      "private_attom_stage": "HTTP_FAILURE_REPLACEMENT_PENDING",
       "public_attom_facts": "NOT_PUBLISHED",
       "financial_scenario": "SYNTHETIC_UNCHANGED",
-      "batch": "C6"
+      "batch": "C6",
+      "private_evidence_note": "Somis original candidate 6914 Solano Verde Dr produced HTTP_FAILURE on 2026-11-03; single-use approval consumed; no mapped provider source or retry. New independently verified Somis-area candidate and authorization required."
     },
     {
       "marker_id": "cf30-029",
@@ -423,10 +442,16 @@
       "target_area": "Napa",
       "illustrative_location": "Napa, California (Napa County)",
       "verified_address": null,
-      "private_attom_stage": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
+      "private_attom_stage": "PRIVATE_DETAIL_VERIFIED",
       "public_attom_facts": "NOT_PUBLISHED",
       "financial_scenario": "SYNTHETIC_UNCHANGED",
-      "batch": "C6"
+      "batch": "C6",
+      "private_evidence_note": "Napa-area private parcel identity verified. County building attributes differ from a more recent luxury listing; assessor lag flagged. Provider bathrooms missing; no values substituted.",
+      "source_record_vintage": "2026-10-21",
+      "private_evidence_missing_fields": [
+        "bathrooms"
+      ],
+      "private_evidence_review_flag": "ASSESSOR_RECORD_LAG_NAPA"
     },
     {
       "marker_id": "cf30-030",
@@ -434,10 +459,11 @@
       "target_area": "Nicasio",
       "illustrative_location": "Nicasio, California (Marin County)",
       "verified_address": null,
-      "private_attom_stage": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
+      "private_attom_stage": "PREPARED_UNUSED_APPROVAL_REQUIRED",
       "public_attom_facts": "NOT_PUBLISHED",
       "financial_scenario": "SYNTHETIC_UNCHANGED",
-      "batch": "C6"
+      "batch": "C6",
+      "private_evidence_note": "Nicasio 3200 Nicasio Valley Rd ATTOM Property Detail request packet prepared and digest-bound in Hermes (d7339a3a060d3807dcdbe8a6480b19a1d2a95cf3f4a426834bafbb2beeebe618), but no live ATTOM call or founder approval executed."
     }
   ]
 }
