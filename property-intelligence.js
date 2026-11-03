@@ -1287,7 +1287,7 @@
    itself applied.
    ===================================================================== */
 ;(() => {
-  const PHOTOS_SRC = './clients30-photos.js?v=h-series-private-review-20261102';
+  const PHOTOS_SRC = './clients30-photos.js?v=public-ai-mansions-20261103-v2';
   const STYLESHEET_SRC = './photos-integration.css';
   const SCHEMA = 'sprintvis-s02-photos-v1';
   const ILLUSTRATIVE_LABEL = 'Illustrative property photograph \u2014 not the client\u2019s actual property.';
