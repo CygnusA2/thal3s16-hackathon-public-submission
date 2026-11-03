@@ -1,0 +1,41 @@
+name: Publish THAL3S 16 with Google Satellite
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: github-pages
+  cancel-in-progress: true
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - name: Build public site
+        env:
+          MAPS_BROWSER_KEY: ${{ secrets.GOOGLE_MAPS_API_KEY }}
+        run: |
+          set -euo pipefail
+          test -n "$MAPS_BROWSER_KEY" || { echo "Maps browser key is not configured"; exit 1; }
+          mkdir -p _site
+          cp index.html research-walkthrough.html *.js *.css *.json _site/
+          cp -R assets _site/
+          python3 - <<'PY'
+          import json,os,pathlib
+          key=os.environ['MAPS_BROWSER_KEY']
+          if not key.startswith('AIza') or len(key) < 30: raise SystemExit('Invalid Maps browser key format')
+          pathlib.Path('_site/maps-config.js').write_text('window.THAL3S_MAPS_CONFIG = '+json.dumps({'googleMapsApiKey':key})+';\n')
+          PY
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deployment
+        uses: actions/deploy-pages@v4
