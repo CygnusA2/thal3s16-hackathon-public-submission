@@ -496,11 +496,12 @@
         /* Verified real parcels are independent research references, NEVER
            proof that a fictional borrower owns the actual home. Licensed
            property facts remain private until display clearance. */
-        for (const id of ['fact-beds', 'fact-baths', 'fact-sqft', 'fact-year']) {
-          setText(id, 'Not published');
-        }
         const recordReviewFlag = evidenceLayer && evidenceLayer.markerReviewFlags &&
           evidenceLayer.markerReviewFlags[property.id];
+        const providerFactsAbsent = recordReviewFlag === 'ATTOM_PARCEL_IDENTITY_ONLY_ALL_BUILDING_FACTS_UNAVAILABLE';
+        for (const id of ['fact-beds', 'fact-baths', 'fact-sqft', 'fact-year']) {
+          setText(id, providerFactsAbsent ? 'Not provided' : 'Not published');
+        }
         const recordReviewMessage = ({
           ASSESSOR_RECORD_LAG_REDEVELOPMENT:
             'CAUTION: this ATTOM assessor record may predate redevelopment; newer listing characteristics are not ATTOM-verified.',
@@ -509,7 +510,9 @@
           ASSESSOR_BUILDER_AREA_VARIANCE:
             'CAUTION: ATTOM building area differs from builder-sourced listing area; sources are not interchangeable.',
           ASSESSOR_LISTING_VARIANCE_NEWPORT:
-            'CAUTION: ATTOM and the public listing disagree about bedrooms and living area. The provider record has not been reconciled with the listing.'
+            'CAUTION: ATTOM and the public listing disagree about bedrooms and living area. The provider record has not been reconciled with the listing.',
+          ATTOM_PARCEL_IDENTITY_ONLY_ALL_BUILDING_FACTS_UNAVAILABLE:
+            'CAUTION: ATTOM verified the parcel identity but returned no bedrooms, bathrooms, living area, or year built. Listing figures must not be treated as ATTOM evidence.'
         })[recordReviewFlag] || '';
         setText('physical-facts-source', recordReviewMessage
           ? 'ATTOM reference parcel verified privately. ' + recordReviewMessage +
