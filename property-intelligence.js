@@ -521,13 +521,13 @@
     setText('fact-year', syntheticClient && property.year === '—' ? missingLabel : property.year);
     setText('photo-source', property.photoSource);
     setText('photo-count', property.imageCount + (property.imageCount === 1 ? ' image' : ' images'));
-    setText('attom-status', property.attomStatus);
+    setText('attom-status', 'No live ATTOM retrieval for this public synthetic scenario');
     renderClientProfile(property.id);
     if (!byId('portfolio-panel').hidden) renderPortfolio(property.id);
 
     if (property.photoUrl) {
       photo.src = property.photoUrl;
-      photo.alt = 'Licensed property listing image for ' + property.address;
+      photo.alt = 'AI-generated fictional luxury residence, illustrative only; not this property';
       photo.hidden = false;
       fallback.hidden = true;
       fallback.style.setProperty('display', 'none', 'important');
