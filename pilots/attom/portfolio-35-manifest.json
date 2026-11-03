@@ -5,16 +5,16 @@
     "total_map_markers": 35,
     "fictional_clients": 30,
     "original_demo_markers": 5,
-    "privately_verified_property_detail_records": 11,
+    "privately_verified_property_detail_records": 16,
     "publicly_published_attom_property_records": 0,
-    "pending_unique_marker_targets": 24,
+    "pending_unique_marker_targets": 19,
     "identity_mismatch_attempts": 1,
     "failed_closed_attempts": 2,
     "privately_verified_original_demo_markers": 5,
-    "privately_verified_fictional_research_reference_markers": 6,
-    "consumed_attom_approvals": 15
+    "privately_verified_fictional_research_reference_markers": 11,
+    "consumed_attom_approvals": 20
   },
-  "important_notice": "Six genuine ATTOM parcels have been privately verified. Five are independent reference parcels for the five original demo areas; an additional Malibu parcel is illustratively associated with cf30-021. No fictional borrower is asserted to own, hold, finance, or occupy any real parcel. The map coordinates and AI photos do not identify the verified parcels. No licensed ATTOM values are published.",
+  "important_notice": "16 of 35 independent real ATTOM reference parcels have been matched and privately retained. Eleven are associated with fictional client marker areas for research only, not evidence of client ownership, occupation, financing, or parcel location at the illustrative map pin. Santa Monica assessor lag, Carmel locality and assessor-vs-listing variation, and Bel Air builder-area variance require review. No licensed measurements, owner data, key, or raw provider response is published.",
   "gates": [
     "verified_unique_real_parcel_identity",
     "exact_address_agreement",
@@ -194,10 +194,15 @@
       "target_area": "San Francisco (Pacific Heights)",
       "illustrative_location": "San Francisco (Pacific Heights), California",
       "verified_address": null,
-      "private_attom_stage": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
+      "private_attom_stage": "PRIVATE_DETAIL_VERIFIED",
       "public_attom_facts": "NOT_PUBLISHED",
       "financial_scenario": "SYNTHETIC_UNCHANGED",
-      "batch": "C2"
+      "batch": "C2",
+      "source_record_vintage": "2026-10-29",
+      "private_evidence_note": "Private identity-matched ATTOM Property Detail reference parcel in San Francisco (Pacific Heights), recorded 2026-11-03. Fictional client neither asserted nor verified to own this real property; AI mansion image is unrelated. Licensed values are not published.",
+      "private_evidence_missing_fields": [
+        "bedrooms"
+      ]
     },
     {
       "marker_id": "cf30-009",
@@ -205,10 +210,12 @@
       "target_area": "Los Gatos",
       "illustrative_location": "Los Gatos, California (Santa Clara County)",
       "verified_address": null,
-      "private_attom_stage": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
+      "private_attom_stage": "PRIVATE_DETAIL_VERIFIED",
       "public_attom_facts": "NOT_PUBLISHED",
       "financial_scenario": "SYNTHETIC_UNCHANGED",
-      "batch": "C2"
+      "batch": "C2",
+      "source_record_vintage": "2026-10-28",
+      "private_evidence_note": "Private identity-matched ATTOM Property Detail reference parcel in Los Gatos, recorded 2026-11-03. Fictional client neither asserted nor verified to own this real property; AI mansion image is unrelated. Licensed values are not published."
     },
     {
       "marker_id": "cf30-010",
@@ -216,10 +223,15 @@
       "target_area": "Oakland",
       "illustrative_location": "Oakland, California (Alameda County)",
       "verified_address": null,
-      "private_attom_stage": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
+      "private_attom_stage": "PRIVATE_DETAIL_VERIFIED",
       "public_attom_facts": "NOT_PUBLISHED",
       "financial_scenario": "SYNTHETIC_UNCHANGED",
-      "batch": "C2"
+      "batch": "C2",
+      "source_record_vintage": "2026-11-02",
+      "private_evidence_note": "Private identity-matched ATTOM Property Detail reference parcel in Oakland Hills, recorded 2026-11-03. Fictional client neither asserted nor verified to own this real property; AI mansion image is unrelated. Licensed values are not published.",
+      "private_evidence_missing_fields": [
+        "bathrooms"
+      ]
     },
     {
       "marker_id": "cf30-011",
@@ -249,10 +261,16 @@
       "target_area": "Carmel-by-the-Sea",
       "illustrative_location": "Carmel-by-the-Sea, California (Monterey County)",
       "verified_address": null,
-      "private_attom_stage": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
+      "private_attom_stage": "PRIVATE_DETAIL_VERIFIED",
       "public_attom_facts": "NOT_PUBLISHED",
       "financial_scenario": "SYNTHETIC_UNCHANGED",
-      "batch": "C3"
+      "batch": "C3",
+      "source_record_vintage": "2026-10-13",
+      "private_evidence_note": "Private identity-matched ATTOM Property Detail reference parcel in Carmel area, recorded 2026-11-03. Fictional client neither asserted nor verified to own this real property; AI mansion image is unrelated. Licensed values are not published. Public listing and provider building specifications disagree; verified postal-locality differs from the Carmel-by-the-Sea city proper; preserve both caveats.",
+      "private_evidence_missing_fields": [
+        "bathrooms"
+      ],
+      "private_evidence_review_flag": "ASSESSOR_LISTING_VARIANCE_AND_LOCALITY_CAVEAT"
     },
     {
       "marker_id": "cf30-014",
@@ -260,10 +278,13 @@
       "target_area": "Bel Air",
       "illustrative_location": "Bel Air, California (Los Angeles County)",
       "verified_address": null,
-      "private_attom_stage": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
+      "private_attom_stage": "PRIVATE_DETAIL_VERIFIED",
       "public_attom_facts": "NOT_PUBLISHED",
       "financial_scenario": "SYNTHETIC_UNCHANGED",
-      "batch": "C3"
+      "batch": "C3",
+      "source_record_vintage": "2026-10-09",
+      "private_evidence_note": "Private identity-matched ATTOM Property Detail reference parcel in Bel Air, recorded 2026-11-03. Fictional client neither asserted nor verified to own this real property; AI mansion image is unrelated. Licensed values are not published. Provider floor area differs from builder-sourced MLS; retain provenance variance and do not substitute listing figure.",
+      "private_evidence_review_flag": "ASSESSOR_BUILDER_AREA_VARIANCE"
     },
     {
       "marker_id": "cf30-015",
