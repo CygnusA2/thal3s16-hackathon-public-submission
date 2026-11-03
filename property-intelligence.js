@@ -521,7 +521,45 @@
     setText('fact-year', syntheticClient && property.year === '—' ? missingLabel : property.year);
     setText('photo-source', property.photoSource);
     setText('photo-count', property.imageCount + (property.imageCount === 1 ? ' image' : ' images'));
-    setText('attom-status', 'No live ATTOM retrieval for this public synthetic scenario');
+    /* ATTOM published facts are separate from synthetic financial inputs. */
+    const evidenceLayer = window.THAL3S_ATTOM_EVIDENCE;
+    const candidate = evidenceLayer && evidenceLayer.publishedFacts &&
+      evidenceLayer.publishedFacts[property.id];
+    const facts = candidate && candidate.facts;
+    const factKeys = ['bedrooms', 'bathrooms', 'living_area_sqft', 'year_built'];
+    const hasApprovedAttomFacts = Boolean(candidate &&
+      candidate.marker_id === property.id &&
+      candidate.provider === 'ATTOM' &&
+      candidate.publication_status === 'CLEARED' &&
+      typeof candidate.verified_address === 'string' && candidate.verified_address.length > 5 &&
+      /^[0-9]{4}-[0-9]{2}-[0-9]{2}T/.test(candidate.retrieved_at_utc || '') &&
+      /^[0-9]{4}-[0-9]{2}-[0-9]{2}$/.test(candidate.record_vintage || '') &&
+      facts && typeof facts === 'object' &&
+      factKeys.every(key => facts[key] === null ||
+        (typeof facts[key] === 'number' && Number.isFinite(facts[key]) && facts[key] > 0)));
+    if (hasApprovedAttomFacts) {
+      const showFact = (value, unit) =>
+        value === null ? 'Not provided' : value.toLocaleString('en-US') + unit;
+      setText('property-address', candidate.verified_address);
+      setText('fact-beds', showFact(facts.bedrooms, ''));
+      setText('fact-baths', showFact(facts.bathrooms, ''));
+      setText('fact-sqft', showFact(facts.living_area_sqft, ' ft²'));
+      setText('fact-year', showFact(facts.year_built, ''));
+      setText('attom-status', 'ATTOM Property Detail · publication cleared');
+      setText('physical-facts-source',
+        'ATTOM property characteristics · retrieved ' + candidate.retrieved_at_utc.slice(0, 10) +
+        ' · record vintage ' + candidate.record_vintage +
+        '. Map marker indicates an area; the AI-generated mansion photograph is illustrative.');
+    } else {
+      const privateVerified = evidenceLayer && evidenceLayer.markerStatus &&
+        evidenceLayer.markerStatus[property.id] === 'PRIVATE_DETAIL_VERIFIED';
+      setText('attom-status', privateVerified
+        ? 'ATTOM Property Detail verified privately · values not published'
+        : 'ATTOM Property Detail not verified for this public marker');
+      setText('physical-facts-source', syntheticClient
+        ? 'No verified ATTOM physical characteristics for this illustrative client location.'
+        : 'Physical characteristics shown above are illustrative demo fixtures, not verified ATTOM figures.');
+    }
     renderClientProfile(property.id);
     if (!byId('portfolio-panel').hidden) renderPortfolio(property.id);
 
