@@ -553,11 +553,17 @@
     } else {
       const privateVerified = evidenceLayer && evidenceLayer.markerStatus &&
         evidenceLayer.markerStatus[property.id] === 'PRIVATE_DETAIL_VERIFIED';
+      const currentEvidenceState = evidenceLayer && evidenceLayer.markerStatus &&
+        evidenceLayer.markerStatus[property.id];
       setText('attom-status', privateVerified
         ? (syntheticClient
           ? 'Independent ATTOM area-reference parcel privately verified · no client ownership asserted'
           : 'ATTOM Property Detail reference parcel privately verified · values not published')
-        : 'ATTOM Property Detail not verified for this public marker');
+        : currentEvidenceState === 'IDENTITY_MISMATCH_REPLACEMENT_PENDING'
+          ? 'ATTOM identity mismatch · rejected · replacement needed'
+          : currentEvidenceState === 'PREPARED_UNUSED_APPROVAL_REQUIRED'
+            ? 'ATTOM request prepared · no retrieval or approval yet'
+            : 'ATTOM Property Detail not verified for this public marker');
       if (privateVerified) {
         /* Verified real parcels are independent research references, NEVER
            proof that a fictional borrower owns the actual home. Licensed
@@ -573,7 +579,9 @@
           ASSESSOR_LISTING_VARIANCE_AND_LOCALITY_CAVEAT:
             'CAUTION: ATTOM and listing building specifications disagree, and this Carmel-area address must not be represented as an address inside Carmel-by-the-Sea city proper.',
           ASSESSOR_BUILDER_AREA_VARIANCE:
-            'CAUTION: ATTOM building area differs from builder-sourced listing area; sources are not interchangeable.'
+            'CAUTION: ATTOM building area differs from builder-sourced listing area; sources are not interchangeable.',
+          ASSESSOR_LISTING_VARIANCE_NEWPORT:
+            'CAUTION: ATTOM and the public listing disagree about bedrooms and living area. The provider record has not been reconciled with the listing.'
         })[recordReviewFlag] || '';
         setText('physical-facts-source', recordReviewMessage
           ? 'ATTOM reference parcel verified privately. ' + recordReviewMessage +
@@ -582,9 +590,14 @@
             ? 'Independent ATTOM reference parcel for this research area only. Fictional client ownership is not asserted. Real building characteristics are not published; mansion image is AI-generated.'
             : 'ATTOM reference parcel verified privately; its characteristics are withheld pending public-display clearance. This map marker represents an area, not the verified parcel boundary. Mansion image is AI-generated.');
       } else {
-        setText('physical-facts-source', syntheticClient
-          ? 'No verified ATTOM physical characteristics for this illustrative client location.'
-          : 'Physical characteristics shown above are illustrative demo fixtures, not verified ATTOM figures.');
+        setText('physical-facts-source',
+          currentEvidenceState === 'IDENTITY_MISMATCH_REPLACEMENT_PENDING'
+            ? 'A prior ATTOM lookup was rejected on address identity. No provider record was retained or assigned to this fictional client; a different parcel requires separate verification.'
+            : currentEvidenceState === 'PREPARED_UNUSED_APPROVAL_REQUIRED'
+              ? 'Property lookup packet prepared privately but not executed; physical facts remain unavailable until independent identity verification and publication clearance.'
+              : syntheticClient
+                ? 'No verified ATTOM physical characteristics for this illustrative client location.'
+                : 'Physical characteristics shown above are illustrative demo fixtures, not verified ATTOM figures.');
       }
     }
     renderClientProfile(property.id);
