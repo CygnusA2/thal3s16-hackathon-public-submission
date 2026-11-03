@@ -4,16 +4,17 @@
   "scope": {
     "active_property_markers": 30,
     "ai_generated_photographs": 30,
-    "verified_private_research_reference_markers": 18,
-    "pending_research_reference_markers": 12,
+    "verified_private_research_reference_markers": 22,
+    "pending_research_reference_markers": 8,
     "published_licensed_attom_facts": 0,
     "archived_original_demo_markers": 5,
     "archived_unique_reference_parcels_excluded_from_active_scope": 2,
-    "previously_verified_private_parcels_in_historical_35_scope": 20,
+    "previously_verified_private_parcels_in_historical_35_scope": 24,
     "verified_private_identity_only_records": 1,
-    "consumed_attom_approvals_historical": 26
+    "consumed_attom_approvals_historical": 32,
+    "failed_closed_attempts_historical": 6
   },
-  "governing_policy": "Exactly 30 fictional-client markers and 30 distinct AI mansion illustrations. ATTOM matches are independent private reference parcels, NOT clients' owned real estate. 18 of 30 area references have provider-verified identities; Orinda identity is matched but building facts are entirely unavailable; licensed records remain private.",
+  "governing_policy": "Exactly 30 synthetic client markers paired with 30 distinct AI-generated fictional mansions. 22 of 30 regional references have independently verified ATTOM parcel identities, including one Orinda parcel with all building characteristics absent. Eight remain; Atherton second parcel failed identity validation. ATTOM provider measurements remain private, no real-client ownership, no changes to synthetic credit or benchmark.",
   "archived_evidence": "Five historical original-demo markers excluded from the active 30. All historical ATTOM approvals, receipts and source records remain intact and unmodified in Hermes. Three matching-area references are reused as research-reference associations. A separate Malibu parcel and La Jolla parcel remain archived outside the 30-target program.",
   "audit_rules": [
     "Any new provider call requires its own fresh one-use founder terminal authorization",
@@ -178,10 +179,12 @@
       "target_area": "San Francisco",
       "illustrative_location": "San Francisco, California",
       "verified_address": null,
-      "private_attom_stage": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
+      "private_attom_stage": "PRIVATE_DETAIL_VERIFIED",
       "public_attom_facts": "NOT_PUBLISHED",
       "financial_scenario": "SYNTHETIC_UNCHANGED",
-      "batch": "C3"
+      "batch": "C3",
+      "source_record_vintage": "2026-11-02",
+      "private_evidence_note": "Independent first San Francisco-area reference parcel privately identity-verified 2026-11-03; provider record freshness supported, physical facts retained privately, no fictional-client ownership asserted."
     },
     {
       "marker_id": "cf30-012",
@@ -189,10 +192,12 @@
       "target_area": "San Francisco",
       "illustrative_location": "San Francisco, California",
       "verified_address": null,
-      "private_attom_stage": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
+      "private_attom_stage": "PRIVATE_DETAIL_VERIFIED",
       "public_attom_facts": "NOT_PUBLISHED",
       "financial_scenario": "SYNTHETIC_UNCHANGED",
-      "batch": "C3"
+      "batch": "C3",
+      "source_record_vintage": "2026-10-29",
+      "private_evidence_note": "Independent second San Francisco-area reference parcel privately identity-verified 2026-11-03; distinct address and digest from other 94115 references. Licensed data private, fictional-client ownership not implied."
     },
     {
       "marker_id": "cf30-013",
@@ -250,10 +255,15 @@
       "target_area": "Hillsborough",
       "illustrative_location": "Hillsborough, California (San Mateo County)",
       "verified_address": null,
-      "private_attom_stage": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
+      "private_attom_stage": "PRIVATE_DETAIL_VERIFIED",
       "public_attom_facts": "NOT_PUBLISHED",
       "financial_scenario": "SYNTHETIC_UNCHANGED",
-      "batch": "C4"
+      "batch": "C4",
+      "source_record_vintage": "2026-09-21",
+      "private_evidence_missing_fields": [
+        "bathrooms"
+      ],
+      "private_evidence_note": "Independent second Hillsborough-area parcel privately identity-verified 2026-11-03. Distinct from prior Hillsborough reference despite shared ZIP; bathrooms not provided by ATTOM. No licensed fields published and no fictional-client ownership implied."
     },
     {
       "marker_id": "cf30-017",
@@ -274,10 +284,11 @@
       "target_area": "Atherton",
       "illustrative_location": "Atherton, California (San Mateo County)",
       "verified_address": null,
-      "private_attom_stage": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
+      "private_attom_stage": "IDENTITY_MISMATCH_REPLACEMENT_PENDING",
       "public_attom_facts": "NOT_PUBLISHED",
       "financial_scenario": "SYNTHETIC_UNCHANGED",
-      "batch": "C4"
+      "batch": "C4",
+      "private_evidence_note": "Second Atherton parcel candidate returned an ATTOM response but failed exact canonical-address identity verification on 2026-11-03; approval consumed; no mapped provider source or licensed data retained. Requires a different authorized candidate, not a retry."
     },
     {
       "marker_id": "cf30-019",
@@ -349,11 +360,16 @@
       "target_area": "Tiburon",
       "illustrative_location": "Tiburon, California (Marin County)",
       "verified_address": null,
-      "private_attom_stage": "PREPARED_UNUSED_APPROVAL_REQUIRED",
+      "private_attom_stage": "PRIVATE_DETAIL_VERIFIED",
       "public_attom_facts": "NOT_PUBLISHED",
       "financial_scenario": "SYNTHETIC_UNCHANGED",
       "batch": "C5",
-      "private_evidence_note": "Earlier Tiburon candidate failed canonical provider-address identity validation; approval permanently burned with no retained source. A distinct Tiburon candidate packet is prepared with an unused digest for separate founder approval; no request made."
+      "private_evidence_note": "Independent Tiburon-area parcel privately verified on 2026-11-03 under the ATTOM provider's canonical Belvedere Tiburon locality; earlier failed identity requests remain consumed. Bathrooms unavailable; assessor and public listing living area disagree. No fictional-client ownership or permitted public property facts asserted.",
+      "source_record_vintage": "2026-09-29",
+      "private_evidence_missing_fields": [
+        "bathrooms"
+      ],
+      "private_evidence_review_flag": "ASSESSOR_LISTING_AREA_VARIANCE_TIBURON"
     },
     {
       "marker_id": "cf30-025",
