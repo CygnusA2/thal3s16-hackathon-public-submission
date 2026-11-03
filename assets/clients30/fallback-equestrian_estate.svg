@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-label="Illustrative original artwork: equestrian estate with stable and paddock. Not a photograph and not any client's actual property.">
+  <title>ILLUSTRATIVE — EQUESTRIAN ESTATE</title>
+  <desc>Original deterministic vector artwork (THAL3S16 SprintVis S01 fallback art). ILLUSTRATIVE only; does not depict any real or client property.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fdf6ec"/><stop offset="1" stop-color="#f3e5cd"/></linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#sky)"/>
+  <circle cx="1330" cy="180" r="90" fill="#e8b04b"/>  <path d="M0,680 Q500,600 1100,660 T1600,630 L1600,1000 L0,1000 Z" fill="#c9d8b0"/>  <g><rect x="980" y="380" width="300" height="180" fill="#f7f3ea" stroke="#3e3a34" stroke-width="4"/><polygon points="960,380 1130,300 1300,380" fill="#8a5a3b" stroke="#3e3a34" stroke-width="4"/><rect x="1060" y="450" width="120" height="110" fill="#3e3a34"/></g><rect x="80" y="600" width="12" height="70" fill="#a9825a"/><rect x="220" y="600" width="12" height="70" fill="#a9825a"/><rect x="360" y="600" width="12" height="70" fill="#a9825a"/><rect x="500" y="600" width="12" height="70" fill="#a9825a"/><rect x="640" y="600" width="12" height="70" fill="#a9825a"/><rect x="780" y="600" width="12" height="70" fill="#a9825a"/>  <rect x="80" y="628" width="712" height="8" fill="#a9825a"/>  <g transform="translate(420,660)"><ellipse cx="0" cy="-38" rx="88" ry="34" fill="#7a5c3e"/><rect x="-14" y="-70" width="26" height="52" fill="#7a5c3e"/><ellipse cx="76" cy="-46" rx="26" ry="18" fill="#7a5c3e"/><path d="M-84,-38 l-26,-10 M-84,-30 l-28,2" stroke="#7a5c3e" stroke-width="10" stroke-linecap="round"/><rect x="-58" y="-8" width="12" height="46" fill="#5e4630"/><rect x="40" y="-8" width="12" height="46" fill="#5e4630"/></g>  <g transform="translate(250,640) scale(1.1)"><rect x="-10" y="-70" width="20" height="80" fill="#a9825a"/><circle cx="0" cy="-105" r="58" fill="#7d9a68"/><circle cx="-40" cy="-80" r="40" fill="#9fb380"/><circle cx="42" cy="-82" r="38" fill="#9fb380"/></g>
+  <g font-family="Georgia, 'Times New Roman', serif" fill="#3e3a34">
+    <text x="80" y="930" font-size="44" letter-spacing="6">ILLUSTRATIVE</text>
+    <text x="80" y="972" font-size="20" letter-spacing="2">ORIGINAL ARTWORK — EQUESTRIAN ESTATE WITH STABLE AND PADDOCK — NOT A PHOTOGRAPH, NOT ANY CLIENT&apos;S ACTUAL PROPERTY</text>
+  </g>
+</svg>
