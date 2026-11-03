@@ -511,6 +511,8 @@
             'CAUTION: ATTOM building area differs from builder-sourced listing area; sources are not interchangeable.',
           ASSESSOR_LISTING_VARIANCE_NEWPORT:
             'CAUTION: ATTOM and the public listing disagree about bedrooms and living area. The provider record has not been reconciled with the listing.',
+          ASSESSOR_LISTING_AREA_VARIANCE_TIBURON:
+            'CAUTION: ATTOM and public listing living-area figures differ for this independently matched Tiburon reference. No source substitution is authorized.',
           ATTOM_PARCEL_IDENTITY_ONLY_ALL_BUILDING_FACTS_UNAVAILABLE:
             'CAUTION: ATTOM verified the parcel identity but returned no bedrooms, bathrooms, living area, or year built. Listing figures must not be treated as ATTOM evidence.'
         })[recordReviewFlag] || '';
