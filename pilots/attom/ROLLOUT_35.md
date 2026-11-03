@@ -1,7 +1,7 @@
 # Thirty-five marker rollout: ATTOM property intelligence
 
 **Scope: all 30 fictional clients + all five original demonstration markers.**
-On 3 November 2026, **11** ATTOM area-reference parcels were verified privately. Five cover the original demo areas; six independent real parcels serve as illustrations for fictional-client geographic regions, **without any ownership or lending relationship**. **Zero** licensed property values have been published. The other **24** marker targets have no verified reference parcel. Two earlier requests failed closed without retained mapped provider evidence.
+On 3 November 2026, **16** ATTOM area-reference parcels were verified privately. Five cover the original demo areas; eleven distinct real parcels serve as research references for fictional-client geographic regions, **without an ownership or lending relationship**. **Zero** licensed ATTOM property values have been published. The other **19** marker targets have no verified reference parcel. Two earlier requests failed closed without retained mapped provider evidence.
 
 [Open the status manifest](./portfolio-35-manifest.json). Every marker has a stable ID and a target *area*, not an invented street address.
 
@@ -67,3 +67,16 @@ Cumulative tracker: **11/35 privately verified reference areas, 24/35 pending, 0
 **Next proposed new-area targets, not yet matched or authorized:** `cf30-008` Pacific Heights, `cf30-009` Los Gatos, `cf30-010` Oakland, `cf30-013` Carmel-by-the-Sea, `cf30-014` Bel Air. The operator must independently select and verify one real residential parcel in each area, obtain a separate one-use approval per lookup, and retain any licensed evidence privately. Existing unused plans remain intact.
 
 **Release gate:** Public values require account-specific redistribution permission and field-level review. Nothing in this tracker authorizes publishing licensed ATTOM building attributes, address records, AVM amounts or owner information.
+
+## R14 Batch 3 · privately validated · 2026-11-03
+
+Five additional independently approved and consumed ATTOM `property/detail` lookups were reported successful and registered in the private R14 engineering route (commit `b075647`): `cf30-008` Pacific Heights, `cf30-009` Los Gatos, `cf30-010` Oakland Hills, `cf30-013` Carmel area, `cf30-014` Bel Air. The real addresses, licensed provider IDs, physical attributes and raw responses remain in the private evidence boundary. These are independently verified reference parcels, not the fictional borrowers' homes, and the mansion pictures are AI-generated illustrations.
+
+- **Missing provider fields:** Bedroom count absent for Pacific Heights; bathroom count absent for Oakland Hills and Carmel. AVM and sale/assessment valuation fields are unavailable from these Property Detail responses, not silently filled from other sources.
+- **Carmel:** The provider and public listing disagree on physical-characteristic measures. Preserve the Carmel-area versus Carmel-by-the-Sea municipality locality caveat; do not present a verified postal-area parcel as inside the city's address-free street system.
+- **Bel Air:** Provider and builder-sourced MLS living-area descriptions differ; no source overrides the other without a documented reconciliation.
+- **Evidence accounting:** 16/35 privately verified research reference parcels, 19 pending geographic targets, zero published licensed ATTOM values; Hermes reported 20 consumed founder approvals across R12/R13/R14, with all historical ledgers and receipts preserved.
+- **Next five *correct* unverified marker target areas**, pending independent address selection and one-use approvals: `cf30-015` Orinda, `cf30-017` San Marino, `cf30-022` Newport Beach, `cf30-024` Tiburon, `cf30-025` Saratoga. No provider lookups are authorized by this plan.
+- **Incorrect older candidate-label associations:** `cf30-011` is San Francisco (not Palo Alto), `cf30-016` Hillsborough (not Santa Barbara), `cf30-020` Bel Air (not Newport Beach), and `cf30-021` is an already-verified Malibu research reference. Always derive area, ID and pending state from the current 35-marker manifest.
+
+**Release boundary unchanged:** the GitHub Pages demo contains only anonymized status/provenance labels, not the licensed property measurements, ATTOM credentials, ownership records, AVM amounts or unreviewed address facts. Provider rights for publication must be confirmed in writing before any restricted data are copied to the public frontend.
