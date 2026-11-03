@@ -1,7 +1,8 @@
 'use strict';
-/* FINAL 30 fictional-client property markers — private ATTOM verification status only.
-   No licensed provider values, ATTOM IDs, real owner data, API credentials, or actual client affiliations.
-   Independently matched real parcels are unrelated reference identities for synthetic regions. */
+/* Public-safe provenance only: 30 fictional client regions, 29 independent
+   real-parcel ATTOM identities privately verified, Somis pending separately approved call.
+   No licensed measurements, owner data, parcel IDs or API credentials published.
+   These real references do not depict the AI houses or imply fictional client ownership. */
 window.THAL3S_ATTOM_EVIDENCE = Object.freeze({
   schema_version: 'thal3s16-attom-evidence-ui-v2-30',
   active_marker_count: 30,
@@ -32,10 +33,10 @@ window.THAL3S_ATTOM_EVIDENCE = Object.freeze({
   "cf30-024": "PRIVATE_DETAIL_VERIFIED",
   "cf30-025": "PRIVATE_DETAIL_VERIFIED",
   "cf30-026": "PRIVATE_DETAIL_VERIFIED",
-  "cf30-027": "PREPARED_UNUSED_APPROVAL_REQUIRED",
-  "cf30-028": "HTTP_FAILURE_REPLACEMENT_PENDING",
+  "cf30-027": "PRIVATE_DETAIL_VERIFIED",
+  "cf30-028": "PREPARED_UNUSED_APPROVAL_REQUIRED",
   "cf30-029": "PRIVATE_DETAIL_VERIFIED",
-  "cf30-030": "PREPARED_UNUSED_APPROVAL_REQUIRED"
+  "cf30-030": "PRIVATE_DETAIL_VERIFIED"
 },
   markerReviewFlags: {
   "cf30-007": "ASSESSOR_RECORD_LAG_REDEVELOPMENT",
@@ -45,7 +46,8 @@ window.THAL3S_ATTOM_EVIDENCE = Object.freeze({
   "cf30-022": "ASSESSOR_LISTING_VARIANCE_NEWPORT",
   "cf30-024": "ASSESSOR_LISTING_AREA_VARIANCE_TIBURON",
   "cf30-026": "ASSESSOR_LISTING_VARIANCE_ST_HELENA",
-  "cf30-029": "ASSESSOR_RECORD_LAG_NAPA"
+  "cf30-029": "ASSESSOR_RECORD_LAG_NAPA",
+  "cf30-030": "ASSESSOR_LISTING_AREA_VARIANCE_NICASIO"
 },
   publishedFacts: Object.freeze({})
 });
