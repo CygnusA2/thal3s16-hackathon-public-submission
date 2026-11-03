@@ -1,0 +1,31 @@
+{
+  "schema_version": "attom-three-candidate-pilot-v1",
+  "status": "PUBLIC_LISTINGS_FOUND__ATTOM_NOT_QUERIED",
+  "note": "Candidate addresses independently observed in public listings. Not ATTOM-verified, not linked to synthetic client values, and no ATTOM data publicly displayed.",
+  "candidates": [
+    {
+      "id": "beverly-hills",
+      "address1": "1005 Schuyler Rd",
+      "address2": "Beverly Hills, CA 90210",
+      "public_reference": "https://www.realtor.com/realestateandhomes-detail/1005-Schuyler-Rd_Beverly-Hills_CA_90210_M21465-63918",
+      "attom_verified": false,
+      "display_rights_for_attom": false
+    },
+    {
+      "id": "palo-alto",
+      "address1": "618 Tennyson Ave",
+      "address2": "Palo Alto, CA 94301",
+      "public_reference": "https://www.mlslistings.com/Property/ML82055387/618-tennyson-ave-palo-alto-ca-94301?view=md",
+      "attom_verified": false,
+      "display_rights_for_attom": false
+    },
+    {
+      "id": "montecito",
+      "address1": "999 Romero Canyon Rd",
+      "address2": "Montecito, CA 93108",
+      "public_reference": "https://www.realtor.com/realestateandhomes-detail/999-Romero-Canyon-Rd_Montecito_CA_93108_M95754-18223",
+      "attom_verified": false,
+      "display_rights_for_attom": false
+    }
+  ]
+}
