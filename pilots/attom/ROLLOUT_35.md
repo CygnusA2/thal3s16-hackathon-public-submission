@@ -1,3 +1,5 @@
+> **HISTORICAL ARCHIVE — SUPERSEDED 3 NOVEMBER 2026.** Founder final scope is **30 fictional client markers, 30 AI-generated house photographs, 16 independently verified private reference-area parcels and 14 pending**, not 35. Do **not** prepare or authorize work based on this obsolete rollout. Use [the active 30-property plan](./ROLLOUT_30.md) and [the active 30-marker manifest](./portfolio-30-manifest.json). The five original-demo records remain preserved solely for historical evidence; no private state or prior approvals were reset.
+
 # Thirty-five marker rollout: ATTOM property intelligence
 
 **Scope: all 30 fictional clients + all five original demonstration markers.**
