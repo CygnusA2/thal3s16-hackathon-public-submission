@@ -4,6 +4,10 @@
 
 THAL3S 16 explores how to assess the liquidity potential of illiquid collateral while keeping financial calculations and lending authority outside the language model.
 
+## Watch the live demonstration
+
+**[33-second THAL3S 16 California demo video](assets/launch/THAL3S16_California_Live_Demo_33s.mp4)** — recorded from the actual public browser interface: real Google Satellite, 30 synthetic California property scenarios, AI-generated mansion imagery, a completed seven-stage assessment, and a blocked-case example. The video is silent with captions; it is not a real loan, credit decision, funding transaction or actual property photograph.
+
 ## Start with these three documents
 
 1. **[Executive Summary](docs/THAL3S16-EXECUTIVE-SUMMARY.md)** — the problem, solution and measured findings in plain English.
