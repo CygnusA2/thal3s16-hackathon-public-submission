@@ -1,7 +1,7 @@
 # Thirty-five marker rollout: ATTOM property intelligence
 
 **Scope: all 30 fictional clients + all five original demonstration markers.**
-On 3 November 2026, **two** original markers (Beverly Hills and Palo Alto) have privately verified, persisted ATTOM `property/detail` records; **zero** licensed ATTOM physical-characteristic values have been published. The remaining **33** map markers have no verified property-detail record. The first Montecito candidate returned HTTP 200 but failed its canonical-address identity match and yielded no retained source.
+On 3 November 2026, **six** area-reference parcels have been privately verified against ATTOM Property Detail. Five cover the original demo areas; the sixth is a separate Malibu reference parcel illustrated alongside fictional client marker `cf30-021`, with **no claimed ownership link**. **Zero** licensed ATTOM property values have been published. The remaining **29** markers have no verified reference parcel. The prior Montecito candidate mismatch and Palo Alto HTTP failure yielded no mapped source.
 
 [Open the status manifest](./portfolio-35-manifest.json). Every marker has a stable ID and a target *area*, not an invented street address.
 
@@ -42,3 +42,12 @@ The existing ATTOM key stays on Hermes at its protected path; never embed it in 
 - **R14** (private commit `f754297`): plan filenames keyed by request digest, identity crosschecks keyed by exact street address and ZIP; per-request independent founder authorizations retained.
 - **Five pending candidates:** two Malibu-area, one La Jolla, one Santa Barbara/Montecito-area replacement, and an additional Palo Alto parcel. None are ATTOM-verified and none advance marker status until their own authorized request and identity verification.
 - **Public publication boundary:** 2/35 privately verified, 0/35 licensed records cleared for display. No private source records, credentials, owner information or licensed values in this repository.
+
+## R14 batch 1 status · 3 November 2026
+
+- **Six verified private ATTOM Property Detail records**: Beverly Hills, Palo Alto, Montecito/Santa Barbara area, La Jolla and two independent Malibu parcels. Five are associated with the five original demo *areas*; the additional Malibu parcel is paired with fictional marker `cf30-021` **for illustration only**. No borrower ownership or affiliation with that parcel is asserted, and the map marker is not a surveyed parcel pin.
+- **Two rejected attempts across prior batches**: 93 Seaview Dr (canonical address identity mismatch), and 134 Seale Ave (HTTP failure). Their one-shot approvals are consumed; neither produced a retained mapped provider record and neither can be silently reused.
+- **Incomplete licensed fields**: bathrooms unavailable in two of the new mapped property-detail records; AVM estimates, dates and sale/assessment fields remain unavailable from this route for the new records. No missing value is inferred from the AI house or synthetic portfolio.
+- **Progress accounting**: 6 / 35 research reference targets privately verified, 29 / 35 awaiting distinct verified reference parcels, 0 / 35 licensed property values publicly disclosed.
+- **Next five packets prepared, not executed**: 636 Waverley St (Palo Alto), 6649 Zumirez Dr (Malibu), 8575 La Jolla Scenic Dr N, 5736 Soledad Mountain Rd (La Jolla), and 1588 E Valley Rd (Santa Barbara/Montecito). These are **additional area candidates**, not five new distinct marker completions. For efficient coverage of the 29 pending markers, prioritize new regions such as Atherton, Woodside, Hillsborough and Pasadena before optional duplicates. Keep every existing immutable plan untouched.
+- **Rights restriction**: private internal-evaluation evidence only; public website displays a sanitized verification status with no ATTOM bedroom, bathroom, year, area, AVM, sale or owner values.

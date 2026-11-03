@@ -5,12 +5,15 @@
     "total_map_markers": 35,
     "fictional_clients": 30,
     "original_demo_markers": 5,
-    "privately_verified_property_detail_records": 2,
+    "privately_verified_property_detail_records": 6,
     "publicly_published_attom_property_records": 0,
-    "pending_unique_marker_targets": 33,
-    "identity_mismatch_attempts": 1
+    "pending_unique_marker_targets": 29,
+    "identity_mismatch_attempts": 1,
+    "failed_closed_attempts": 2,
+    "privately_verified_original_demo_markers": 5,
+    "privately_verified_fictional_research_reference_markers": 1
   },
-  "important_notice": "Marker coordinates and AI-generated photos do not prove a real parcel. All fictional client financial calculations remain synthetic. ATTOM records cannot be disclosed publicly unless specifically licensed and reviewed.",
+  "important_notice": "Six genuine ATTOM parcels have been privately verified. Five are independent reference parcels for the five original demo areas; an additional Malibu parcel is illustratively associated with cf30-021. No fictional borrower is asserted to own, hold, finance, or occupy any real parcel. The map coordinates and AI photos do not identify the verified parcels. No licensed ATTOM values are published.",
   "gates": [
     "verified_unique_real_parcel_identity",
     "exact_address_agreement",
@@ -41,10 +44,12 @@
       "target_area": "Malibu",
       "illustrative_location": "Malibu, CA",
       "verified_address": null,
-      "private_attom_stage": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
+      "private_attom_stage": "PRIVATE_DETAIL_VERIFIED",
       "public_attom_facts": "NOT_PUBLISHED",
       "financial_scenario": "SYNTHETIC_UNCHANGED",
-      "batch": "B2_ORIGINAL_REMAINING"
+      "batch": "B2_ORIGINAL_REMAINING",
+      "private_evidence_note": "Malibu-area ATTOM reference parcel verified privately in R14 batch 1; the photo is an illustration and the public lending figures remain synthetic.",
+      "source_record_vintage": "2026-09-29"
     },
     {
       "marker_id": "montecito",
@@ -52,11 +57,12 @@
       "target_area": "Montecito",
       "illustrative_location": "Montecito, CA",
       "verified_address": null,
-      "private_attom_stage": "IDENTITY_MISMATCH_REPLACEMENT_PENDING",
+      "private_attom_stage": "PRIVATE_DETAIL_VERIFIED",
       "public_attom_facts": "NOT_PUBLISHED",
       "financial_scenario": "SYNTHETIC_UNCHANGED",
       "batch": "B1_PILOT",
-      "private_evidence_note": "First candidate returned HTTP 200 but failed canonical address identity. No source persisted; separately scoped replacement candidate prepared, not executed."
+      "private_evidence_note": "Montecito-area reference parcel verified privately in the R14 batch 1, using assessor-locality Santa Barbara; first Montecito candidate was rejected. Neither AI house nor map marker identifies this parcel.",
+      "source_record_vintage": "2026-09-29"
     },
     {
       "marker_id": "palo-alto",
@@ -77,10 +83,12 @@
       "target_area": "La Jolla",
       "illustrative_location": "La Jolla, CA",
       "verified_address": null,
-      "private_attom_stage": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
+      "private_attom_stage": "PRIVATE_DETAIL_VERIFIED",
       "public_attom_facts": "NOT_PUBLISHED",
       "financial_scenario": "SYNTHETIC_UNCHANGED",
-      "batch": "B2_ORIGINAL_REMAINING"
+      "batch": "B2_ORIGINAL_REMAINING",
+      "private_evidence_note": "La Jolla-area ATTOM reference parcel verified privately in R14 batch 1; the photo and map marker are illustrative.",
+      "source_record_vintage": "2026-09-29"
     },
     {
       "marker_id": "cf30-001",
@@ -308,10 +316,13 @@
       "target_area": "Malibu",
       "illustrative_location": "Malibu, California (Los Angeles County)",
       "verified_address": null,
-      "private_attom_stage": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
+      "private_attom_stage": "PRIVATE_DETAIL_VERIFIED",
       "public_attom_facts": "NOT_PUBLISHED",
       "financial_scenario": "SYNTHETIC_UNCHANGED",
-      "batch": "C5"
+      "batch": "C5",
+      "private_evidence_note": "Second distinct Malibu-area ATTOM reference parcel verified privately in R14 batch 1, paired for an illustrative research example only; fictional client has no established ownership or affiliation.",
+      "source_record_vintage": "2026-11-02",
+      "illustrative_reference_pairing": "REAL_PARCEL_NOT_OWNED_BY_FICTIONAL_CLIENT"
     },
     {
       "marker_id": "cf30-022",
