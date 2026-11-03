@@ -1,8 +1,7 @@
 'use strict';
-/* Final 30-marker synthetic client research demonstration.
-   Provider-verified independent parcel identities are stored privately on Hermes;
-   these labels make no client ownership, occupancy, photographic or lending claim.
-   No licensed ATTOM property measurements or credentials are published. */
+/* FINAL 30 fictional-client property markers — private ATTOM verification status only.
+   No licensed provider values, ATTOM IDs, real owner data, API credentials, or actual client affiliations.
+   Independently matched real parcels are unrelated reference identities for synthetic regions. */
 window.THAL3S_ATTOM_EVIDENCE = Object.freeze({
   schema_version: 'thal3s16-attom-evidence-ui-v2-30',
   active_marker_count: 30,
@@ -24,19 +23,19 @@ window.THAL3S_ATTOM_EVIDENCE = Object.freeze({
   "cf30-015": "PRIVATE_DETAIL_VERIFIED",
   "cf30-016": "PRIVATE_DETAIL_VERIFIED",
   "cf30-017": "PRIVATE_DETAIL_VERIFIED",
-  "cf30-018": "IDENTITY_MISMATCH_REPLACEMENT_PENDING",
-  "cf30-019": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
-  "cf30-020": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
+  "cf30-018": "PRIVATE_DETAIL_VERIFIED",
+  "cf30-019": "PRIVATE_DETAIL_VERIFIED",
+  "cf30-020": "PRIVATE_DETAIL_VERIFIED",
   "cf30-021": "PRIVATE_DETAIL_VERIFIED",
   "cf30-022": "PRIVATE_DETAIL_VERIFIED",
   "cf30-023": "PRIVATE_DETAIL_VERIFIED",
   "cf30-024": "PRIVATE_DETAIL_VERIFIED",
   "cf30-025": "PRIVATE_DETAIL_VERIFIED",
-  "cf30-026": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
-  "cf30-027": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
-  "cf30-028": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
-  "cf30-029": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
-  "cf30-030": "NEEDS_ADDRESS_AND_PARCEL_MATCH"
+  "cf30-026": "PRIVATE_DETAIL_VERIFIED",
+  "cf30-027": "PREPARED_UNUSED_APPROVAL_REQUIRED",
+  "cf30-028": "HTTP_FAILURE_REPLACEMENT_PENDING",
+  "cf30-029": "PRIVATE_DETAIL_VERIFIED",
+  "cf30-030": "PREPARED_UNUSED_APPROVAL_REQUIRED"
 },
   markerReviewFlags: {
   "cf30-007": "ASSESSOR_RECORD_LAG_REDEVELOPMENT",
@@ -44,7 +43,9 @@ window.THAL3S_ATTOM_EVIDENCE = Object.freeze({
   "cf30-014": "ASSESSOR_BUILDER_AREA_VARIANCE",
   "cf30-015": "ATTOM_PARCEL_IDENTITY_ONLY_ALL_BUILDING_FACTS_UNAVAILABLE",
   "cf30-022": "ASSESSOR_LISTING_VARIANCE_NEWPORT",
-  "cf30-024": "ASSESSOR_LISTING_AREA_VARIANCE_TIBURON"
+  "cf30-024": "ASSESSOR_LISTING_AREA_VARIANCE_TIBURON",
+  "cf30-026": "ASSESSOR_LISTING_VARIANCE_ST_HELENA",
+  "cf30-029": "ASSESSOR_RECORD_LAG_NAPA"
 },
   publishedFacts: Object.freeze({})
 });
