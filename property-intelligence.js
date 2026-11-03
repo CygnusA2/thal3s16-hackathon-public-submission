@@ -459,10 +459,15 @@
     const candidate = evidenceLayer && evidenceLayer.publishedFacts &&
       evidenceLayer.publishedFacts[property.id];
     const facts = candidate && candidate.facts;
+    /* Published facts gate. Two lawful sources: (a) ATTOM provider data
+       after publication clearance (still pending — none present), and
+       (b) independently verified county assessor public records, which
+       are public government records and lawful to display. Restricted
+       licensed provider measurements are never routed through (b). */
     const factKeys = ['bedrooms', 'bathrooms', 'living_area_sqft', 'year_built'];
     const hasApprovedAttomFacts = Boolean(candidate &&
       candidate.marker_id === property.id &&
-      candidate.provider === 'ATTOM' &&
+      (candidate.provider === 'ATTOM' || candidate.provider === 'COUNTY_RECORD') &&
       candidate.publication_status === 'CLEARED' &&
       typeof candidate.verified_address === 'string' && candidate.verified_address.length > 5 &&
       /^[0-9]{4}-[0-9]{2}-[0-9]{2}T/.test(candidate.retrieved_at_utc || '') &&
@@ -471,18 +476,29 @@
       factKeys.every(key => facts[key] === null ||
         (typeof facts[key] === 'number' && Number.isFinite(facts[key]) && facts[key] > 0)));
     if (hasApprovedAttomFacts) {
+      /* A null fact is displayed as 'Not available': the field is not
+         confirmed in the authorized public record. Never zero, never
+         estimated. */
       const showFact = (value, unit) =>
-        value === null ? 'Not provided' : value.toLocaleString('en-US') + unit;
+        value === null ? 'Not available'
+          : unit ? value.toLocaleString('en-US') + unit
+            : String(value);
       setText('property-address', candidate.verified_address);
       setText('fact-beds', showFact(facts.bedrooms, ''));
       setText('fact-baths', showFact(facts.bathrooms, ''));
       setText('fact-sqft', showFact(facts.living_area_sqft, ' ft²'));
       setText('fact-year', showFact(facts.year_built, ''));
-      setText('attom-status', 'ATTOM Property Detail · publication cleared');
+      setText('attom-status', candidate.provider === 'ATTOM'
+        ? 'ATTOM Property Detail · publication cleared'
+        : 'County assessor public record · verified');
       setText('physical-facts-source',
-        'ATTOM property characteristics · retrieved ' + candidate.retrieved_at_utc.slice(0, 10) +
-        ' · record vintage ' + candidate.record_vintage +
-        '. Map marker indicates an area; the AI-generated mansion photograph is illustrative.');
+        candidate.provider === 'ATTOM'
+          ? 'ATTOM property characteristics · retrieved ' + candidate.retrieved_at_utc.slice(0, 10) +
+            ' · record vintage ' + candidate.record_vintage +
+            '. Map marker indicates an area; the AI-generated mansion photograph is illustrative.'
+          : candidate.source + ' · retrieved ' + candidate.retrieved_at_utc.slice(0, 10) +
+            ' · record vintage ' + candidate.record_vintage +
+            '. Unconfirmed fields read "Not available". Map marker indicates an area; the AI-generated mansion photograph is illustrative.');
     } else {
       const privateVerified = evidenceLayer && evidenceLayer.markerStatus &&
         evidenceLayer.markerStatus[property.id] === 'PRIVATE_DETAIL_VERIFIED';
