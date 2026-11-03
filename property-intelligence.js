@@ -565,9 +565,13 @@
         for (const id of ['fact-beds', 'fact-baths', 'fact-sqft', 'fact-year']) {
           setText(id, 'Not published');
         }
-        setText('physical-facts-source', syntheticClient
-          ? 'Independent ATTOM reference parcel for this research area only. Fictional client ownership is not asserted. Real building characteristics are not published; mansion image is AI-generated.'
-          : 'ATTOM reference parcel verified privately; its characteristics are withheld pending public-display clearance. This map marker represents an area, not the verified parcel boundary. Mansion image is AI-generated.');
+        const recordReviewFlag = evidenceLayer && evidenceLayer.markerReviewFlags &&
+          evidenceLayer.markerReviewFlags[property.id];
+        setText('physical-facts-source', recordReviewFlag === 'ASSESSOR_RECORD_LAG_REDEVELOPMENT'
+          ? 'ATTOM reference parcel verified privately. CAUTION: assessor building information may predate redevelopment; newer listing characteristics are not ATTOM-verified. The real facts remain unpublished and no fictional client ownership is asserted.'
+          : syntheticClient
+            ? 'Independent ATTOM reference parcel for this research area only. Fictional client ownership is not asserted. Real building characteristics are not published; mansion image is AI-generated.'
+            : 'ATTOM reference parcel verified privately; its characteristics are withheld pending public-display clearance. This map marker represents an area, not the verified parcel boundary. Mansion image is AI-generated.');
       } else {
         setText('physical-facts-source', syntheticClient
           ? 'No verified ATTOM physical characteristics for this illustrative client location.'
