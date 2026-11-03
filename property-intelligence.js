@@ -635,9 +635,17 @@
     finalCard.hidden = false;
     void finalCard.offsetWidth;
     finalCard.classList.add('show');
-    setText('assessment-title', 'Indicative liquidity identified · human review required');
-    /* THAL3S_CLIENTS30: final signal derives from the applied flow */
+    /* The synthetic case's decision state controls the completion heading.
+       A blocked collateral case must NEVER be labelled "liquidity identified". */
     const fp = judgeFlow && judgeFlow.payload;
+    const blocked = fp && fp.capacity_state === 'BLOCKED';
+    const reviewOnly = fp && fp.capacity_state === 'REVIEW_REQUIRED';
+    setText('assessment-title', blocked
+      ? 'Liquidity capacity blocked · human review required'
+      : reviewOnly
+        ? 'Liquidity flagged for mandatory human review'
+        : 'Indicative liquidity identified · human review required');
+    /* THAL3S_CLIENTS30: final signal derives from the applied flow */
     setText('assessment-signal', fp ? (
       (fp.capacity_state === 'BLOCKED'
         ? 'Evidence gate BLOCKED · $0 / BLOCKED · human review required'
@@ -648,7 +656,9 @@
     ) : 'Assessment complete · human review required');
     setText('outcome-status', 'HUMAN REVIEW REQUIRED');
     setText('outcome-evidence', judgeFlow ? 'RECONCILED / PRIVATE' : 'MAPPED / PRIVATE');
-    setText('run-context', 'Indicative liquidity identified');
+    setText('run-context', blocked ? 'BLOCKED · no indicative capacity'
+      : reviewOnly ? 'Mandatory human review'
+      : 'Indicative liquidity identified');
     runButton.textContent = 'Assessment complete';
   }
 
