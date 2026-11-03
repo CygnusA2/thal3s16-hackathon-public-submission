@@ -14,6 +14,8 @@ THAL3S 16 explores how to assess the liquidity potential of illiquid collateral 
 2. **[THAL3S 16, FIP and the Meta Model](docs/THAL3S16-THE-BRAIN-FIP-AND-META.md)** — how the financial intelligence brain works and why we created FIP.
 3. **[Full V9 Financial Intelligence Research Report](THAL3S16_Meta_Model_Financial_Intelligence_Report_V9.pdf)** — original PDF, transferred byte-for-byte.
 
+**Bonus prize — Best Build on Meta Open Weight Models:** THAL3S 16 was built and experimentally evaluated on **Muse Spark Open (Meta open weights) served through Fireworks AI**. See **[META_OPEN_WEIGHTS_EVIDENCE.md](META_OPEN_WEIGHTS_EVIDENCE.md)** for the exact model and provider identification, the sanitized execution ledger summary and how the infrastructure partner can verify the runs.
+
 ## Two innovations
 
 **THAL3S 16** combines a deterministic financial assessment with bounded AI interpretation. **FIP** uses numeric codes, a strict schema and fact references to reduce ambiguity and reject contradictions.
