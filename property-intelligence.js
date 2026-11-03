@@ -519,6 +519,8 @@
             'CAUTION: ATTOM county structure differs from newer marketing information for the independently verified Saint Helena parcel; no listing substitution is permitted.',
           ASSESSOR_RECORD_LAG_NAPA:
             'CAUTION: the verified Napa assessor record may not describe a more recent redeveloped listing. ATTOM building facts remain independently sourced and are not replaced with listing attributes.',
+          ASSESSOR_LISTING_AREA_VARIANCE_NICASIO:
+            'CAUTION: ATTOM and public marketing information report different living-area figures for this independently verified Nicasio parcel. No provider value is replaced by listing data.',
           ATTOM_PARCEL_IDENTITY_ONLY_ALL_BUILDING_FACTS_UNAVAILABLE:
             'CAUTION: ATTOM verified the parcel identity but returned no bedrooms, bathrooms, living area, or year built. Listing figures must not be treated as ATTOM evidence.'
         })[recordReviewFlag] || '';
