@@ -1,0 +1,103 @@
+{
+  "schema_version": "r12-judge-flow-v1",
+  "mode": "DETERMINISTIC_SYNTHETIC",
+  "events": [
+    {
+      "step": "property_selected",
+      "title": "Property selected",
+      "status": "COMPLETED",
+      "values": {
+        "property_identity_status": "VERIFIED",
+        "fictional": true
+      }
+    },
+    {
+      "step": "evidence_reconciled",
+      "title": "Evidence reconciled",
+      "status": "COMPLETED",
+      "values": {
+        "evidence_status": "CONSISTENT",
+        "source_count": 2,
+        "evidence_freshness_state": "FRESH"
+      }
+    },
+    {
+      "step": "valuation_spread",
+      "title": "Valuation spread",
+      "status": "COMPLETED",
+      "values": {
+        "value_spread_bps": 100
+      }
+    },
+    {
+      "step": "uncertainty_haircut",
+      "title": "Uncertainty / haircut",
+      "status": "COMPLETED",
+      "values": {
+        "valuation_uncertainty_bps": 100,
+        "haircut_bps": 100
+      }
+    },
+    {
+      "step": "effective_ltv",
+      "title": "Effective LTV",
+      "status": "COMPLETED",
+      "values": {
+        "base_ltv_bps": 4000,
+        "effective_ltv_bps": 3900
+      }
+    },
+    {
+      "step": "indicative_capacity",
+      "title": "Indicative liquidity capacity",
+      "status": "INDICATIVE",
+      "values": {
+        "indicative_capacity_cents": 28000000,
+        "capacity_state": "INDICATIVE",
+        "assessment_status": "ILLUSTRATIVE_ONLY"
+      }
+    },
+    {
+      "step": "human_review",
+      "title": "Human review",
+      "status": "HUMAN_REVIEW_REQUIRED",
+      "values": {
+        "human_review_required": true,
+        "reason_codes": []
+      }
+    }
+  ],
+  "payload": {
+    "schema_version": "r12-judge-payload-v1",
+    "scenario": "reconciliation",
+    "fictional": true,
+    "property_identity_status": "VERIFIED",
+    "evidence_status": "CONSISTENT",
+    "value_spread_bps": 100,
+    "valuation_uncertainty_bps": 100,
+    "haircut_bps": 100,
+    "base_ltv_bps": 4000,
+    "effective_ltv_bps": 3900,
+    "indicative_capacity_cents": 28000000,
+    "capacity_state": "INDICATIVE",
+    "assessment_status": "ILLUSTRATIVE_ONLY",
+    "reason_codes": [],
+    "source_count": 2,
+    "evidence_freshness_state": "FRESH",
+    "approval_authorized": false,
+    "issuance_authorized": false,
+    "funding_authorized": false,
+    "human_review_required": true,
+    "explanation_status": "VERIFIED"
+  },
+  "explanation": {
+    "status": "VERIFIED",
+    "source": "proven final R11 validation receipt (sanitised record)",
+    "live_call": false
+  },
+  "safety": {
+    "live_provider_calls": 0,
+    "credentials_accessed": false,
+    "fresh_inference": false
+  }
+}
