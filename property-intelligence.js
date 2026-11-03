@@ -554,17 +554,20 @@
       const privateVerified = evidenceLayer && evidenceLayer.markerStatus &&
         evidenceLayer.markerStatus[property.id] === 'PRIVATE_DETAIL_VERIFIED';
       setText('attom-status', privateVerified
-        ? 'ATTOM Property Detail verified privately · values not published'
+        ? (syntheticClient
+          ? 'Independent ATTOM area-reference parcel privately verified · no client ownership asserted'
+          : 'ATTOM Property Detail reference parcel privately verified · values not published')
         : 'ATTOM Property Detail not verified for this public marker');
       if (privateVerified) {
-        /* A real matched parcel now exists, so do not display the historical
-           fictional physical specifications as if they belonged to it.
-           ATTOM values remain private pending field-level display clearance. */
+        /* Verified real parcels are independent research references, NEVER
+           proof that a fictional borrower owns the actual home. Licensed
+           property facts remain private until display clearance. */
         for (const id of ['fact-beds', 'fact-baths', 'fact-sqft', 'fact-year']) {
           setText(id, 'Not published');
         }
-        setText('physical-facts-source',
-          'ATTOM parcel verified privately. Building characteristics are withheld pending public-display clearance. The mansion photograph is AI-generated and illustrative.');
+        setText('physical-facts-source', syntheticClient
+          ? 'Independent ATTOM reference parcel for this research area only. Fictional client ownership is not asserted. Real building characteristics are not published; mansion image is AI-generated.'
+          : 'ATTOM reference parcel verified privately; its characteristics are withheld pending public-display clearance. This map marker represents an area, not the verified parcel boundary. Mansion image is AI-generated.');
       } else {
         setText('physical-facts-source', syntheticClient
           ? 'No verified ATTOM physical characteristics for this illustrative client location.'
