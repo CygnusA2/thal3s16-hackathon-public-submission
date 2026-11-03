@@ -27,6 +27,7 @@ jobs:
           test -n "$MAPS_BROWSER_KEY" || { echo "Maps browser key is not configured"; exit 1; }
           mkdir -p _site
           cp index.html research-walkthrough.html *.js *.css *.json _site/
+          cp EVIDENCE.md META_OPEN_WEIGHTS_EVIDENCE.md _site/
           cp -R assets _site/
           python3 - <<'PY'
           import json,os,pathlib
