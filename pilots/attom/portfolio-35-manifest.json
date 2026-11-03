@@ -5,8 +5,10 @@
     "total_map_markers": 35,
     "fictional_clients": 30,
     "original_demo_markers": 5,
-    "privately_verified_property_detail_records": 1,
-    "publicly_published_attom_property_records": 0
+    "privately_verified_property_detail_records": 2,
+    "publicly_published_attom_property_records": 0,
+    "pending_unique_marker_targets": 33,
+    "identity_mismatch_attempts": 1
   },
   "important_notice": "Marker coordinates and AI-generated photos do not prove a real parcel. All fictional client financial calculations remain synthetic. ATTOM records cannot be disclosed publicly unless specifically licensed and reviewed.",
   "gates": [
@@ -50,21 +52,24 @@
       "target_area": "Montecito",
       "illustrative_location": "Montecito, CA",
       "verified_address": null,
-      "private_attom_stage": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
+      "private_attom_stage": "IDENTITY_MISMATCH_REPLACEMENT_PENDING",
       "public_attom_facts": "NOT_PUBLISHED",
       "financial_scenario": "SYNTHETIC_UNCHANGED",
-      "batch": "B1_PILOT"
+      "batch": "B1_PILOT",
+      "private_evidence_note": "First candidate returned HTTP 200 but failed canonical address identity. No source persisted; separately scoped replacement candidate prepared, not executed."
     },
     {
       "marker_id": "palo-alto",
       "marker_group": "original_demo",
       "target_area": "Palo Alto",
       "illustrative_location": "Palo Alto, CA",
-      "verified_address": null,
-      "private_attom_stage": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
+      "verified_address": "640 Waverley St, Palo Alto, CA 94301",
+      "private_attom_stage": "PRIVATE_DETAIL_VERIFIED",
       "public_attom_facts": "NOT_PUBLISHED",
       "financial_scenario": "SYNTHETIC_UNCHANGED",
-      "batch": "B1_PILOT"
+      "batch": "B1_PILOT",
+      "private_evidence_note": "ATTOM property/detail verified 2026-11-03; licensed values retained privately, not for public display",
+      "source_record_vintage": "2026-09-29"
     },
     {
       "marker_id": "la-jolla",

@@ -1,12 +1,12 @@
 'use strict';
-/* ATTOM provenance only. No licensed provider values, owner records, or secrets. */
+/* Sanitized ATTOM evidence status: no licensed property facts or API secrets. */
 window.THAL3S_ATTOM_EVIDENCE = Object.freeze({
   schema_version: 'thal3s16-attom-evidence-ui-v1',
   markerStatus: {
   "beverly-hills": "PRIVATE_DETAIL_VERIFIED",
   "malibu": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
-  "montecito": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
-  "palo-alto": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
+  "montecito": "IDENTITY_MISMATCH_REPLACEMENT_PENDING",
+  "palo-alto": "PRIVATE_DETAIL_VERIFIED",
   "la-jolla": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
   "cf30-001": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
   "cf30-002": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
@@ -39,9 +39,6 @@ window.THAL3S_ATTOM_EVIDENCE = Object.freeze({
   "cf30-029": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
   "cf30-030": "NEEDS_ADDRESS_AND_PARCEL_MATCH"
 },
-  /* A provider-facts record can be added ONLY after explicit field-level publication clearance.
-     Required contract: marker_id, provider='ATTOM', publication_status='CLEARED',
-     verified_address, retrieved_at_utc, record_vintage, facts (null allowed).
-     The front-end never uses these real-property facts as lending/portfolio inputs. */
+  /* Values remain empty until separately verified, field-level publication rights. */
   publishedFacts: Object.freeze({})
 });
