@@ -473,5 +473,8 @@
       "financial_scenario": "SYNTHETIC_UNCHANGED",
       "batch": "C6"
     }
-  ]
+  ],
+  "archive_status": "SUPERSEDED_BY_FOUNDER_30_MARKER_SCOPE_2026-11-03",
+  "active_manifest": "pilots/attom/portfolio-30-manifest.json",
+  "archive_notice": "Historical research audit snapshot only. Do NOT use these five original demo markers or the previous 35-target count for any further provider authorizations, published map markers, image requirements, or active milestones. The protected private ATTOM source records are preserved."
 }
