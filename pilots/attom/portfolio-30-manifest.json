@@ -4,14 +4,16 @@
   "scope": {
     "active_property_markers": 30,
     "ai_generated_photographs": 30,
-    "verified_private_research_reference_markers": 16,
-    "pending_research_reference_markers": 14,
+    "verified_private_research_reference_markers": 18,
+    "pending_research_reference_markers": 12,
     "published_licensed_attom_facts": 0,
     "archived_original_demo_markers": 5,
     "archived_unique_reference_parcels_excluded_from_active_scope": 2,
-    "previously_verified_private_parcels_in_historical_35_scope": 18
+    "previously_verified_private_parcels_in_historical_35_scope": 20,
+    "verified_private_identity_only_records": 1,
+    "consumed_attom_approvals_historical": 26
   },
-  "governing_policy": "Exactly 30 existing fictional client marker IDs cf30-001..cf30-030. One unique AI-generated illustrative mansion per marker. ATTOM references are independent real parcels, not client property ownership, credit collateral, actual photographs, or parcel-accurate pin placements.",
+  "governing_policy": "Exactly 30 fictional-client markers and 30 distinct AI mansion illustrations. ATTOM matches are independent private reference parcels, NOT clients' owned real estate. 18 of 30 area references have provider-verified identities; Orinda identity is matched but building facts are entirely unavailable; licensed records remain private.",
   "archived_evidence": "Five historical original-demo markers excluded from the active 30. All historical ATTOM approvals, receipts and source records remain intact and unmodified in Hermes. Three matching-area references are reused as research-reference associations. A separate Malibu parcel and La Jolla parcel remain archived outside the 30-target program.",
   "audit_rules": [
     "Any new provider call requires its own fresh one-use founder terminal authorization",
@@ -229,11 +231,18 @@
       "target_area": "Orinda",
       "illustrative_location": "Orinda, California (Contra Costa County)",
       "verified_address": null,
-      "private_attom_stage": "IDENTITY_MISMATCH_REPLACEMENT_PENDING",
+      "private_attom_stage": "PRIVATE_DETAIL_VERIFIED",
       "public_attom_facts": "NOT_PUBLISHED",
       "financial_scenario": "SYNTHETIC_UNCHANGED",
       "batch": "C3",
-      "private_evidence_note": "Original Orinda candidate failed closed on exact canonical street identity; approval permanently consumed, no provider record persisted. Distinct replacement packet prepared but not executed."
+      "private_evidence_note": "Orinda-area replacement parcel privately identity-matched by ATTOM Property Detail 2026-11-03. All four building-characteristic fields are absent from the provider record. Public listing attributes are not treated as ATTOM data. This is a verified parcel IDENTITY ONLY, not a completed building-facts profile. No fictional client ownership is asserted.",
+      "private_evidence_review_flag": "ATTOM_PARCEL_IDENTITY_ONLY_ALL_BUILDING_FACTS_UNAVAILABLE",
+      "private_evidence_missing_fields": [
+        "bedrooms",
+        "bathrooms",
+        "living_area_sqft",
+        "year_built"
+      ]
     },
     {
       "marker_id": "cf30-016",
@@ -340,11 +349,11 @@
       "target_area": "Tiburon",
       "illustrative_location": "Tiburon, California (Marin County)",
       "verified_address": null,
-      "private_attom_stage": "IDENTITY_MISMATCH_REPLACEMENT_PENDING",
+      "private_attom_stage": "PREPARED_UNUSED_APPROVAL_REQUIRED",
       "public_attom_facts": "NOT_PUBLISHED",
       "financial_scenario": "SYNTHETIC_UNCHANGED",
       "batch": "C5",
-      "private_evidence_note": "Original Tiburon candidate failed exact provider address identity; approval permanently consumed, no source record persisted. Root cause undetermined; replacement not yet prepared."
+      "private_evidence_note": "Earlier Tiburon candidate failed canonical provider-address identity validation; approval permanently burned with no retained source. A distinct Tiburon candidate packet is prepared with an unused digest for separate founder approval; no request made."
     },
     {
       "marker_id": "cf30-025",
@@ -352,11 +361,12 @@
       "target_area": "Saratoga",
       "illustrative_location": "Saratoga, California (Santa Clara County)",
       "verified_address": null,
-      "private_attom_stage": "PREPARED_UNUSED_APPROVAL_REQUIRED",
+      "private_attom_stage": "PRIVATE_DETAIL_VERIFIED",
       "public_attom_facts": "NOT_PUBLISHED",
       "financial_scenario": "SYNTHETIC_UNCHANGED",
       "batch": "C5",
-      "private_evidence_note": "Saratoga single-use Property Detail request packet prepared, still unused; requires fresh interactive founder authorization before execution."
+      "private_evidence_note": "Saratoga-area reference parcel privately identity-matched and mapped from one founder-authorized ATTOM Property Detail request on 2026-11-03. Building characteristics were present in the owner-only record; licensed values remain unpublished. No fictional-client ownership is asserted.",
+      "source_record_vintage": "2026-09-23"
     },
     {
       "marker_id": "cf30-026",
