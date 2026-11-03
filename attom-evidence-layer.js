@@ -1,6 +1,6 @@
 'use strict';
-/* Sanitized ATTOM verification metadata only. No licensed values, raw records or API secrets.
-   Area-reference parcels are independent of fictional client portfolios and AI photographs. */
+/* Sanitized ATTOM verification metadata only. No licensed values, identifiers, raw records or API secrets.
+   Real parcels are independent research references for fictional client areas; no ownership is asserted. */
 window.THAL3S_ATTOM_EVIDENCE = Object.freeze({
   schema_version: 'thal3s16-attom-evidence-ui-v1',
   markerStatus: {
@@ -16,13 +16,13 @@ window.THAL3S_ATTOM_EVIDENCE = Object.freeze({
   "cf30-005": "PRIVATE_DETAIL_VERIFIED",
   "cf30-006": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
   "cf30-007": "PRIVATE_DETAIL_VERIFIED",
-  "cf30-008": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
-  "cf30-009": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
-  "cf30-010": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
+  "cf30-008": "PRIVATE_DETAIL_VERIFIED",
+  "cf30-009": "PRIVATE_DETAIL_VERIFIED",
+  "cf30-010": "PRIVATE_DETAIL_VERIFIED",
   "cf30-011": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
   "cf30-012": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
-  "cf30-013": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
-  "cf30-014": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
+  "cf30-013": "PRIVATE_DETAIL_VERIFIED",
+  "cf30-014": "PRIVATE_DETAIL_VERIFIED",
   "cf30-015": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
   "cf30-016": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
   "cf30-017": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
@@ -41,7 +41,9 @@ window.THAL3S_ATTOM_EVIDENCE = Object.freeze({
   "cf30-030": "NEEDS_ADDRESS_AND_PARCEL_MATCH"
 },
   markerReviewFlags: {
-  "cf30-007": "ASSESSOR_RECORD_LAG_REDEVELOPMENT"
+  "cf30-007": "ASSESSOR_RECORD_LAG_REDEVELOPMENT",
+  "cf30-013": "ASSESSOR_LISTING_VARIANCE_AND_LOCALITY_CAVEAT",
+  "cf30-014": "ASSESSOR_BUILDER_AREA_VARIANCE"
 },
-  publishedFacts: Object.freeze({}) // Display permission not yet cleared.
+  publishedFacts: Object.freeze({}) // Licensed field publication not cleared.
 });
