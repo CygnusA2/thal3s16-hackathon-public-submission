@@ -5,13 +5,14 @@
     "total_map_markers": 35,
     "fictional_clients": 30,
     "original_demo_markers": 5,
-    "privately_verified_property_detail_records": 6,
+    "privately_verified_property_detail_records": 11,
     "publicly_published_attom_property_records": 0,
-    "pending_unique_marker_targets": 29,
+    "pending_unique_marker_targets": 24,
     "identity_mismatch_attempts": 1,
     "failed_closed_attempts": 2,
     "privately_verified_original_demo_markers": 5,
-    "privately_verified_fictional_research_reference_markers": 1
+    "privately_verified_fictional_research_reference_markers": 6,
+    "consumed_attom_approvals": 15
   },
   "important_notice": "Six genuine ATTOM parcels have been privately verified. Five are independent reference parcels for the five original demo areas; an additional Malibu parcel is illustratively associated with cf30-021. No fictional borrower is asserted to own, hold, finance, or occupy any real parcel. The map coordinates and AI photos do not identify the verified parcels. No licensed ATTOM values are published.",
   "gates": [
@@ -96,10 +97,15 @@
       "target_area": "Atherton",
       "illustrative_location": "Atherton, California (San Mateo County)",
       "verified_address": null,
-      "private_attom_stage": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
+      "private_attom_stage": "PRIVATE_DETAIL_VERIFIED",
       "public_attom_facts": "NOT_PUBLISHED",
       "financial_scenario": "SYNTHETIC_UNCHANGED",
-      "batch": "C1"
+      "batch": "C1",
+      "source_record_vintage": "2026-09-24",
+      "private_evidence_note": "Privately verified ATTOM reference parcel in Atherton. Fictional client does not own the real parcel, and no licensed building attributes are published.",
+      "private_evidence_missing_fields": [
+        "bathrooms"
+      ]
     },
     {
       "marker_id": "cf30-002",
@@ -107,10 +113,15 @@
       "target_area": "Woodside",
       "illustrative_location": "Woodside, California (San Mateo County)",
       "verified_address": null,
-      "private_attom_stage": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
+      "private_attom_stage": "PRIVATE_DETAIL_VERIFIED",
       "public_attom_facts": "NOT_PUBLISHED",
       "financial_scenario": "SYNTHETIC_UNCHANGED",
-      "batch": "C1"
+      "batch": "C1",
+      "source_record_vintage": "2026-09-29",
+      "private_evidence_note": "Privately verified ATTOM reference parcel in Woodside. Fictional client does not own the real parcel, and no licensed building attributes are published.",
+      "private_evidence_missing_fields": [
+        "bathrooms"
+      ]
     },
     {
       "marker_id": "cf30-003",
@@ -129,10 +140,15 @@
       "target_area": "Hillsborough",
       "illustrative_location": "Hillsborough, California (San Mateo County)",
       "verified_address": null,
-      "private_attom_stage": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
+      "private_attom_stage": "PRIVATE_DETAIL_VERIFIED",
       "public_attom_facts": "NOT_PUBLISHED",
       "financial_scenario": "SYNTHETIC_UNCHANGED",
-      "batch": "C1"
+      "batch": "C1",
+      "source_record_vintage": "2026-09-29",
+      "private_evidence_note": "Privately verified ATTOM reference parcel in Hillsborough. Fictional client does not own the real parcel, and no licensed building attributes are published.",
+      "private_evidence_missing_fields": [
+        "bathrooms"
+      ]
     },
     {
       "marker_id": "cf30-005",
@@ -140,10 +156,12 @@
       "target_area": "Pasadena",
       "illustrative_location": "Pasadena, California (Los Angeles County)",
       "verified_address": null,
-      "private_attom_stage": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
+      "private_attom_stage": "PRIVATE_DETAIL_VERIFIED",
       "public_attom_facts": "NOT_PUBLISHED",
       "financial_scenario": "SYNTHETIC_UNCHANGED",
-      "batch": "C1"
+      "batch": "C1",
+      "source_record_vintage": "2026-09-23",
+      "private_evidence_note": "Privately verified ATTOM reference parcel in Pasadena. Fictional client does not own the real parcel, and no licensed building attributes are published."
     },
     {
       "marker_id": "cf30-006",
@@ -162,10 +180,13 @@
       "target_area": "Santa Monica",
       "illustrative_location": "Santa Monica, California (Los Angeles County)",
       "verified_address": null,
-      "private_attom_stage": "NEEDS_ADDRESS_AND_PARCEL_MATCH",
+      "private_attom_stage": "PRIVATE_DETAIL_VERIFIED",
       "public_attom_facts": "NOT_PUBLISHED",
       "financial_scenario": "SYNTHETIC_UNCHANGED",
-      "batch": "C2"
+      "batch": "C2",
+      "source_record_vintage": "2026-09-22",
+      "private_evidence_note": "Privately verified ATTOM reference parcel in Santa Monica. Fictional client does not own the real parcel, and no licensed building attributes are published. Building details may be an earlier assessor record; do not replace with listing attributes.",
+      "private_evidence_review_flag": "ASSESSOR_RECORD_LAG_REDEVELOPMENT"
     },
     {
       "marker_id": "cf30-008",
