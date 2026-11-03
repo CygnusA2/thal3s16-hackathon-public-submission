@@ -20,93 +20,19 @@
     orange: {cash:1.2, equities:2, bonds:1, privateBusiness:2, alternatives:4.8, properties:[['Primary residence',4,1],['Investment property A',3.5,1.7],['Investment property B',2.5,1.3]]}
   };
 
-  const properties = [
-    {
-      id: 'beverly-hills',
-      label: 'Beverly Hills',
-      x: 67, y: 69,
-      lat: 34.08937, lng: -118.404517, zoom: 19,
-      address: '1005 Schuyler Rd',
-      location: 'Beverly Hills, CA 90210',
-      beds: '5',
-      baths: '6.5',
-      sqft: '6,710 ft²',
-      year: '1968',
-      photoUrl: './assets/clients30/cf30-003.jpg',
-      photoSource: 'AI-generated fictional mansion — fictional scenario, not an actual property photograph',
-      imageCount: 1,
-      attomStatus: 'Live AVM route proven · private evidence only'
-    },
-    {
-      id: 'malibu',
-      label: 'Malibu',
-      x: 59, y: 72,
-      lat: 34.0259, lng: -118.7798, zoom: 17,
-      address: 'Malibu Demo Property',
-      location: 'Malibu, CA',
-      beds: '6',
-      baths: '7.5',
-      sqft: '8,420 ft²',
-      year: '2019',
-      photoUrl: './assets/clients30/cf30-022.jpg',
-      photoSource: 'AI-generated fictional mansion — fictional scenario, not an actual property photograph',
-      imageCount: 1,
-      attomStatus: 'Illustrative property characteristics · ATTOM wiring pending'
-    },
-    {
-      id: 'montecito',
-      label: 'Montecito',
-      x: 50, y: 64,
-      lat: 34.4367, lng: -119.6321, zoom: 17,
-      address: 'Montecito Demo Property',
-      location: 'Montecito, CA',
-      beds: '7',
-      baths: '8',
-      sqft: '9,180 ft²',
-      year: '2016',
-      photoUrl: './assets/clients30/cf30-023.jpg',
-      photoSource: 'AI-generated fictional mansion — fictional scenario, not an actual property photograph',
-      imageCount: 1,
-      attomStatus: 'Property discovery fixture'
-    },
-    {
-      id: 'palo-alto',
-      label: 'Palo Alto',
-      x: 40, y: 30,
-      lat: 37.4419, lng: -122.1430, zoom: 17,
-      address: 'Palo Alto Demo Property',
-      location: 'Palo Alto, CA',
-      beds: '5',
-      baths: '6',
-      sqft: '6,950 ft²',
-      year: '2021',
-      photoUrl: './assets/clients30/cf30-019.jpg',
-      photoSource: 'AI-generated fictional mansion — fictional scenario, not an actual property photograph',
-      imageCount: 1,
-      attomStatus: 'Property discovery fixture'
-    },
-    {
-      id: 'la-jolla',
-      label: 'La Jolla',
-      x: 72, y: 87,
-      lat: 32.8328, lng: -117.2713, zoom: 17,
-      address: 'La Jolla Demo Property',
-      location: 'La Jolla, CA',
-      beds: '6',
-      baths: '7',
-      sqft: '7,640 ft²',
-      year: '2018',
-      photoUrl: './assets/clients30/cf30-008.jpg',
-      photoSource: 'AI-generated fictional mansion — fictional scenario, not an actual property photograph',
-      imageCount: 1,
-      attomStatus: 'Property discovery fixture'
-    }
-  ];
+  // Final release scope: exactly the thirty original fictional client scenarios.
+  // The five legacy demonstration markers were duplicate geographic references.
+  // Their historical source code and private ATTOM evidence remain preserved in Git history
+  // and Hermes; they are deliberately excluded from both map marker implementations.
+  const properties = [];
 
   /* --- THAL3S_CLIENTS30 INTEGRATION (recovery-safe, additive; generated
      data from demo/property_preview_data.py; no interface redesign) --- */
   const clients30 = window.THAL3S_CLIENTS30;
-  if (clients30 && clients30.enabled === true && Array.isArray(clients30.properties)) {
+  if (clients30 && clients30.enabled === true && Array.isArray(clients30.properties) &&
+      clients30.properties.length === 30 &&
+      new Set(clients30.properties.map(entry => entry.id)).size === 30 &&
+      clients30.properties.every(entry => /^cf30-[0-9]{3}$/.test(entry.id))) {
     clients30.properties.forEach(entry => {
       if (!properties.some(item => item.id === entry.id)) properties.push(entry);
     });
@@ -114,6 +40,8 @@
     Object.assign(clientProfileForProperty, clients30.clientProfileForProperty || {});
     Object.assign(assetProfiles, clients30.assetProfiles || {});
   }
+
+  if (properties.length !== 30) throw new Error('THAL3S 16 requires the exact 30-client map fixture.');
 
   const markerLayer = document.getElementById('marker-layer');
   const photo = document.getElementById('property-photo');
