@@ -5,17 +5,17 @@ This scope **supersedes** [the historic 35-marker research rollout](./ROLLOUT_35
 
 ## Accounting and provenance
 
-- **16 / 30** active markers have individually matched, private real-property *research references*. **14 / 30** remain.
+- **18 / 30** active markers now have independently verified private real-parcel *identities*; **12 / 30** remain. Orinda counts as a parcel identity match only: ATTOM provided no building-characteristic fields.
 - **0 / 30** licensed ATTOM Property Detail measurements have been published: entitlement documentation currently supports internal evaluation, not public redistribution.
 - Five formerly separate original-demo records remain preserved in historical code and the owner-only Hermes ATTOM ledger. Three matching-region reference parcels are now associated with **cf30-003 Beverly Hills**, **cf30-006 Palo Alto**, and **cf30-023 Montecito** without any new API calls. The other two historical reference records (Malibu, La Jolla) remain archived outside the active scope. Another distinct Malibu reference is already associated with `cf30-021`.
 - Public marker coordinates are **illustrative regional positions**, not surveyed boundaries or verified ATTOM parcel pins. No fictional family is asserted to own, finance, occupy or have any relationship with the real reference parcel.
 - Each of the **30** photographs remains an AI-generated, fictional illustration, not a real property photo.
-- The historical count **18 private ATTOM records** remains intact. The smaller 16/30 figure counts only distinct matched **active marker IDs**; never misrepresent the two excluded historical references as failed or deleted.
+- Hermes reports **20 historical successful ATTOM parcel references**, including two outside the current 30-marker scope. The 18/30 count represents independently matched **active marker areas** and does not assert ownership, a valid lending collateral value, or complete physical facts.
 - Legacy consumed approvals, receipts, source files, request plans, and the protected API key are not changed or reset. Existing FIP and credit-engine research scenarios remain synthetic and unchanged.
 
-## Sixteen active matched regional references
+## Eighteen privately verified area-reference identities
 
-| Marker | Target area | Status |
+| Marker | Target area | Verification status |
 |---|---|---|
 | `cf30-001` | Atherton | PRIVATE DETAIL VERIFIED |
 | `cf30-002` | Woodside | PRIVATE DETAIL VERIFIED |
@@ -29,33 +29,35 @@ This scope **supersedes** [the historic 35-marker research rollout](./ROLLOUT_35
 | `cf30-010` | Oakland | PRIVATE DETAIL VERIFIED |
 | `cf30-013` | Carmel-by-the-Sea | PRIVATE DETAIL VERIFIED |
 | `cf30-014` | Bel Air | PRIVATE DETAIL VERIFIED |
+| `cf30-015` | Orinda | Identity verified; building facts unavailable |
 | `cf30-017` | San Marino | PRIVATE DETAIL VERIFIED |
 | `cf30-021` | Malibu | PRIVATE DETAIL VERIFIED |
 | `cf30-022` | Newport Beach | PRIVATE DETAIL VERIFIED |
 | `cf30-023` | Montecito | PRIVATE DETAIL VERIFIED |
+| `cf30-025` | Saratoga | PRIVATE DETAIL VERIFIED |
 
-## Fourteen outstanding targets
+## Twelve outstanding targets
 
 | Marker | Target area | Status |
 |---|---|---|
 | `cf30-011` | San Francisco | NEEDS ADDRESS AND PARCEL MATCH |
 | `cf30-012` | San Francisco | NEEDS ADDRESS AND PARCEL MATCH |
-| `cf30-015` | Orinda | IDENTITY MISMATCH REPLACEMENT PENDING |
 | `cf30-016` | Hillsborough | NEEDS ADDRESS AND PARCEL MATCH |
 | `cf30-018` | Atherton | NEEDS ADDRESS AND PARCEL MATCH |
 | `cf30-019` | Woodside | NEEDS ADDRESS AND PARCEL MATCH |
 | `cf30-020` | Bel Air | NEEDS ADDRESS AND PARCEL MATCH |
-| `cf30-024` | Tiburon | IDENTITY MISMATCH REPLACEMENT PENDING |
-| `cf30-025` | Saratoga | PREPARED UNUSED APPROVAL REQUIRED |
+| `cf30-024` | Tiburon | PREPARED UNUSED APPROVAL REQUIRED |
 | `cf30-026` | St. Helena | NEEDS ADDRESS AND PARCEL MATCH |
 | `cf30-027` | Antelope Valley area | NEEDS ADDRESS AND PARCEL MATCH |
 | `cf30-028` | Somis | NEEDS ADDRESS AND PARCEL MATCH |
 | `cf30-029` | Napa | NEEDS ADDRESS AND PARCEL MATCH |
 | `cf30-030` | Nicasio | NEEDS ADDRESS AND PARCEL MATCH |
 
-The existing unused **Saratoga** request remains unexecuted and requires a fresh personal founder authorization. The Orinda and Tiburon original attempts failed exact provider-address identity checking; each must use an independently authorized replacement. No retrials or weakening of the response-side identity gate.
+The **Saratoga** request has successfully completed with a private, exact-address ATTOM match. The distinct **Orinda replacement** also passed its parcel identity cross-check, but its provider response contained **no bedrooms, bathrooms, living area, or year built**; all four fields remain unavailable and must not be populated using public listing claims. The earlier burned Miner Road attempt remains an immutable failure.
 
-## Operational rules for remaining 14
+The **Tiburon** earlier request failed identity validation; a distinct, unused replacement packet for the Tiburon area has been prepared on Hermes but **not executed**. It requires its own interactive founder approval, with no retries or loosening of the response identity check.
+
+## Operational rules for remaining 12
 
 1. Select one genuine parcel **in the marker's existing target area**, with independently established actual street/city/state/postal identity.
 2. Confirm a unique, unused request digest and original plan file; request a new 15-minute terminal approval with one attempt only.
