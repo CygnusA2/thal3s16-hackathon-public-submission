@@ -6,7 +6,15 @@ THAL3S 16 explores how to assess the liquidity potential of illiquid collateral 
 
 ## Explore the interactive demonstration
 
-**[Open the THAL3S 16 California demo](https://cygnusa2.github.io/thal3s16-hackathon-public-submission/)** — explore 30 independently verified California ATTOM reference addresses alongside 30 AI-generated illustrative mansion photographs and a seven-stage synthetic financial assessment. The reference properties are not represented as assets owned by fictional clients; no real appraisal, credit approval, token issuance or funding takes place.
+**[Open the THAL3S 16 California demo](https://cygnusa2.github.io/thal3s16-hackathon-public-submission/)** — explore 30 independently verified California [ATTOM](#what-is-attom-and-why-cygnus-a2-uses-it) reference addresses alongside 30 AI-generated illustrative mansion photographs and a seven-stage synthetic financial assessment. The reference properties are not represented as assets owned by fictional clients; no real appraisal, credit approval, token issuance or funding takes place.
+
+### What is ATTOM and why Cygnus-A² uses it?
+
+[ATTOM](https://www.attomdata.com/solutions/delivery/property-data-api/) is a U.S. real-estate data and analytics provider. Its property-data APIs bring together standardized records such as parcel identities, property characteristics, ownership and mortgage information, transaction history and valuation-related datasets. The availability and licensing of each field depend on the subscribed product and record.
+
+**Why we selected ATTOM:** THAL3S 16 needs a traceable property-data foundation to match real estate assets to the correct parcels, reconcile available evidence, identify gaps and support future collateral-intelligence workflows. ATTOM is a selected property-data provider in our research and integration ecosystem; additional complementary providers may be used for independent verification, valuation, title and other asset classes.
+
+**What the public demo actually shows:** ATTOM was used privately to verify the 30 California property-reference identities. The displayed public property characteristics are drawn from separately cited public or third-party sources, **not from a redistribution of licensed ATTOM records**. Fictional client profiles, AI-generated mansion images, financial scenarios, risk quantities and indicative liquidity outputs are illustrative. This research use does not imply that ATTOM endorses the project or that an unrestricted production/public-display license has been established. See [property evidence and licensing limitations](EVIDENCE.md).
 
 ## Start with these four documents
 
