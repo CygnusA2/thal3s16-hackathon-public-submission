@@ -27,13 +27,65 @@ THAL3S 16 explores how to assess the liquidity potential of illiquid collateral 
 
 **Hackathon build provenance (26 October–4 November):** [pre-existing baseline, dated new work and evidence trail](HACKATHON_BUILD_PROVENANCE.md).
 
-## Two innovations
+## Two Innovations. One Mission: Trustworthy Financial Intelligence.
 
-**THAL3S 16** combines a deterministic financial assessment with bounded AI interpretation. **FIP** uses numeric codes, a strict schema and fact references to reduce ambiguity and reject contradictions.
+**We didn't simply integrate a Meta AI model. We built a financial-intelligence architecture around it—and developed a protocol to challenge, verify and reject its outputs when necessary.**
 
-**Live model:** Meta **Muse Spark Open**, served through **Fireworks AI**.
+### 🧠 Innovation 1 — THAL3S 16: The Brain of Cygnus-A²
 
-**Main FIP V2 research:** 70/93 validated synthetic attempts (75.3%); 50/50 blocked-status cases and 20/43 clean-status cases. Results do not establish production credit approval, funding, model superiority or statistically validated token savings.
+**From complex, illiquid wealth to structured, explainable financial intelligence.**
+
+THAL3S 16 combines deterministic financial calculations, property evidence, collateral-risk assessment and Meta AI interpretation into a seven-stage workflow.
+
+Designed for the complexity of ultra-high-net-worth private credit, it evaluates how asset characteristics, existing obligations, valuation uncertainty and economic conditions affect indicative liquidity capacity.
+
+**What makes it different:**
+
+- Separates authoritative financial calculations from AI-generated interpretation.
+- Evaluates 13 risk dimensions across synthetic client profiles, portfolio structures and economic scenarios.
+- Uses Meta Muse Spark Open to interpret bounded financial evidence and identify relevant risk factors.
+- Preserves human review and prevents AI from independently authorizing credit.
+
+**What we demonstrated:** An interactive California research environment featuring 30 independently verified property-reference addresses, fictional UHNW client portfolios and a seven-stage synthetic collateral-assessment workflow.
+
+### 🛡️ Innovation 2 — FIP: THAL3S 16 Financial Intelligence Protocol
+
+**Because an intelligent AI response is not necessarily a trustworthy financial conclusion.**
+
+During our Meta-model experiments, we discovered that conventional narrative outputs could conflict with strict financial-integrity validation—even when the model explicitly denied lending authority.
+
+Instead of continuing to rely on ambiguous financial prose, we developed FIP: a structured, machine-checkable protocol using numeric codes, controlled schemas, fact references and deterministic validation.
+
+**What makes it different:**
+
+- Converts AI financial interpretations into structured, verifiable outputs.
+- Verifies cited evidence against authorized facts.
+- Detects inconsistencies between AI-assigned risk severity and deterministic financial constraints.
+- Rejects contradictory or unauthorized interpretations before they are presented as validated intelligence.
+
+**What we demonstrated:** Real, founder-authorized inference experiments using Meta Muse Spark Open, served through Fireworks AI, with recorded FIP validation outcomes.
+
+### Our Experimental Evidence
+
+| Measurement | Verified result |
+|---|---|
+| FIP V2 validation | **70/93 — 75.3%** |
+| Blocked-status cases | **50/50 validated** |
+| Clean-status cases | **20/43 validated** |
+| Evidence-citation precision | **100% among validated outputs** |
+| Median inference latency | **8.22 seconds** in the 60-case study |
+
+**Our most important discovery:** The experiments exposed a systematic risk-severity disagreement in certain clean cases under stressed economic conditions. Rather than silently accepting those interpretations, FIP rejected them.
+
+This is why we measure model behavior beyond conventional AI benchmarks: **to understand not only when AI succeeds, but when it fails—and why.**
+
+**Technology:** Meta Muse Spark Open · Fireworks AI · THAL3S 16 · FIP V2
+
+**Research boundaries:** All financial scenarios are synthetic. The public demo replays recorded model outcomes. The findings do not establish production lending capability, superiority over other Meta models or real-borrower performance.
+
+**Explore the evidence:** [FIP Innovation Story](docs/THAL3S16-FIP-INNOVATION-STORY.md) · [Inference Statistics Research](docs/THAL3S16-WHY-INFERENCE-STATISTICS-MATTER.md) · [Meta Model Execution Evidence](META_OPEN_WEIGHTS_EVIDENCE.md)
+
+**Our principle: Financial AI must not only produce answers. It must demonstrate which answers can be trusted.**
 
 ## Inspect the engineering
 
