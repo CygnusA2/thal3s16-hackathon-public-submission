@@ -18,6 +18,8 @@ THAL3S 16 explores how to assess the liquidity potential of illiquid collateral 
 
 **Hackathon build provenance (26 October–4 November):** [pre-existing baseline, dated new work and evidence trail](HACKATHON_BUILD_PROVENANCE.md).
 
+**Beyond AI Benchmarks — Why Inference Statistics Matter in Private Credit:** [Our R&D rationale and findings from Meta Muse Spark Open](docs/THAL3S16-WHY-INFERENCE-STATISTICS-MATTER.md).
+
 ## Two innovations
 
 **THAL3S 16** combines a deterministic financial assessment with bounded AI interpretation. **FIP** uses numeric codes, a strict schema and fact references to reduce ambiguity and reject contradictions.
