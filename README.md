@@ -23,7 +23,7 @@ THAL3S 16 explores how to assess the liquidity potential of illiquid collateral 
 3. **[Full V9 Financial Intelligence Research Report](THAL3S16_Meta_Model_Financial_Intelligence_Report_V9.pdf)** — original PDF, transferred byte-for-byte.
 4. **[Beyond AI Benchmarks: Why Inference Statistics Matter in Private Credit](docs/THAL3S16-WHY-INFERENCE-STATISTICS-MATTER.md)** — why conventional AI benchmarks are insufficient for UHNW private credit, what we measured with Meta Muse Spark Open, and the future THAL3S 16 model-evaluation framework.
 
-**Bonus prize — Best Build on Meta Open Weight Models:** THAL3S 16 was built and experimentally evaluated on **Muse Spark Open (Meta open weights) served through Fireworks AI**. See **[META_OPEN_WEIGHTS_EVIDENCE.md](META_OPEN_WEIGHTS_EVIDENCE.md)** for the exact model and provider identification, the sanitized execution ledger summary and how the infrastructure partner can verify the runs.
+**Bonus prize — Best Build on Meta Open Weight Models:** THAL3S 16 was built and experimentally evaluated on **Muse Spark Open (Meta open weights) served through [Fireworks AI](https://fireworks.ai/)**. See **[META_OPEN_WEIGHTS_EVIDENCE.md](META_OPEN_WEIGHTS_EVIDENCE.md)** for the exact model and provider identification, the sanitized execution ledger summary and how the infrastructure partner can verify the runs.
 
 **Hackathon build provenance (26 October–4 November):** [pre-existing baseline, dated new work and evidence trail](HACKATHON_BUILD_PROVENANCE.md).
 
@@ -63,7 +63,9 @@ Instead of continuing to rely on ambiguous financial prose, we developed FIP: a 
 - Detects inconsistencies between AI-assigned risk severity and deterministic financial constraints.
 - Rejects contradictory or unauthorized interpretations before they are presented as validated intelligence.
 
-**What we demonstrated:** Real, founder-authorized inference experiments using Meta Muse Spark Open, served through Fireworks AI, with recorded FIP validation outcomes.
+**What we demonstrated:** Real, founder-authorized inference experiments using Meta Muse Spark Open, served through [Fireworks AI](https://fireworks.ai/), with recorded FIP validation outcomes.
+
+**Acknowledgment:** Fireworks AI's inference credits helped make our live Meta-model experiments financially feasible during the hackathon. Their infrastructure enabled us to execute and measure actual model inferences rather than relying solely on offline simulations.
 
 ### Our Experimental Evidence
 
@@ -79,7 +81,7 @@ Instead of continuing to rely on ambiguous financial prose, we developed FIP: a 
 
 This is why we measure model behavior beyond conventional AI benchmarks: **to understand not only when AI succeeds, but when it fails—and why.**
 
-**Technology:** Meta Muse Spark Open · Fireworks AI · THAL3S 16 · FIP V2
+**Technology:** Meta Muse Spark Open · [Fireworks AI](https://fireworks.ai/) · THAL3S 16 · FIP V2
 
 **Research boundaries:** All financial scenarios are synthetic. The public demo replays recorded model outcomes. The findings do not establish production lending capability, superiority over other Meta models or real-borrower performance.
 
