@@ -6,7 +6,7 @@ THAL3S 16 explores how to assess the liquidity potential of illiquid collateral 
 
 ## Explore the interactive demonstration
 
-**[Open the THAL3S 16 California demo](https://cygnusa2.github.io/thal3s16-hackathon-public-submission/)** — explore 30 independently verified California [ATTOM](#what-is-attom-and-why-cygnus-a2-uses-it) reference addresses alongside 30 AI-generated illustrative mansion photographs and a seven-stage synthetic financial assessment. The reference properties are not represented as assets owned by fictional clients; no real appraisal, credit approval, token issuance or funding takes place.
+**[Open the THAL3S 16 California demo](https://cygnusa2.github.io/thal3s16-hackathon-public-submission/)** — explore 30 independently verified California ATTOM reference addresses alongside 30 AI-generated illustrative mansion photographs and a seven-stage synthetic financial assessment. The reference properties are not represented as assets owned by fictional clients; no real appraisal, credit approval, token issuance or funding takes place.
 
 ### What is ATTOM and why Cygnus-A² uses it?
 
