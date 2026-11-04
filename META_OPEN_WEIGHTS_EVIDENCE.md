@@ -35,6 +35,35 @@ not whether it can write plausible prose. Muse Spark Open was chosen because:
 - Serving it through a recognized inference partner (Fireworks AI) made the
   execution auditable: every call is receipted, digested and cost-metered.
 
+  ### Model Selection — Why Muse Spark Open Instead of Other Meta Models?
+
+We selected **Muse Spark Open** because it provided the most practical verified inference route for our specific research objective: determining whether AI-generated financial-risk interpretations can be structured, grounded in evidence and validated before reaching a human decision-maker.
+
+Our selection was based on five engineering considerations: model availability, structured-output compatibility, inference infrastructure, reproducibility and controlled experimentation costs.
+
+| Meta model | Research assessment | Project outcome |
+|---|---|---|
+| **Muse Spark Open** | Available through Fireworks AI with structured JSON-schema generation, auditable inference receipts and controlled execution. | **Selected and experimentally evaluated.** |
+| **Muse Spark 1.3** | Explored through Meta's documented API and structured-output specifications. Equivalent live FIP benchmarking access was not established. | Documented candidate; no comparable live FIP results. |
+| **Muse Wonder 1.0** | Considered during model-access planning. No verified, authorized inference route was established for the measured FIP V2 programme. | Not benchmarked. |
+| **Muse Glimmer 30B** | Investigated as a possible locally hosted open-weight alternative. Model-weight and runtime requirements introduced additional deployment complexity. | Local deployment and comparative benchmarking not completed. |
+
+#### Why this decision mattered
+
+The hackathon presented a limited development window. We prioritized a working model-inference route that allowed us to concentrate on our central research question:
+
+**Can a Meta AI model interpret financial evidence while a separate protocol reliably detects and rejects unsupported conclusions?**
+
+Muse Spark Open, served through Fireworks AI, allowed us to conduct those experiments using our Financial Intelligence Protocol (FIP).
+
+Our research produced 70 validated outputs across 93 FIP V2 attempts, with 100% evidence-citation precision among validated outputs and an 8.22-second median latency in the 60-case study.
+
+**Research limitation:** We did not conduct a controlled head-to-head benchmark against the other Meta models. These results demonstrate the behavior of Muse Spark Open within our experimental architecture, not its superiority over alternative models.
+
+Our principal innovation is therefore not the selection of a particular language model. It is the development of **THAL3S 16 and FIP**, an architecture that separates deterministic financial calculations from AI interpretation and validates the resulting intelligence before presentation.
+
+Future research will assess additional Meta models using equivalent scenarios, schemas and evaluation criteria.
+
 ## 3. How THAL3S 16 used the model
 
 THAL3S 16 computes all financial figures — LTV, collateral capacity, the 13
