@@ -16,6 +16,8 @@ THAL3S 16 explores how to assess the liquidity potential of illiquid collateral 
 
 **Bonus prize — Best Build on Meta Open Weight Models:** THAL3S 16 was built and experimentally evaluated on **Muse Spark Open (Meta open weights) served through Fireworks AI**. See **[META_OPEN_WEIGHTS_EVIDENCE.md](META_OPEN_WEIGHTS_EVIDENCE.md)** for the exact model and provider identification, the sanitized execution ledger summary and how the infrastructure partner can verify the runs.
 
+**Hackathon build provenance (26 October–4 November):** [pre-existing baseline, dated new work and evidence trail](HACKATHON_BUILD_PROVENANCE.md).
+
 ## Two innovations
 
 **THAL3S 16** combines a deterministic financial assessment with bounded AI interpretation. **FIP** uses numeric codes, a strict schema and fact references to reduce ambiguity and reject contradictions.
