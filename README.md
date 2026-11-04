@@ -8,17 +8,16 @@ THAL3S 16 explores how to assess the liquidity potential of illiquid collateral 
 
 **[Open the THAL3S 16 California demo](https://cygnusa2.github.io/thal3s16-hackathon-public-submission/)** — explore 30 independently verified California ATTOM reference addresses alongside 30 AI-generated illustrative mansion photographs and a seven-stage synthetic financial assessment. The reference properties are not represented as assets owned by fictional clients; no real appraisal, credit approval, token issuance or funding takes place.
 
-## Start with these three documents
+## Start with these four documents
 
 1. **[Executive Summary](docs/THAL3S16-EXECUTIVE-SUMMARY.md)** — the problem, solution and measured findings in plain English.
 2. **[THAL3S 16, FIP and the Meta Model](docs/THAL3S16-THE-BRAIN-FIP-AND-META.md)** — how the financial intelligence brain works and why we created FIP.
 3. **[Full V9 Financial Intelligence Research Report](THAL3S16_Meta_Model_Financial_Intelligence_Report_V9.pdf)** — original PDF, transferred byte-for-byte.
+4. **[Beyond AI Benchmarks: Why Inference Statistics Matter in Private Credit](docs/THAL3S16-WHY-INFERENCE-STATISTICS-MATTER.md)** — why conventional AI benchmarks are insufficient for UHNW private credit, what we measured with Meta Muse Spark Open, and the future THAL3S 16 model-evaluation framework.
 
 **Bonus prize — Best Build on Meta Open Weight Models:** THAL3S 16 was built and experimentally evaluated on **Muse Spark Open (Meta open weights) served through Fireworks AI**. See **[META_OPEN_WEIGHTS_EVIDENCE.md](META_OPEN_WEIGHTS_EVIDENCE.md)** for the exact model and provider identification, the sanitized execution ledger summary and how the infrastructure partner can verify the runs.
 
 **Hackathon build provenance (26 October–4 November):** [pre-existing baseline, dated new work and evidence trail](HACKATHON_BUILD_PROVENANCE.md).
-
-**Beyond AI Benchmarks — Why Inference Statistics Matter in Private Credit:** [Our R&D rationale and findings from Meta Muse Spark Open](docs/THAL3S16-WHY-INFERENCE-STATISTICS-MATTER.md).
 
 ## Two innovations
 
