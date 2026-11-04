@@ -6,15 +6,52 @@ THAL3S 16 explores how to assess the liquidity potential of illiquid collateral 
 
 ## Explore the interactive demonstration
 
-**[Open the THAL3S 16 California demo](https://cygnusa2.github.io/thal3s16-hackathon-public-submission/)** — explore 30 independently verified California ATTOM reference addresses alongside 30 AI-generated illustrative mansion photographs and a seven-stage synthetic financial assessment. The reference properties are not represented as assets owned by fictional clients; no real appraisal, credit approval, token issuance or funding takes place.
+**[Open the THAL3S 16 California demo](https://cygnusa2.github.io/thal3s16-hackathon-public-submission/)** — explore 30 independently verified California ATTOM property-reference addresses, 30 AI-generated illustrative mansion photographs, research-informed fictional UHNW portfolios, and a seven-stage synthetic financial assessment.
 
-### What is ATTOM and why Cygnus-A² uses it?
+**Our objective was to build a realistic financial-intelligence research environment—not simply generate fictional numbers.** We drew upon property data, historical mortgage-performance research, public economic information, institutional financial intelligence and independent global wealth reports. The use of those sources to inform research does not mean every input shown in the demo was imported from a live third-party feed.
 
-[ATTOM](https://www.attomdata.com/solutions/delivery/property-data-api/) is a U.S. real-estate data and analytics provider. Its property-data APIs bring together standardized records such as parcel identities, property characteristics, ownership and mortgage information, transaction history and valuation-related datasets. The availability and licensing of each field depend on the subscribed product and record.
+### 1. Property Intelligence — ATTOM
 
-**Why we selected ATTOM:** THAL3S 16 needs a traceable property-data foundation to match real estate assets to the correct parcels, reconcile available evidence, identify gaps and support future collateral-intelligence workflows. ATTOM is a selected property-data provider in our research and integration ecosystem; additional complementary providers may be used for independent verification, valuation, title and other asset classes.
+[ATTOM](https://www.attomdata.com/solutions/delivery/property-data-api/) is a U.S. real-estate data and analytics provider offering property identification, building characteristics, ownership and mortgage information, transaction histories and other property-related datasets.
 
-**What the public demo actually shows:** ATTOM was used privately to verify the 30 California property-reference identities. The displayed public property characteristics are drawn from separately cited public or third-party sources, **not from a redistribution of licensed ATTOM records**. Fictional client profiles, AI-generated mansion images, financial scenarios, risk quantities and indicative liquidity outputs are illustrative. This research use does not imply that ATTOM endorses the project or that an unrestricted production/public-display license has been established. See [property evidence and licensing limitations](EVIDENCE.md).
+**Why ATTOM:** A reliable collateral assessment must start with the correct property identity and a traceable evidence trail. THAL3S 16 used ATTOM privately to verify the identities of 30 California property references. The characteristics shown publicly are from separately cited public and third-party sources, **not redistributed licensed ATTOM records**. ATTOM is one selected provider in our property-data ecosystem; further independent sources may support reconciliation and future collateral workflows. See [property evidence and licensing limitations](EVIDENCE.md).
+
+### 2. Credit Policy Research — Evidence-Based Risk Assessment
+
+Cygnus-A²'s proprietary credit-policy research draws on historical mortgage performance, property-price changes, macroeconomic indicators and financial intelligence. Our broader research framework is intended to support collateral analysis, credit-risk assessment and qualified human review.
+
+**Research and data sources:**
+
+| Source | Role in credit-policy research |
+|---|---|
+| [Freddie Mac — Single-Family Loan-Level Dataset](https://www.freddiemac.com/research/datasets/sf-loanlevel-dataset) | Historical mortgage performance, delinquency outcomes and loan-to-value (LTV) research across market conditions. |
+| [Federal Reserve — FRED Economic Data](https://fred.stlouisfed.org/) | Rates, inflation, yield-curve and credit-market indicators for economic-cycle and stress-scenario context. |
+| [Federal Housing Finance Agency — FHFA House Price Index](https://www.fhfa.gov/reports/house-price-index) | Historical regional house-price trends relevant to collateral-market analysis; not individual-property appraisals. |
+| [BigData.com](https://bigdata.com/) | Financial news, filings, public-company fundamentals and institutional risk-intelligence research. |
+
+**Scope:** These sources informed Cygnus-A²'s broader credit-policy research. The hackathon demo uses a bounded, deterministic **synthetic assessment**, not the complete proprietary underwriting policy or live borrower-data feeds. Its LTV, haircut, risk and liquidity figures should not be interpreted as production credit decisions.
+
+### 3. UHNW Portfolio Research — Independent Global Wealth Studies
+
+The fictional ultra-high-net-worth portfolios in the demo were informed by research into wealth distribution, investment allocation, private capital and ownership of illiquid assets, rather than being presented as randomly chosen client portfolios.
+
+- **[Knight Frank — The Wealth Report](https://www.knightfrank.com/research/reports/wealthreport):** Global private-wealth trends, prime property, luxury assets and UHNW investment preferences.
+- **[Altrata — World Ultra Wealth Report 2026](https://altrata.com/reports/world-ultra-wealth-report-2026):** Ultra-high-net-worth population, wealth distribution and characteristics of the global ultra-wealthy.
+- **[Capgemini — World Wealth Report](https://www.capgemini.com/insights/research-library/world-wealth-report/):** HNWI wealth-management trends, portfolio allocations and preferences across financial and alternative investments.
+
+**Why these reports matter:** Substantial net worth does not necessarily mean substantial immediate liquidity. Different assets have different valuation, leverage and liquidation characteristics, which THAL3S 16 aims to investigate.
+
+**Research transparency:** These are **research-informed fictional portfolios**, not actual named clients or portfolios reproduced from the reports. Their precise simulated allocations and values have not been verified as direct statistical reconstructions of the publications. The reports do not imply ownership of any of the 30 California reference properties or endorsement of this demonstration.
+
+### 4. Bringing the Evidence Together — THAL3S 16
+
+**Property evidence → economic and credit-risk context → portfolio analysis → deterministic financial assessment → Meta AI interpretation → FIP validation → human review.**
+
+This is our broader research architecture. The hackathon demonstrates **selected components** using synthetic client profiles, verified California property-reference identities and recorded Meta Muse Spark Open inference experiments. FIP checks whether model-generated structured interpretations comply with the supplied evidence and deterministic assessment constraints.
+
+**Our objective is financial AI that is measurable, evidence-grounded, accountable and progressively suitable for more demanding financial research—not merely an impressive answer on a screen.**
+
+**Demo boundaries:** All client identities, portfolios, AI mansion images and financial scenarios are illustrative. Real property references are not represented as assets owned by fictional clients. No actual appraisal, lending approval, token issuance or funding occurs. Third-party research references do not imply endorsement or unrestricted data-redistribution rights.
 
 ## Start with these four documents
 
