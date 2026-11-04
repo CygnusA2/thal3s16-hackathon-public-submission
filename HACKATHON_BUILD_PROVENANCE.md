@@ -4,6 +4,14 @@
 
 This document distinguishes prior preparatory engineering from work performed during the hackathon. **The date a file was committed to this public repository is not, by itself, proof of the original creation date of its contents.** This public submission was created on **3 November 2026** to package a curated demonstration, not to imply that the entire underlying project originated that day.
 
+## Founder context — why preparation began early
+
+I am the founder of Cygnus-A², with a bachelor's degree in **Finance, Banking and Insurance**, rather than a formal software-engineering background. This was my **first hackathon**. Before the October 26 start, I was uncertain how much engineering effort a ten-day competition would require, whether I could complete a credible demonstration within that time, and how to organize the work responsibly.
+
+For that reason, I began preparing on October 19: exploring the model-access and test setup, assembling a limited synthetic collateral-assessment baseline, studying integration constraints and establishing basic safety checks. This preparation was intended to reduce avoidable setup risks so I could use the official competition window for substantive development and experimentation—not to present earlier work as if it had been created during the event.
+
+**The distinction is intentional and auditable:** October 19 code and tests are identified below as pre-existing; work from October 26 onward is documented separately through dated commits, research receipts and development artifacts. I believe transparency about both the preparation and the competition-period innovations is more useful to judges than an inaccurate claim that the entire technical foundation was built in ten days.
+
 ## Before the hackathon — existing foundation
 
 Cygnus-A²'s **private** engineering repository `CygnusA2/thal3s16-meta-hackathon-2026` was created on **19 October 2026**, before the event's build window. Its October 19 commits include a synthetic-only deterministic collateral assessment baseline, an early Muse Spark explanation/provider adapter, safety and offline tests, smoke-test infrastructure, and preflight/planning documentation. These components constitute **pre-existing preparation**; they are **not claimed as hackathon-created inventions**.
